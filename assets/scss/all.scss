@@ -1,0 +1,17 @@
+// Bootstrap 必須最先載入的 functions（後面變數與 map-merge 都會用到）
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 你的自定義變數（顏色、字體大小等等）
+@import "./variables/variables";
+@import "./variables/variables-dark";
+
+// Bootstrap 本體
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// 在這裡引入 utilities 覆寫（因為要影響 bootstrap 的生成）
+@import "./variables/utilities";
+@import "/node_modules/bootstrap/scss/utilities/api";
+
+// 你的基礎樣式 & 客製化
+@import "./base/base";
+@import "./custom/custom";

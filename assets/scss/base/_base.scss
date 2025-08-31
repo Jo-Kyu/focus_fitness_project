@@ -1,0 +1,20 @@
+body {
+  font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: $line-height-base;
+  color: $gray-950;
+  background: $blue-900;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}

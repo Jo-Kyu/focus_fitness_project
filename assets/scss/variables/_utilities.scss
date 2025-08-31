@@ -1,0 +1,24 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "display-font-size": (
+      property: font-size,
+      class: display,
+      values: $display-font-sizes,
+      responsive: true,
+    ),
+  )
+);
