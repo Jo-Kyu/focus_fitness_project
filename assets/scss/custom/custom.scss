@@ -1,9 +1,146 @@
+// max-width
+
+.max-w-1296 {
+  max-width: 1296px;
+}
+
+.max-w-136 {
+  max-width: 136px;
+}
+
+.max-w-111 {
+  max-width: 111px;
+}
+
+.max-w-312 {
+  max-width: 312px;
+}
+
+.max-w-315 {
+  max-width: 315px;
+}
+
+.max-w-40 {
+  max-width: 40px;
+}
+
+// max-height
+
+.max-h-796 {
+  max-height: 796px;
+}
+
+// spacer
+
+.left--70 {
+  left: -20px;
+}
+
+.right--70 {
+  right: -20px;
+}
+
+// hover
+
+// 無背景 初始border為灰色、2px
+.hover-effect {
+  border: 1px solid $gray-950;
+}
+
+.hover-effect:hover,  // border+outline
+.hover-effect:focus,  // border
+.hover-effect:active {
+  border-color: $primary-400 !important;
+  outline: 2px solid $primary-900;
+}
+
+// 無背景色 初始border為綠色、2px
+.hover-effect-2 {
+  border: 2px solid $secondary-600;
+}
+
+.hover-effect-2:hover, // border+outline
+.hover-effect-2:focus, // border
+.hover-effect-2:active {
+  border-color: $primary-400 !important;
+  outline: 2px solid $primary-900;
+}
+
+// 無背景色 初始border為透明、1px
+.hover-effect-3 {
+  border: 1px solid transparent;
+}
+
+.hover-effect-3:hover, // border+outline
+.hover-effect-3:focus, // border
+.hover-effect-3:active {
+  border-color: $primary-400 !important;
+  outline: 2px solid $primary-900;
+}
+
+// 圖片放大 1.05倍
+.scale-ease-1p05:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+// 初始背景色為藍、文字白
+.fill-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: $white;
+}
+
+.fill-btn:hover,  //背景色黃、文字黑
+.fill-btn:focus {
+  background-color: $primary-400;
+  color: $gray-900;
+}
+
+// bg
+
+.bg-white-opacity-20 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.product-main-img {
+  background-image: url("../images/product_details_page/Rectangle_58.jpg");
+  background-size: cover; /* 建議加上 */
+  background-position: center; /* 建議加上 */
+  background-repeat: no-repeat; /* 建議加上 */
+}
+
+// placeholder
+
+input.placeholder-lg::placeholder {
+  font-size: $h5-font-size;
+}
+
+.input-focus:focus {
+  outline: none !important;
+}
+
 // border-radius
 
 .border-radius-12 {
-  border-radius: $border-radius-12; //12px
+  border-radius: $border-radius-12;
 }
 
 .border-radius-16 {
-  border-radius: $border-radius-16; //16px
+  border-radius: $border-radius-16;
+}
+
+// opacity
+.transparent {
+  background-color: transparent;
+}
+
+// scroll
+
+.scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
 }
