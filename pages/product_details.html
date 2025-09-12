@@ -17,15 +17,16 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <main>
+    <main class="px-6">
       <!-- 分頁 -->
-      <section class="p-0 mb-7 container max-w-1296">
+      <section class="p-0 mb-6 mb-md-7 container max-w-1296">
         <nav style="--bs-breadcrumb-divider: " aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item pe-6">
-              <a class="fs-6 text-gray-200 fw-bold" href="#">首頁</a>
+          <ol class="breadcrumb mb-0 fs-9 fs-md-6">
+            <li class="breadcrumb-item pe-2 pe-md-6">
+              <a class="text-gray-200 fw-bold" href="#">首頁</a>
             </li>
-            <li>
+            <!-- 電腦版顯示箭頭符號 -->
+            <li class="d-none d-md-block">
               <svg
                 width="20"
                 height="20"
@@ -39,10 +40,26 @@
                 />
               </svg>
             </li>
-            <li class="breadcrumb-item px-6">
-              <a class="fs-6 text-gray-200 fw-bold" href="#">商城</a>
+            <!-- 手機版顯示箭頭符號 -->
+            <li class="d-md-none">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.91009 3.57757C7.23553 3.25214 7.76304 3.25214 8.08848 3.57757L13.9218 9.41091C14.2473 9.73634 14.2473 10.2639 13.9218 10.5893L8.08848 16.4226C7.76304 16.7481 7.23553 16.7481 6.91009 16.4226C6.58466 16.0972 6.58466 15.5697 6.91009 15.2442L12.1542 10.0001L6.91009 4.75596C6.58466 4.43052 6.58466 3.90301 6.91009 3.57757Z"
+                  fill="white"
+                />
+              </svg>
             </li>
-            <li>
+            <li class="breadcrumb-item px-2 px-md-6">
+              <a class="text-gray-200 fw-bold" href="#">商城</a>
+            </li>
+            <!-- 電腦版顯示箭頭符號 -->
+            <li class="d-none d-md-block">
               <svg
                 width="20"
                 height="20"
@@ -56,10 +73,26 @@
                 />
               </svg>
             </li>
-            <li class="breadcrumb-item px-6">
-              <a class="fs-6 text-gray-200 fw-bold" href="#">健身裝備</a>
+            <!-- 手機版顯示箭頭符號 -->
+            <li class="d-md-none">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.91009 3.57757C7.23553 3.25214 7.76304 3.25214 8.08848 3.57757L13.9218 9.41091C14.2473 9.73634 14.2473 10.2639 13.9218 10.5893L8.08848 16.4226C7.76304 16.7481 7.23553 16.7481 6.91009 16.4226C6.58466 16.0972 6.58466 15.5697 6.91009 15.2442L12.1542 10.0001L6.91009 4.75596C6.58466 4.43052 6.58466 3.90301 6.91009 3.57757Z"
+                  fill="white"
+                />
+              </svg>
             </li>
-            <li>
+            <li class="breadcrumb-item px-2 px-md-6">
+              <a class="text-gray-200 fw-bold" href="#">健身裝備</a>
+            </li>
+            <!-- 電腦版顯示箭頭符號 -->
+            <li class="d-none d-md-block">
               <svg
                 width="20"
                 height="20"
@@ -73,13 +106,44 @@
                 />
               </svg>
             </li>
-            <li class="breadcrumb-item px-6">
-              <a class="fs-6 text-gray-200 fw-bold" href="#">重量訓練專區</a>
+            <!-- 手機版顯示箭頭符號 -->
+            <li class="d-md-none">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.91009 3.57757C7.23553 3.25214 7.76304 3.25214 8.08848 3.57757L13.9218 9.41091C14.2473 9.73634 14.2473 10.2639 13.9218 10.5893L8.08848 16.4226C7.76304 16.7481 7.23553 16.7481 6.91009 16.4226C6.58466 16.0972 6.58466 15.5697 6.91009 15.2442L12.1542 10.0001L6.91009 4.75596C6.58466 4.43052 6.58466 3.90301 6.91009 3.57757Z"
+                  fill="white"
+                />
+              </svg>
             </li>
-            <li>
+            <li class="breadcrumb-item px-2 px-md-6">
+              <a class="text-gray-200 fw-bold" href="#">重量訓練專區</a>
+            </li>
+            <!-- 電腦版顯示箭頭符號 -->
+            <li class="d-none d-md-block">
               <svg
                 width="20"
                 height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.91009 3.57757C7.23553 3.25214 7.76304 3.25214 8.08848 3.57757L13.9218 9.41091C14.2473 9.73634 14.2473 10.2639 13.9218 10.5893L8.08848 16.4226C7.76304 16.7481 7.23553 16.7481 6.91009 16.4226C6.58466 16.0972 6.58466 15.5697 6.91009 15.2442L12.1542 10.0001L6.91009 4.75596C6.58466 4.43052 6.58466 3.90301 6.91009 3.57757Z"
+                  fill="white"
+                />
+              </svg>
+            </li>
+            <!-- 手機版顯示箭頭符號 -->
+            <li class="d-md-none">
+              <svg
+                width="12"
+                height="12"
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +155,7 @@
               </svg>
             </li>
             <li
-              class="breadcrumb-item active ps-6 text-primary-400 fw-bold"
+              class="breadcrumb-item active ps-2 ps-md-6 text-primary-400 fw-bold"
               aria-current="page"
             >
               助力帶
@@ -100,15 +164,16 @@
         </nav>
       </section>
       <!-- 商品詳情 -->
-      <section class="p-0 mb-11 container max-w-1296">
+      <section class="p-0 mb-8 mb-md-11 container max-w-1296">
         <!-- 格線系統 -->
-        <div class="row">
+        <div class="row flex-column flex-md-row">
           <!-- 商品圖片 -->
-          <div class="col-6">
+          <div class="mb-md-0 mb-6 col-12 col-md-6">
             <div
-              class="product-main-img h-100 max-h-796 rounded-4 d-flex justify-content-center align-items-end pb-3 mb-4"
+              class="product-main-img h-100 max-h-796 rounded-4 d-flex flex-column flex-md-row justify-content-between align-items-md-end p-3 pb-md-3 mb-6 mb-md-4"
             >
-              <ul class="mb-0 d-flex list-unstyled">
+              <!-- 商品小圖片，電腦版出現 -->
+              <ul class="mb-0 d-flex list-unstyled thumb-list d-none d-md-flex">
                 <li class="me-6 max-w-111">
                   <button
                     class="btn p-0 hover-effect-2 rounded-3 overflow-hidden"
@@ -160,8 +225,194 @@
                   </button>
                 </li>
               </ul>
+              <!-- 圖片選項按鈕，手機板出現 -->
+              <div class="d-md-none d-flex thumb-list-indicator">
+                <button
+                  class="me-1 max-w-60 max-h-7 img-change-btn border-0 rounded-pill"
+                  data-index="0"
+                ></button>
+                <button
+                  class="me-1 max-w-60 max-h-7 img-change-btn border-0 rounded-pill"
+                  data-index="1"
+                ></button>
+                <button
+                  class="me-1 max-w-60 max-h-7 img-change-btn border-0 rounded-pill"
+                  data-index="2"
+                ></button>
+                <button
+                  class="me-1 max-w-60 max-h-7 img-change-btn border-0 rounded-pill"
+                  data-index="3"
+                ></button>
+                <button
+                  class="max-w-60 max-h-7 img-change-btn border-0 rounded-pill"
+                  data-index="4"
+                ></button>
+              </div>
+              <!-- 分享圖示，手機板出現 -->
+              <div
+                class="d-flex justify-content-end d-md-none"
+                style="margin-top: 296px"
+              >
+                <ul class="mb-0 d-flex list-unstyled">
+                  <li class="me-6">
+                    <a href="#">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_440_5295)">
+                          <path
+                            d="M32 16C32 7.1625 24.8375 0 16 0C7.1625 0 0 7.1625 0 16C0 24.8375 7.1625 32 16 32C16.0938 32 16.1875 32 16.2812 31.9937V19.5438H12.8438V15.5375H16.2812V12.5875C16.2812 9.16875 18.3688 7.30625 21.4188 7.30625C22.8813 7.30625 24.1375 7.4125 24.5 7.4625V11.0375H22.4C20.7437 11.0375 20.4188 11.825 20.4188 12.9812V15.5312H24.3875L23.8687 19.5375H20.4188V31.3813C27.1063 29.4625 32 23.3062 32 16Z"
+                            fill="#F3F4EF"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_440_5295">
+                            <rect width="32" height="32" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="me-6">
+                    <a href="#">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_440_5297)">
+                          <path
+                            d="M19.0625 16C19.0625 17.6914 17.6914 19.0625 16 19.0625C14.3086 19.0625 12.9375 17.6914 12.9375 16C12.9375 14.3086 14.3086 12.9375 16 12.9375C17.6914 12.9375 19.0625 14.3086 19.0625 16Z"
+                            fill="#F3F4EF"
+                          />
+                          <path
+                            d="M23.1611 10.5813C23.0139 10.1824 22.7791 9.82129 22.4739 9.5249C22.1775 9.21973 21.8167 8.98486 21.4175 8.83765C21.0938 8.71191 20.6074 8.56226 19.7117 8.52148C18.7427 8.47729 18.4521 8.46777 15.999 8.46777C13.5457 8.46777 13.2551 8.47705 12.2864 8.52124C11.3906 8.56226 10.9041 8.71191 10.5806 8.83765C10.1814 8.98486 9.82031 9.21973 9.52417 9.5249C9.21899 9.82129 8.98413 10.1821 8.83667 10.5813C8.71094 10.905 8.56128 11.3916 8.52051 12.2874C8.47632 13.2561 8.4668 13.5466 8.4668 16C8.4668 18.4531 8.47632 18.7437 8.52051 19.7126C8.56128 20.6084 8.71094 21.0947 8.83667 21.4185C8.98413 21.8176 9.21875 22.1785 9.52393 22.4749C9.82031 22.78 10.1812 23.0149 10.5803 23.1621C10.9041 23.2881 11.3906 23.4377 12.2864 23.4785C13.2551 23.5227 13.5454 23.532 15.9988 23.532C18.4524 23.532 18.7429 23.5227 19.7114 23.4785C20.6072 23.4377 21.0938 23.2881 21.4175 23.1621C22.2188 22.853 22.8521 22.2197 23.1611 21.4185C23.2869 21.0947 23.4365 20.6084 23.4775 19.7126C23.5217 18.7437 23.531 18.4531 23.531 16C23.531 13.5466 23.5217 13.2561 23.4775 12.2874C23.4368 11.3916 23.2871 10.905 23.1611 10.5813ZM15.999 20.7175C13.3933 20.7175 11.281 18.6055 11.281 15.9998C11.281 13.394 13.3933 11.282 15.999 11.282C18.6045 11.282 20.7168 13.394 20.7168 15.9998C20.7168 18.6055 18.6045 20.7175 15.999 20.7175ZM20.9033 12.198C20.2944 12.198 19.8008 11.7043 19.8008 11.0955C19.8008 10.4866 20.2944 9.99292 20.9033 9.99292C21.5122 9.99292 22.0059 10.4866 22.0059 11.0955C22.0056 11.7043 21.5122 12.198 20.9033 12.198Z"
+                            fill="#F3F4EF"
+                          />
+                          <path
+                            d="M16 0C7.16479 0 0 7.16479 0 16C0 24.8352 7.16479 32 16 32C24.8352 32 32 24.8352 32 16C32 7.16479 24.8352 0 16 0ZM25.1321 19.7878C25.0876 20.7659 24.9321 21.4336 24.7051 22.0181C24.2278 23.2522 23.2522 24.2278 22.0181 24.7051C21.4338 24.9321 20.7659 25.0874 19.7881 25.1321C18.8083 25.1768 18.4954 25.1875 16.0002 25.1875C13.5049 25.1875 13.1921 25.1768 12.2122 25.1321C11.2344 25.0874 10.5664 24.9321 9.98218 24.7051C9.3689 24.4744 8.81372 24.1128 8.35474 23.6453C7.88745 23.1865 7.52588 22.6311 7.29517 22.0181C7.06812 21.4338 6.9126 20.7659 6.86816 19.7881C6.823 18.8081 6.8125 18.4951 6.8125 16C6.8125 13.5049 6.823 13.1919 6.86792 12.2122C6.91235 11.2341 7.06763 10.5664 7.29468 9.98193C7.52539 9.3689 7.88721 8.81348 8.35474 8.35474C8.81348 7.88721 9.3689 7.52563 9.98193 7.29492C10.5664 7.06787 11.2341 6.9126 12.2122 6.86792C13.1919 6.82324 13.5049 6.8125 16 6.8125C18.4951 6.8125 18.8081 6.82324 19.7878 6.86816C20.7659 6.9126 21.4336 7.06787 22.0181 7.29468C22.6311 7.52539 23.1865 7.88721 23.6455 8.35474C24.1128 8.81372 24.4746 9.3689 24.7051 9.98193C24.9324 10.5664 25.0876 11.2341 25.1323 12.2122C25.177 13.1919 25.1875 13.5049 25.1875 16C25.1875 18.4951 25.177 18.8081 25.1321 19.7878Z"
+                            fill="#F3F4EF"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_440_5297">
+                            <rect width="32" height="32" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="me-6">
+                    <a href="#">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 0C24.8365 0 32 7.16347 32 16C32 24.8365 24.8365 32 16 32C7.16347 32 0 24.8365 0 16C2.57705e-07 7.16347 7.16347 2.57721e-07 16 0ZM16 7.53418C10.3863 7.53418 5.81836 11.1469 5.81836 15.5869C5.81861 19.5672 9.44033 22.9009 14.333 23.5312C14.6644 23.6009 15.1162 23.7443 15.2305 24.0205C15.3331 24.2714 15.2978 24.6647 15.2637 24.918C15.2606 24.9362 15.1439 25.6188 15.1182 25.7666C15.0738 26.0175 14.9137 26.748 16 26.3018C17.0872 25.8552 21.8628 22.9368 23.999 20.541C25.4745 18.9641 26.1815 17.3637 26.1816 15.5869C26.1816 11.147 21.6144 7.53426 16 7.53418Z"
+                          fill="#F3F4EF"
+                        />
+                        <path
+                          d="M10.5137 13.4316C10.6137 13.4316 10.6953 13.516 10.6953 13.6201V16.9717H12.4688C12.5686 16.9719 12.6494 17.0562 12.6494 17.1602V17.8398C12.6492 17.9436 12.5684 18.0281 12.4688 18.0283H9.86035C9.81173 18.0282 9.76793 18.0078 9.73535 17.9756C9.73443 17.9746 9.73312 17.9736 9.73242 17.9727C9.73149 17.9718 9.73108 17.9706 9.73047 17.9697C9.69926 17.9363 9.67973 17.8903 9.67969 17.8398V13.6201C9.67972 13.516 9.76132 13.4316 9.86133 13.4316H10.5137ZM22.1387 13.4316C22.2385 13.4316 22.3191 13.5162 22.3193 13.6201V14.2998C22.3193 14.4041 22.2387 14.4883 22.1387 14.4883H20.3652V15.2012H22.1387C22.2387 15.2012 22.3193 15.2863 22.3193 15.3906V16.0693C22.3193 16.1734 22.2387 16.2578 22.1387 16.2578H20.3652V16.9717H22.1387C22.2387 16.9717 22.3193 17.0563 22.3193 17.1602V17.8398C22.3192 17.9438 22.2386 18.0283 22.1387 18.0283H19.5312C19.4826 18.0283 19.4386 18.008 19.4062 17.9756L19.4004 17.9697C19.385 17.9528 19.3729 17.9329 19.3643 17.9111L19.3506 17.8398V13.6201C19.3506 13.5697 19.3694 13.5239 19.4004 13.4902L19.4053 13.4854C19.4216 13.4689 19.4408 13.4554 19.4619 13.4463L19.5312 13.4316H22.1387ZM14.042 13.4316C14.142 13.4316 14.2236 13.5163 14.2236 13.6201V17.8398C14.2236 17.9437 14.142 18.0273 14.042 18.0273H13.3896C13.2897 18.0273 13.2081 17.9437 13.208 17.8398V13.6201C13.208 13.5163 13.2896 13.4316 13.3896 13.4316H14.042ZM15.7168 13.4336C15.7191 13.4338 15.722 13.4341 15.7246 13.4346C15.7279 13.4353 15.7311 13.4368 15.7344 13.4375C15.7365 13.4382 15.7391 13.439 15.7412 13.4395C15.7448 13.4406 15.7485 13.4412 15.752 13.4424C15.754 13.4431 15.7557 13.4436 15.7578 13.4443C15.7615 13.4458 15.7651 13.4478 15.7686 13.4492L15.7832 13.458C15.7851 13.4592 15.7874 13.4597 15.7891 13.4609C15.7923 13.4631 15.7956 13.4656 15.7988 13.4678C15.8001 13.4689 15.8012 13.4704 15.8027 13.4717C15.806 13.4741 15.8095 13.4776 15.8125 13.4805C15.8139 13.4817 15.8153 13.4824 15.8164 13.4834C15.8199 13.4872 15.8237 13.491 15.8271 13.4951L15.8281 13.4961C15.833 13.5021 15.8376 13.5088 15.8418 13.5156L17.7002 16.127V13.6201C17.7002 13.5163 17.7816 13.4316 17.8818 13.4316H18.5342C18.6342 13.4316 18.7158 13.5163 18.7158 13.6201V17.8398C18.7158 17.9437 18.6342 18.0273 18.5342 18.0273H17.8818C17.8655 18.0273 17.8497 18.0256 17.835 18.0215H17.832C17.8282 18.0201 17.8246 18.0182 17.8203 18.0166C17.8184 18.0161 17.8163 18.0154 17.8145 18.0146C17.8115 18.0135 17.8086 18.0117 17.8057 18.0107C17.8029 18.0093 17.7996 18.0075 17.7969 18.0059C17.7954 18.005 17.7937 18.004 17.792 18.0029C17.7884 18.001 17.7849 17.9987 17.7812 17.9961L17.7793 17.9951C17.762 17.9827 17.7462 17.9669 17.7334 17.9482L15.873 15.333V17.8398C15.873 17.9436 15.7916 18.0273 15.6914 18.0273H15.0391C14.9391 18.0273 14.8575 17.9437 14.8574 17.8398V13.6201C14.8574 13.5163 14.939 13.4316 15.0391 13.4316H15.6973L15.7168 13.4336Z"
+                          fill="#F3F4EF"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M21 6.49805C22.934 6.49805 24.5018 8.06584 24.5018 9.99982C24.5018 11.9338 22.934 13.5016 21 13.5016C19.97 13.5016 19.0439 13.0569 18.4032 12.3491L13.8446 14.9535C13.9479 15.2839 14.0035 15.6354 14.0035 15.9998C14.0035 16.3643 13.9479 16.7157 13.8446 17.0461L18.4023 19.6516C19.043 18.9431 19.9695 18.498 21 18.498C22.934 18.498 24.5018 20.0658 24.5018 21.9998C24.5018 23.9338 22.934 25.5016 21 25.5016C19.066 25.5016 17.4982 23.9338 17.4982 21.9998C17.4982 21.6354 17.5539 21.2839 17.6572 20.9535L13.0995 18.3481C12.4587 19.0565 11.5322 19.5016 10.5018 19.5016C8.5678 19.5016 7 17.9338 7 15.9998C7 14.0658 8.5678 12.498 10.5018 12.498C11.5317 12.498 12.4578 12.9427 13.0986 13.6505L17.6572 11.0461C17.5539 10.7157 17.4982 10.3643 17.4982 9.99982C17.4982 8.06584 19.066 6.49805 21 6.49805ZM21 19.998C19.8945 19.998 18.9982 20.8943 18.9982 21.9998C18.9982 23.1054 19.8945 24.0016 21 24.0016C22.1055 24.0016 23.0018 23.1054 23.0018 21.9998C23.0018 20.8943 22.1055 19.998 21 19.998ZM10.5018 13.998C9.39622 13.998 8.5 14.8943 8.5 15.9998C8.5 17.1054 9.39622 18.0016 10.5018 18.0016C11.6073 18.0016 12.5035 17.1054 12.5035 15.9998C12.5035 14.8943 11.6073 13.998 10.5018 13.998ZM21 7.99805C19.8945 7.99805 18.9982 8.89427 18.9982 9.99982C18.9982 11.1054 19.8945 12.0016 21 12.0016C22.1055 12.0016 23.0018 11.1054 23.0018 9.99982C23.0018 8.89427 22.1055 7.99805 21 7.99805Z"
+                          fill="#171A29"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="d-flex align-items-center">
+            <!-- 商品圖片，手機板出現 -->
+            <div class="d-md-none scroll">
+              <ul class="mb-0 d-flex list-unstyled thumb-list">
+                <li class="me-6 max-w-111 min-w-111">
+                  <button
+                    class="btn p-0 hover-effect-2 rounded-3 overflow-hidden"
+                  >
+                    <img
+                      class="max-h-100"
+                      src="../assets/images/product_details_page/Rectangle_58.jpg"
+                      alt=""
+                    />
+                  </button>
+                </li>
+                <li class="me-6 max-w-111 min-w-111">
+                  <button
+                    class="btn p-0 hover-effect-2 rounded-3 overflow-hidden"
+                  >
+                    <img
+                      class="max-h-100"
+                      src="../assets/images/product_details_page/Rectangle 59.jpg"
+                      alt=""
+                    />
+                  </button>
+                </li>
+                <li class="me-6 max-w-111 min-w-111">
+                  <button
+                    class="btn p-0 hover-effect-2 rounded-3 overflow-hidden"
+                  >
+                    <img
+                      class="max-h-100"
+                      src="../assets/images/product_details_page/Rectangle 60.jpg"
+                      alt=""
+                    />
+                  </button>
+                </li>
+                <li class="me-6 max-w-111 min-w-111">
+                  <button
+                    class="btn p-0 hover-effect-2 rounded-3 overflow-hidden"
+                  >
+                    <img
+                      class="max-h-100"
+                      src="../assets/images/product_details_page/Rectangle 61.jpg"
+                      alt=""
+                    />
+                  </button>
+                </li>
+                <li class="me-6 max-w-111 min-w-111">
+                  <button
+                    class="btn p-0 hover-effect-2 rounded-3 overflow-hidden"
+                  >
+                    <img
+                      class="max-h-100"
+                      src="../assets/images/product_details_page/Rectangle 62.jpg"
+                      alt=""
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <!-- 分享圖示，電腦版出現 -->
+            <div class="d-flex align-items-center d-none d-md-flex">
               <div class="me-6">
                 <h4 class="mb-0 fs-6 text-gray-200">分享</h4>
               </div>
@@ -264,20 +515,22 @@
             </div>
           </div>
           <!-- 商品說明 -->
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <!-- 商品標題、商品評價、商品價格 -->
-            <div class="mb-8">
+            <div class="mb-6 mb-md-8">
               <!-- 商品標題 -->
-              <div class="mb-4">
-                <h1 class="mb-0 fs-2 fw-bold lh-sm">Focus 耐磨皮革拉力帶</h1>
+              <div class="mb-2 mb-md-4">
+                <h1 class="mb-0 fs-7 fs-md-2 fw-bold lh-md-sm">
+                  Focus 耐磨皮革拉力帶
+                </h1>
               </div>
               <!-- 商品評價 -->
-              <div class="mb-4">
+              <div class="mb-2 mb-md-4">
                 <p class="mb-0 d-flex align-items-center">
-                  <span class="me-1 fs-8 fw-bold">4.9</span>
-                  <!-- 星星符號 -->
+                  <span class="me-1 fs-9 fs-md-8 fw-bold">4.9</span>
+                  <!-- 星星符號，電腦板顯示 -->
                   <span
-                    class="me-3 pe-3 border-end border-white d-flex align-items-center"
+                    class="me-2 pe-2 border-end border-white d-flex align-items-center d-none d-md-flex"
                   >
                     <span
                       class="p-12 text-warning-normal d-flex align-items-center"
@@ -349,6 +602,91 @@
                       <svg
                         width="20"
                         height="20"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                          fill="#FFD416"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <!-- 星星符號，手機板顯示 -->
+                  <span
+                    class="me-2 pe-2 border-end border-white d-flex align-items-center d-md-none"
+                  >
+                    <span
+                      class="p-12 text-warning-normal d-flex align-items-center"
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                          fill="#FFD416"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="p-12 text-warning-normal d-flex align-items-center"
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                          fill="#FFD416"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="p-12 text-warning-normal d-flex align-items-center"
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                          fill="#FFD416"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="p-12 text-warning-normal d-flex align-items-center"
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                          fill="#FFD416"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="p-12 text-warning-normal d-flex align-items-center"
+                    >
+                      <svg
+                        width="14"
+                        height="14"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
@@ -361,15 +699,17 @@
                     </span>
                   </span>
                   <!-- 評價數量 -->
-                  <span class="me-3 pe-3 d-flex border-end border-white">
+                  <span
+                    class="me-2 me-md-3 pe-2 pe-md-3 d-flex border-end border-white"
+                  >
                     <span
-                      class="me-1 text-gray-950 fw-bold d-flex align-items-center"
+                      class="me-1 fs-9 fs-md-8 text-gray-950 fw-bold d-flex align-items-center"
                     >
                       10,000
                     </span>
 
                     <span
-                      class="fs-8 text-gray-500 fw-bold d-flex align-items-center"
+                      class="fs-9 fs-md-8 text-gray-500 fw-bold d-flex align-items-center"
                     >
                       評價
                     </span>
@@ -377,73 +717,97 @@
                   <!-- 售出數量 -->
                   <span class="d-flex">
                     <span
-                      class="me-1 text-gray-950 fw-bold d-flex align-items-center"
+                      class="me-1 fs-9 fs-md-8 text-gray-950 fw-bold d-flex align-items-center"
                     >
                       30,000+
                     </span>
 
                     <span
-                      class="fs-8 text-gray-500 fw-bold d-flex align-items-center"
+                      class="fs-9 fs-md-8 text-gray-500 fw-bold d-flex align-items-center"
                     >
                       已售出
                     </span>
                   </span>
                 </p>
               </div>
-              <!-- 商品價格 -->
-              <div>
-                <h2 class="mb-0 d-flex align-items-center">
-                  <span class="me-6 fs-4 text-gray-950 fw-bold lh-sm"
-                    >NT$1,280</span
-                  >
-                  <span
-                    class="fs-7 text-gray-500 fw-bold text-decoration-line-through"
-                    >NT$1,580</span
-                  >
-                </h2>
+              <!-- 商品價格、手機板收藏按鈕 -->
+              <div
+                class="py-2 d-flex justify-content-between align-items-center"
+              >
+                <!-- 商品價格 -->
+                <div class="py-md-0">
+                  <h2 class="mb-0 d-flex align-items-center">
+                    <span class="me-6 fs-6 fs-md-4 text-gray-950 fw-bold lh-sm"
+                      >NT$1,280</span
+                    >
+                    <span
+                      class="fs-8 fs-md-7 text-gray-500 fw-bold text-decoration-line-through"
+                      >NT$1,580</span
+                    >
+                  </h2>
+                </div>
+                <!-- 手機板收藏按鈕 -->
+                <div class="d-md-none">
+                  <button class="btn p-2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 36 37"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.28592 33.2821C8.54171 33.8176 7.50391 33.2856 7.50391 32.3688V9.875C7.50391 7.18261 9.68651 5 12.3789 5H23.6265C26.3188 5 28.5015 7.18261 28.5015 9.875V32.3688C28.5015 33.2856 27.4636 33.8176 26.7195 33.2821L18.0027 27.0107L9.28592 33.2821ZM26.2515 9.875C26.2515 8.42525 25.0762 7.25 23.6265 7.25H12.3789C10.9292 7.25 9.75391 8.42525 9.75391 9.875V30.1736L17.3457 24.7115C17.7382 24.4292 18.2673 24.4292 18.6597 24.7115L26.2515 30.1736V9.875Z"
+                        fill="white"
+                        stroke="white"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-            <!-- 顏色、尺寸、數量 -->
-            <div class="mb-8">
+            <!-- 顏色、尺寸、數量、加入購物車、直接購買按鈕、電腦版收藏按鈕 -->
+            <div class="mb-4 mb-md-8">
               <!-- 顏色 -->
-              <div class="mb-8">
+              <div class="mb-4 mb-md-8">
                 <!-- 顏色標題 -->
                 <div class="mb-6">
                   <h3 class="mb-0 fs-6 text-gray-200 fw-medium">顏色</h3>
                 </div>
                 <!-- 顏色按鈕 -->
-                <ul class="mb-0 list-unstyled d-flex">
+                <ul class="mb-0 list-unstyled d-flex flex-wrap">
                   <li class="me-6">
                     <button
-                      class="btn btn-lg bg-blue-900 rounded-3 text-gray-950 hover-effect"
+                      class="btn btn-lg mb-6 mb-md-0 bg-blue-900 rounded-3 text-gray-950 hover-effect"
                     >
                       牛皮棕
                     </button>
                   </li>
                   <li class="me-6">
                     <button
-                      class="btn btn-lg bg-blue-900 rounded-3 text-gray-950 hover-effect"
+                      class="btn btn-lg mb-6 mb-md-0 bg-blue-900 rounded-3 text-gray-950 hover-effect"
                     >
                       牛皮黑
                     </button>
                   </li>
                   <li class="me-6">
                     <button
-                      class="btn btn-lg bg-blue-900 rounded-3 text-gray-950 hover-effect"
+                      class="btn btn-lg mb-6 mb-md-0 bg-blue-900 rounded-3 text-gray-950 hover-effect"
                     >
                       牛皮黃
                     </button>
                   </li>
                   <li class="me-6">
                     <button
-                      class="btn btn-lg bg-blue-900 rounded-3 text-gray-950 hover-effect"
+                      class="btn btn-lg mb-6 mb-md-0 bg-blue-900 rounded-3 text-gray-950 hover-effect"
                     >
                       牛皮綠
                     </button>
                   </li>
                   <li class="me-6">
                     <button
-                      class="btn btn-lg bg-blue-900 rounded-3 text-gray-950 hover-effect"
+                      class="btn btn-lg mb-6 mb-md-0 bg-blue-900 rounded-3 text-gray-950 hover-effect"
                     >
                       牛皮粉
                     </button>
@@ -451,7 +815,7 @@
                 </ul>
               </div>
               <!-- 尺寸 -->
-              <div class="mb-8">
+              <div class="mb-4 mb-md-8">
                 <!-- 顏色標題 -->
                 <div class="mb-6">
                   <h3 class="mb-0 fs-6 text-gray-200 fw-medium">尺寸</h3>
@@ -467,15 +831,15 @@
                   </li>
                 </ul>
               </div>
-              <!-- 數量 -->
-              <div class="mb-8">
-                <!-- 顏色標題 -->
+              <!-- 商品數量 -->
+              <div class="mb-4 mb-md-8">
+                <!-- 數量標題 -->
                 <div class="mb-6">
                   <h3 class="mb-0 fs-6 text-gray-200 fw-medium">數量</h3>
                 </div>
                 <!-- 數量按鈕 -->
                 <div
-                  class="rounded-pill bg-white-opacity-20 d-flex justify-content-center align-items-center max-w-136"
+                  class="rounded-pill bg-white-opacity-20 d-flex justify-content-between justify-content-md-center align-items-center max-w-md-136"
                 >
                   <button class="btn p-2 border-0">
                     <span class="d-flex align-items-center">
@@ -517,20 +881,20 @@
                   </button>
                 </div>
               </div>
-              <!-- 加入購物車、直接購買按鈕、收藏按鈕 -->
-              <div class="d-flex align-items-center">
+              <!-- 加入購物車、直接購買按鈕、電腦版收藏按鈕 -->
+              <div class="d-flex flex-column flex-md-row align-items-md-center">
                 <button
-                  class="me-6 py-3 fill-btn btn fs-7 fw-bold fill-btn flex-fill border-radius-12"
+                  class="mb-6 mb-md-0 me-md-6 py-2 py-md-3 fill-btn btn fs-7 fw-bold fill-btn flex-fill border-radius-12"
                 >
                   加入購物車
                 </button>
                 <button
-                  class="me-6 btn py-3 fill-btn fs-7 fw-bold fill-btn flex-fill border-radius-12"
+                  class="me-md-6 py-2 py-md-3 btn py-md-3 fill-btn fs-7 fw-bold fill-btn flex-fill border-radius-12"
                 >
                   直接購買
                 </button>
                 <!-- 收藏按鈕 -->
-                <div>
+                <div class="d-none d-md-flex">
                   <button class="btn p-2">
                     <svg
                       width="36"
@@ -864,882 +1228,1002 @@
         </div>
       </section>
       <!-- 商品評價 -->
-      <section class="p-0 mb-11 container max-w-1296">
+      <section class="p-0 mb-8 mb-md-11 container max-w-1296">
         <!-- 商品評價標題 -->
-        <div class="mb-8">
-          <h2 class="mb-0 fs-10 text-gray-950 fw-bold lh-sm">商品評價</h2>
+        <div class="mb-3 mb-md-8">
+          <h2 class="mb-0 fs-5 fs-md-10 text-gray-950 fw-bold lh-sm">
+            商品評價
+          </h2>
         </div>
         <!-- 商品評價卡片 -->
         <div class="position-relative">
           <div class="d-flex flex-nowrap scroll">
             <!-- 卡片一 -->
             <div
-              class="card me-3 p-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
+              class="card me-6 me-md-3 py-6 px-3 p-md-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
             >
               <!-- 卡片標題 -->
-              <div class="mb-6 d-flex align-items-center">
+              <div class="mb-1 mb-md-6 d-flex align-items-center">
                 <div class="me-6">
                   <img
+                    class="max-w-36 max-w-md-40"
                     src="../assets/images/icons/customer 1.svg"
                     class="card-img-top"
                     alt="客戶照片"
                   />
                 </div>
                 <div>
-                  <h3 class="mb-0 fs-7 text-white fw-bold">Alex Lee</h3>
+                  <h3 class="mb-0 fs-8 fs-md-7 text-white fw-bold">Alex Lee</h3>
                 </div>
               </div>
               <!-- 卡片評價 -->
               <!-- 星星符號 -->
-              <span class="mb-6 me-3 pe-3 d-flex align-items-center">
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+              <span class="mb-1 mb-md-6 d-flex align-items-center">
+                <!-- 星星符號，電腦板顯示 -->
+                <span class="d-flex align-items-center d-none d-md-flex">
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
                 </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                <!-- 星星符號，手機板顯示 -->
+                <span class="d-flex align-items-center d-md-none">
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
                 </span>
               </span>
               <!-- 卡片文字 -->
               <div class="card-body p-0">
-                <p class="card-text mb-0 fs-8 text-gray-200">
+                <p class="card-text mb-0 fs-9 fs-md-8 text-gray-200">
                   收到覺得品質非常好，質量好，使用感覺專業，而且出貨速度我覺得算蠻快的，售後服務也蠻好的，老闆很有耐心，客服耐心解答疑問，售後服務到位。總體而言很推！
                 </p>
               </div>
             </div>
             <!-- 卡片二 -->
             <div
-              class="card me-3 p-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
+              class="card me-6 me-md-3 py-6 px-3 p-md-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
             >
               <!-- 卡片標題 -->
-              <div class="mb-6 d-flex align-items-center">
+              <div class="mb-1 mb-md-6 d-flex align-items-center">
                 <div class="me-6">
                   <img
+                    class="max-w-36 max-w-md-40"
                     src="../assets/images/icons/customer 2.svg"
                     class="card-img-top"
                     alt="客戶照片"
                   />
                 </div>
                 <div>
-                  <h3 class="mb-0 fs-7 text-white fw-bold">Hank Shiau</h3>
+                  <h3 class="mb-0 fs-8 fs-md-7 text-white fw-bold">
+                    Hank Shiau
+                  </h3>
                 </div>
               </div>
               <!-- 卡片評價 -->
               <!-- 星星符號 -->
-              <span class="mb-6 me-3 pe-3 d-flex align-items-center">
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+              <span class="mb-1 mb-md-6 d-flex align-items-center">
+                <!-- 星星符號，電腦板顯示 -->
+                <span class="d-flex align-items-center d-none d-md-flex">
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
                 </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                <!-- 星星符號，手機板顯示 -->
+                <span class="d-flex align-items-center d-md-none">
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
                 </span>
               </span>
               <!-- 卡片文字 -->
               <div class="card-body p-0">
-                <p class="card-text mb-0 fs-8 text-gray-200">
-                  收到覺得品質非常好，質量好，使用感覺專業，而且出貨速度我覺得算蠻快的，售後服務也蠻好的，老闆很有耐心，客服耐心解答疑問，售後服務到位。總體而言很推！
+                <p class="card-text mb-0 fs-9 fs-md-8 text-gray-200">
+                  我對這次購買的健身器材非常滿意！質量好，使用感覺專業。出貨速度快，讓我能迅速開始健身。客服耐心解答疑問，售後服務到位。總之，這是一個值得推薦的品牌！
                 </p>
               </div>
             </div>
             <!-- 卡片三 -->
             <div
-              class="card me-3 p-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
+              class="card me-6 me-md-3 py-6 px-3 p-md-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
             >
               <!-- 卡片標題 -->
-              <div class="mb-6 d-flex align-items-center">
+              <div class="mb-1 mb-md-6 d-flex align-items-center">
                 <div class="me-6">
                   <img
+                    class="max-w-36 max-w-md-40"
                     src="../assets/images/icons/customer 3.svg"
                     class="card-img-top"
                     alt="客戶照片"
                   />
                 </div>
                 <div>
-                  <h3 class="mb-0 fs-7 text-white fw-bold">Andy hsu</h3>
+                  <h3 class="mb-0 fs-8 fs-md-7 text-white fw-bold">Andy hsu</h3>
                 </div>
               </div>
               <!-- 卡片評價 -->
               <!-- 星星符號 -->
-              <span class="mb-6 me-3 pe-3 d-flex align-items-center">
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+              <span class="mb-1 mb-md-6 d-flex align-items-center">
+                <!-- 星星符號，電腦板顯示 -->
+                <span class="d-flex align-items-center d-none d-md-flex">
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
                 </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                <!-- 星星符號，手機板顯示 -->
+                <span class="d-flex align-items-center d-md-none">
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
                 </span>
               </span>
               <!-- 卡片文字 -->
               <div class="card-body p-0">
-                <p class="card-text mb-0 fs-8 text-gray-200">
-                  收到覺得品質非常好，質量好，使用感覺專業，而且出貨速度我覺得算蠻快的，售後服務也蠻好的，老闆很有耐心，客服耐心解答疑問，售後服務到位。總體而言很推！
+                <p class="card-text mb-0 fs-9 fs-md-8 text-gray-200">
+                  在FOCUS商城購買的健身產品讓我驚喜！質量一流，使用舒適，完全符合需求。出貨速度快，客服友善，耐心解答問題。總的來說，這是一個值得信賴的品牌，會再回購！
                 </p>
               </div>
             </div>
             <!-- 卡片四 -->
             <div
-              class="card me-3 p-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
+              class="card me-6 me-md-3 py-6 px-3 p-md-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
             >
               <!-- 卡片標題 -->
-              <div class="mb-6 d-flex align-items-center">
+              <div class="mb-1 mb-md-6 d-flex align-items-center">
                 <div class="me-6">
                   <img
+                    class="max-w-36 max-w-md-40"
                     src="../assets/images/icons/customer 4.svg"
                     class="card-img-top"
                     alt="客戶照片"
                   />
                 </div>
                 <div>
-                  <h3 class="mb-0 fs-7 text-white fw-bold">Benson Tsai</h3>
+                  <h3 class="mb-0 fs-8 fs-md-7 text-white fw-bold">
+                    Benson Tsai
+                  </h3>
                 </div>
               </div>
               <!-- 卡片評價 -->
               <!-- 星星符號 -->
-              <span class="mb-6 me-3 pe-3 d-flex align-items-center">
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+              <span class="mb-1 mb-md-6 d-flex align-items-center">
+                <!-- 星星符號，電腦板顯示 -->
+                <span class="d-flex align-items-center d-none d-md-flex">
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
                 </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                <!-- 星星符號，手機板顯示 -->
+                <span class="d-flex align-items-center d-md-none">
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-              </span>
-              <!-- 卡片文字 -->
-              <div class="card-body p-0">
-                <p class="card-text mb-0 fs-8 text-gray-200">
-                  收到覺得品質非常好，質量好，使用感覺專業，而且出貨速度我覺得算蠻快的，售後服務也蠻好的，老闆很有耐心，客服耐心解答疑問，售後服務到位。總體而言很推！
-                </p>
-              </div>
-            </div>
-            <!-- 卡片一 -->
-            <div
-              class="card me-3 p-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
-            >
-              <!-- 卡片標題 -->
-              <div class="mb-6 d-flex align-items-center">
-                <div class="me-6">
-                  <img
-                    src="../assets/images/icons/customer 1.svg"
-                    class="card-img-top"
-                    alt="客戶照片"
-                  />
-                </div>
-                <div>
-                  <h3 class="mb-0 fs-7 text-white fw-bold">Alex Lee</h3>
-                </div>
-              </div>
-              <!-- 卡片評價 -->
-              <!-- 星星符號 -->
-              <span class="mb-6 me-3 pe-3 d-flex align-items-center">
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
                 </span>
               </span>
               <!-- 卡片文字 -->
               <div class="card-body p-0">
-                <p class="card-text mb-0 fs-8 text-gray-200">
-                  收到覺得品質非常好，質量好，使用感覺專業，而且出貨速度我覺得算蠻快的，售後服務也蠻好的，老闆很有耐心，客服耐心解答疑問，售後服務到位。總體而言很推！
-                </p>
-              </div>
-            </div>
-            <!-- 卡片二 -->
-            <div
-              class="card me-3 p-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
-            >
-              <!-- 卡片標題 -->
-              <div class="mb-6 d-flex align-items-center">
-                <div class="me-6">
-                  <img
-                    src="../assets/images/icons/customer 2.svg"
-                    class="card-img-top"
-                    alt="客戶照片"
-                  />
-                </div>
-                <div>
-                  <h3 class="mb-0 fs-7 text-white fw-bold">Hank Shiau</h3>
-                </div>
-              </div>
-              <!-- 卡片評價 -->
-              <!-- 星星符號 -->
-              <span class="mb-6 me-3 pe-3 d-flex align-items-center">
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-              </span>
-              <!-- 卡片文字 -->
-              <div class="card-body p-0">
-                <p class="card-text mb-0 fs-8 text-gray-200">
-                  收到覺得品質非常好，質量好，使用感覺專業，而且出貨速度我覺得算蠻快的，售後服務也蠻好的，老闆很有耐心，客服耐心解答疑問，售後服務到位。總體而言很推！
-                </p>
-              </div>
-            </div>
-            <!-- 卡片三 -->
-            <div
-              class="card me-3 p-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
-            >
-              <!-- 卡片標題 -->
-              <div class="mb-6 d-flex align-items-center">
-                <div class="me-6">
-                  <img
-                    src="../assets/images/icons/customer 3.svg"
-                    class="card-img-top"
-                    alt="客戶照片"
-                  />
-                </div>
-                <div>
-                  <h3 class="mb-0 fs-7 text-white fw-bold">Andy hsu</h3>
-                </div>
-              </div>
-              <!-- 卡片評價 -->
-              <!-- 星星符號 -->
-              <span class="mb-6 me-3 pe-3 d-flex align-items-center">
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-              </span>
-              <!-- 卡片文字 -->
-              <div class="card-body p-0">
-                <p class="card-text mb-0 fs-8 text-gray-200">
-                  收到覺得品質非常好，質量好，使用感覺專業，而且出貨速度我覺得算蠻快的，售後服務也蠻好的，老闆很有耐心，客服耐心解答疑問，售後服務到位。總體而言很推！
+                <p class="card-text mb-0 fs-9 fs-md-8 text-gray-200">
+                  我最近購買的健身器材讓我非常滿意！質量超出預期，感覺耐用。出貨速度快，幾乎是下單後就收到了。客服回應迅速，專業且用心。總之，這次購物體驗愉快，強烈推薦！
                 </p>
               </div>
             </div>
             <!-- 卡片四 -->
             <div
-              class="card p-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
+              class="card me-6 me-md-3 py-6 px-3 p-md-7 rounded-4 bg-blue-600 max-w-312 flex-grow-0 flex-shrink-0"
             >
               <!-- 卡片標題 -->
-              <div class="mb-6 d-flex align-items-center">
+              <div class="mb-1 mb-md-6 d-flex align-items-center">
                 <div class="me-6">
                   <img
+                    class="max-w-36 max-w-md-40"
                     src="../assets/images/icons/customer 4.svg"
                     class="card-img-top"
                     alt="客戶照片"
                   />
                 </div>
                 <div>
-                  <h3 class="mb-0 fs-7 text-white fw-bold">Benson Tsai</h3>
+                  <h3 class="mb-0 fs-8 fs-md-7 text-white fw-bold">
+                    Benson Tsai
+                  </h3>
                 </div>
               </div>
               <!-- 卡片評價 -->
               <!-- 星星符號 -->
-              <span class="mb-6 me-3 pe-3 d-flex align-items-center">
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+              <span class="mb-1 mb-md-6 d-flex align-items-center">
+                <!-- 星星符號，電腦板顯示 -->
+                <span class="d-flex align-items-center d-none d-md-flex">
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
                 </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                <!-- 星星符號，手機板顯示 -->
+                <span class="d-flex align-items-center d-md-none">
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="p-12 me-1 text-warning-normal d-flex align-items-center"
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
                   >
-                    <path
-                      d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
-                      fill="#FFD416"
-                    />
-                  </svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="p-12 text-warning-normal d-flex align-items-center"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.9119L3.81935 19.1577L5 12.2829L0 7.41462L6.90967 6.41236L10 0.157715L13.0903 6.41236L20 7.41462L15 12.2829L16.1807 19.1577L10 15.9119Z"
+                        fill="#FFD416"
+                      />
+                    </svg>
+                  </span>
                 </span>
               </span>
               <!-- 卡片文字 -->
               <div class="card-body p-0">
-                <p class="card-text mb-0 fs-8 text-gray-200">
-                  收到覺得品質非常好，質量好，使用感覺專業，而且出貨速度我覺得算蠻快的，售後服務也蠻好的，老闆很有耐心，客服耐心解答疑問，售後服務到位。總體而言很推！
+                <p class="card-text mb-0 fs-9 fs-md-8 text-gray-200">
+                  我最近購買的健身器材讓我非常滿意！質量超出預期，感覺耐用。出貨速度快，幾乎是下單後就收到了。客服回應迅速，專業且用心。總之，這次購物體驗愉快，強烈推薦！
                 </p>
               </div>
             </div>
+
             <!-- 按鈕 -->
             <button
               type="button"
-              class="btn bg-white-opacity-20 p-6 rounded-circle d-flex align-items-center justify-content-center translate-middle-y position-absolute top-50 left--70 hover-effect-3"
+              class="btn bg-white-opacity-20 p-6 rounded-circle d-flex align-items-center justify-content-center translate-middle-y position-absolute top-50 left--70 hover-effect-3 carousel-prev d-none d-md-flex"
             >
               <svg
                 width="16"
@@ -1757,7 +2241,7 @@
 
             <button
               type="button"
-              class="btn bg-white-opacity-20 p-6 rounded-circle d-flex align-items-center justify-content-center translate-middle-y position-absolute top-50 right--70 hover-effect-3"
+              class="btn bg-white-opacity-20 p-6 rounded-circle d-flex align-items-center justify-content-center translate-middle-y position-absolute top-50 right--70 hover-effect-3 carousel-next d-none d-md-flex"
             >
               <svg
                 width="20"
@@ -1778,28 +2262,70 @@
       <!-- 你可能也喜歡 -->
       <section class="mb-9 p-0 container max-w-1296">
         <!-- 你可能也喜歡標題 -->
-        <div class="mb-8">
-          <h2 class="mb-0 fs-10 text-gray-950 fw-bold lh-sm">你可能也喜歡</h2>
+        <div class="mb-3 mb-md-8">
+          <h2 class="mb-0 fs-5 fs-md-10 text-gray-950 fw-bold lh-sm">
+            你可能也喜歡
+          </h2>
         </div>
         <!-- 你可能也喜歡卡片 -->
         <div class="position-relative">
           <div class="d-flex flex-nowrap scroll">
             <!-- 你可能也喜歡卡片一 -->
             <div
-              class="me-6 card rounded-3 bg-blue-600 max-w-315 flex-grow-0 flex-shrink-0 hover-effect-3 overflow-hidden"
+              class="card me-2 me-md-6 rounded-3 bg-blue-600 max-w-172 max-w-md-318 flex-grow-0 flex-shrink-0 hover-effect-3 overflow-hidden"
             >
-              <a class="rounded-3" href="#">
-                <div class="scale scale-ease-1p05">
-                  <img
-                    src="../assets/images/product_list_page/product-list_5.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
+              <a class="rounded-3 position-relative" href="#">
+                <div>
+                  <!-- 商品圖 -->
+                  <div>
+                    <img
+                      src="../assets/images/product_list_page/product-list_5.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div
+                    class="d-flex justify-content-between position-absolute top-0 w-100"
+                  >
+                    <!-- 優惠標籤 -->
+                    <div class="pt-6 ps-6 d-none">
+                      <span
+                        class="badge py-1 px-6 bg-danger-normal fs-8 text-white fw-bold"
+                        >熱銷</span
+                      >
+                      <span
+                        class="badge py-1 px-6 bg-primary-400 fs-8 text-blue-900 fw-bold"
+                        >最新上市</span
+                      >
+                    </div>
+                    <!-- 收藏符號 -->
+                    <div
+                      class="p-2 color-primary-400 bg-gray-900-20 blur-30 rounded-2 border-top-left-radius-0 border-bottom-right-radius-0 ms-auto"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 36 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.28592 33.2821C8.54171 33.8176 7.50391 33.2856 7.50391 32.3688V9.875C7.50391 7.18261 9.68651 5 12.3789 5H23.6265C26.3188 5 28.5015 7.18261 28.5015 9.875V32.3688C28.5015 33.2856 27.4636 33.8176 26.7195 33.2821L18.0027 27.0107L9.28592 33.2821ZM26.2515 9.875C26.2515 8.42525 25.0762 7.25 23.6265 7.25H12.3789C10.9292 7.25 9.75391 8.42525 9.75391 9.875V30.1736L17.3457 24.7115C17.7382 24.4292 18.2673 24.4292 18.6597 24.7115L26.2515 30.1736V9.875Z"
+                          fill="#e1ff00"
+                          stroke="#e1ff00"
+                          stroke-width="0.5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="card-body py-6 px-2">
+                <!-- 商品標題、價格、折扣標籤 -->
+                <div class="card-body py-md-6 p-2">
+                  <!-- 商品標題 -->
                   <div class="mb-2">
-                    <h5 class="card-title mb-0 fs-6 text-gray-950 fw-bold">
+                    <h5
+                      class="card-title mb-0 fs-8 fs-md-6 text-gray-950 fw-bold"
+                    >
                       放鬆滾筒
                     </h5>
                   </div>
@@ -1807,7 +2333,7 @@
                   <div class="d-flex">
                     <!-- 售價、原價 -->
                     <div>
-                      <p class="card-text text-gray-950 fw-bold">
+                      <p class="card-text fs-8 fs-md-6 text-gray-950 fw-bold">
                         <span class="me-1">$799</span>
                         <span
                           class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
@@ -1816,8 +2342,9 @@
                         </span>
                       </p>
                     </div>
+                    <!-- 折扣標籤 -->
                     <span
-                      class="badge fs-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
+                      class="badge fs-9 fs-md-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
                       >68 折</span
                     >
                   </div>
@@ -1826,142 +2353,68 @@
             </div>
             <!-- 你可能也喜歡卡片二 -->
             <div
-              class="me-6 card rounded-3 bg-blue-600 max-w-315 flex-grow-0 flex-shrink-0"
+              class="card me-2 me-md-6 rounded-3 bg-blue-600 max-w-172 max-w-md-318 flex-grow-0 flex-shrink-0 hover-effect-3 overflow-hidden"
             >
-              <div>
-                <img
-                  src="../assets/images/product_list_page/product-list_7.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card-body py-6 px-2">
-                <div class="mb-2">
-                  <h5 class="card-title mb-0 fs-6 text-gray-950 fw-bold">
-                    尼龍翹臀圈
-                  </h5>
-                </div>
-                <!-- 價格 -->
-                <div class="d-flex">
-                  <!-- 售價、原價 -->
+              <a class="rounded-3 position-relative" href="#">
+                <div>
+                  <!-- 商品圖 -->
                   <div>
-                    <p class="card-text text-gray-950 fw-bold">
-                      <span class="me-1">$799</span>
-                      <span
-                        class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
-                      >
-                        $1,099
-                      </span>
-                    </p>
+                    <img
+                      src="../assets/images/product_list_page/product-list_7.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                   </div>
-                  <span
-                    class="badge fs-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
-                    >68 折</span
+                  <div
+                    class="d-flex justify-content-between position-absolute top-0 w-100"
                   >
-                </div>
-              </div>
-            </div>
-            <!-- 你可能也喜歡卡片三 -->
-            <div
-              class="me-6 card rounded-3 bg-blue-600 max-w-315 flex-grow-0 flex-shrink-0"
-            >
-              <div>
-                <img
-                  src="../assets/images/index_page/商城/product-3.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card-body py-6 px-2">
-                <div class="mb-2">
-                  <h5 class="card-title mb-0 fs-6 text-gray-950 fw-bold">
-                    瑜珈彈力帶
-                  </h5>
-                </div>
-                <!-- 價格 -->
-                <div class="d-flex">
-                  <!-- 售價、原價 -->
-                  <div>
-                    <p class="card-text text-gray-950 fw-bold">
-                      <span class="me-1">$799</span>
+                    <!-- 優惠標籤 -->
+                    <div class="pt-6 ps-6 d-none">
                       <span
-                        class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
+                        class="badge py-1 px-6 bg-danger-normal fs-8 text-white fw-bold"
+                        >熱銷</span
                       >
-                        $1,099
-                      </span>
-                    </p>
-                  </div>
-                  <span
-                    class="badge fs-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
-                    >68 折</span
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- 你可能也喜歡卡片四 -->
-            <div
-              class="card me-6 rounded-3 bg-blue-600 max-w-315 flex-grow-0 flex-shrink-0"
-            >
-              <div>
-                <img
-                  src="../assets/images/product_list_page/product-list_3.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card-body py-6 px-2">
-                <div class="mb-2">
-                  <h5 class="card-title mb-0 fs-6 text-gray-950 fw-bold">
-                    調節護肘
-                  </h5>
-                </div>
-                <!-- 價格 -->
-                <div class="d-flex">
-                  <!-- 售價、原價 -->
-                  <div>
-                    <p class="card-text text-gray-950 fw-bold">
-                      <span class="me-1">$799</span>
                       <span
-                        class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
+                        class="badge py-1 px-6 bg-primary-400 fs-8 text-blue-900 fw-bold"
+                        >最新上市</span
                       >
-                        $1,099
-                      </span>
-                    </p>
+                    </div>
+                    <!-- 收藏符號 -->
+                    <div
+                      class="p-2 color-primary-400 bg-gray-900-20 blur-30 rounded-2 border-top-left-radius-0 border-bottom-right-radius-0 ms-auto"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 36 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.28592 33.2821C8.54171 33.8176 7.50391 33.2856 7.50391 32.3688V9.875C7.50391 7.18261 9.68651 5 12.3789 5H23.6265C26.3188 5 28.5015 7.18261 28.5015 9.875V32.3688C28.5015 33.2856 27.4636 33.8176 26.7195 33.2821L18.0027 27.0107L9.28592 33.2821ZM26.2515 9.875C26.2515 8.42525 25.0762 7.25 23.6265 7.25H12.3789C10.9292 7.25 9.75391 8.42525 9.75391 9.875V30.1736L17.3457 24.7115C17.7382 24.4292 18.2673 24.4292 18.6597 24.7115L26.2515 30.1736V9.875Z"
+                          fill="#e1ff00"
+                          stroke="#e1ff00"
+                          stroke-width="0.5"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                  <span
-                    class="badge fs-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
-                    >68 折</span
-                  >
                 </div>
-              </div>
-            </div>
-            <!-- 你可能也喜歡卡片五 -->
-            <div
-              class="me-6 card rounded-3 bg-blue-600 max-w-315 flex-grow-0 flex-shrink-0 hover-effect-3 overflow-hidden"
-            >
-              <a class="rounded-3" href="#">
-                <div class="scale scale-ease-1p05">
-                  <img
-                    src="../assets/images/product_list_page/product-list_5.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                </div>
-
-                <div class="card-body py-6 px-2">
+                <!-- 商品標題、價格、折扣標籤 -->
+                <div class="card-body py-md-6 p-2">
+                  <!-- 商品標題 -->
                   <div class="mb-2">
-                    <h5 class="card-title mb-0 fs-6 text-gray-950 fw-bold">
-                      放鬆滾筒
+                    <h5
+                      class="card-title mb-0 fs-8 fs-md-6 text-gray-950 fw-bold"
+                    >
+                      尼龍翹臀圈
                     </h5>
                   </div>
                   <!-- 價格 -->
                   <div class="d-flex">
                     <!-- 售價、原價 -->
                     <div>
-                      <p class="card-text text-gray-950 fw-bold">
+                      <p class="card-text fs-8 fs-md-6 text-gray-950 fw-bold">
                         <span class="me-1">$799</span>
                         <span
                           class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
@@ -1970,132 +2423,263 @@
                         </span>
                       </p>
                     </div>
+                    <!-- 折扣標籤 -->
                     <span
-                      class="badge fs-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
+                      class="badge fs-9 fs-md-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
                       >68 折</span
                     >
                   </div>
                 </div>
               </a>
             </div>
-            <!-- 你可能也喜歡卡片六 -->
+            <!-- 你可能也喜歡卡片三 -->
             <div
-              class="me-6 card rounded-3 bg-blue-600 max-w-315 flex-grow-0 flex-shrink-0"
+              class="card me-2 me-md-6 rounded-3 bg-blue-600 max-w-172 max-w-md-318 flex-grow-0 flex-shrink-0 hover-effect-3 overflow-hidden"
             >
-              <div>
-                <img
-                  src="../assets/images/product_list_page/product-list_7.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card-body py-6 px-2">
-                <div class="mb-2">
-                  <h5 class="card-title mb-0 fs-6 text-gray-950 fw-bold">
-                    尼龍翹臀圈
-                  </h5>
-                </div>
-                <!-- 價格 -->
-                <div class="d-flex">
-                  <!-- 售價、原價 -->
+              <a class="rounded-3 position-relative" href="#">
+                <div>
+                  <!-- 商品圖 -->
                   <div>
-                    <p class="card-text text-gray-950 fw-bold">
-                      <span class="me-1">$799</span>
-                      <span
-                        class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
-                      >
-                        $1,099
-                      </span>
-                    </p>
+                    <img
+                      src="../assets/images/index_page/商城/product-3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                   </div>
-                  <span
-                    class="badge fs-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
-                    >68 折</span
+                  <div
+                    class="d-flex justify-content-between position-absolute top-0 w-100"
                   >
+                    <!-- 優惠標籤 -->
+                    <div class="pt-6 ps-6 d-none">
+                      <span
+                        class="badge py-1 px-6 bg-danger-normal fs-8 text-white fw-bold"
+                        >熱銷</span
+                      >
+                      <span
+                        class="badge py-1 px-6 bg-primary-400 fs-8 text-blue-900 fw-bold"
+                        >最新上市</span
+                      >
+                    </div>
+                    <!-- 收藏符號 -->
+                    <div
+                      class="p-2 color-primary-400 bg-gray-900-20 blur-30 rounded-2 border-top-left-radius-0 border-bottom-right-radius-0 ms-auto"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 36 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.28592 33.2821C8.54171 33.8176 7.50391 33.2856 7.50391 32.3688V9.875C7.50391 7.18261 9.68651 5 12.3789 5H23.6265C26.3188 5 28.5015 7.18261 28.5015 9.875V32.3688C28.5015 33.2856 27.4636 33.8176 26.7195 33.2821L18.0027 27.0107L9.28592 33.2821ZM26.2515 9.875C26.2515 8.42525 25.0762 7.25 23.6265 7.25H12.3789C10.9292 7.25 9.75391 8.42525 9.75391 9.875V30.1736L17.3457 24.7115C17.7382 24.4292 18.2673 24.4292 18.6597 24.7115L26.2515 30.1736V9.875Z"
+                          fill="#e1ff00"
+                          stroke="#e1ff00"
+                          stroke-width="0.5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <!-- 商品標題、價格、折扣標籤 -->
+                <div class="card-body py-md-6 p-2">
+                  <!-- 商品標題 -->
+                  <div class="mb-2">
+                    <h5
+                      class="card-title mb-0 fs-8 fs-md-6 text-gray-950 fw-bold"
+                    >
+                      瑜珈彈力帶
+                    </h5>
+                  </div>
+                  <!-- 價格 -->
+                  <div class="d-flex">
+                    <!-- 售價、原價 -->
+                    <div>
+                      <p class="card-text fs-8 fs-md-6 text-gray-950 fw-bold">
+                        <span class="me-1">$799</span>
+                        <span
+                          class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
+                        >
+                          $1,099
+                        </span>
+                      </p>
+                    </div>
+                    <!-- 折扣標籤 -->
+                    <span
+                      class="badge fs-9 fs-md-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
+                      >68 折</span
+                    >
+                  </div>
+                </div>
+              </a>
             </div>
-            <!-- 你可能也喜歡卡片七 -->
+            <!-- 你可能也喜歡卡片四 -->
             <div
-              class="me-6 card rounded-3 bg-blue-600 max-w-315 flex-grow-0 flex-shrink-0"
+              class="card me-2 me-md-6 rounded-3 bg-blue-600 max-w-172 max-w-md-318 flex-grow-0 flex-shrink-0 hover-effect-3 overflow-hidden"
             >
-              <div>
-                <img
-                  src="../assets/images/index_page/商城/product-3.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card-body py-6 px-2">
-                <div class="mb-2">
-                  <h5 class="card-title mb-0 fs-6 text-gray-950 fw-bold">
-                    瑜珈彈力帶
-                  </h5>
-                </div>
-                <!-- 價格 -->
-                <div class="d-flex">
-                  <!-- 售價、原價 -->
+              <a class="rounded-3 position-relative" href="#">
+                <div>
+                  <!-- 商品圖 -->
                   <div>
-                    <p class="card-text text-gray-950 fw-bold">
-                      <span class="me-1">$799</span>
-                      <span
-                        class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
-                      >
-                        $1,099
-                      </span>
-                    </p>
+                    <img
+                      src="../assets/images/product_list_page/product-list_3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                   </div>
-                  <span
-                    class="badge fs-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
-                    >68 折</span
+                  <div
+                    class="d-flex justify-content-between align-items-center position-absolute top-0 w-100"
                   >
+                    <!-- 優惠標籤 -->
+                    <div class="pt-6 ps-6 d-none d-md-flex">
+                      <span
+                        class="badge me-1 py-1 px-6 bg-danger-normal fs-8 text-white fw-bold d-flex align-items-center"
+                        >熱銷</span
+                      >
+                      <span
+                        class="badge py-1 px-6 bg-primary-400 fs-8 text-blue-900 fw-bold d-flex align-items-center"
+                        >最新上市</span
+                      >
+                    </div>
+                    <!-- 收藏符號 -->
+                    <div
+                      class="p-2 color-primary-400 bg-gray-900-20 blur-30 rounded-2 border-top-left-radius-0 border-bottom-right-radius-0 ms-auto"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 36 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.28592 33.2821C8.54171 33.8176 7.50391 33.2856 7.50391 32.3688V9.875C7.50391 7.18261 9.68651 5 12.3789 5H23.6265C26.3188 5 28.5015 7.18261 28.5015 9.875V32.3688C28.5015 33.2856 27.4636 33.8176 26.7195 33.2821L18.0027 27.0107L9.28592 33.2821ZM26.2515 9.875C26.2515 8.42525 25.0762 7.25 23.6265 7.25H12.3789C10.9292 7.25 9.75391 8.42525 9.75391 9.875V30.1736L17.3457 24.7115C17.7382 24.4292 18.2673 24.4292 18.6597 24.7115L26.2515 30.1736V9.875Z"
+                          fill="#e1ff00"
+                          stroke="#e1ff00"
+                          stroke-width="0.5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <!-- 商品標題、價格、折扣標籤 -->
+                <div class="card-body py-md-6 p-2">
+                  <!-- 商品標題 -->
+                  <div class="mb-2">
+                    <h5
+                      class="card-title mb-0 fs-8 fs-md-6 text-gray-950 fw-bold"
+                    >
+                      調節護肘
+                    </h5>
+                  </div>
+                  <!-- 價格 -->
+                  <div class="d-flex">
+                    <!-- 售價、原價 -->
+                    <div>
+                      <p class="card-text fs-8 fs-md-6 text-gray-950 fw-bold">
+                        <span class="me-1">$799</span>
+                        <span
+                          class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
+                        >
+                          $1,099
+                        </span>
+                      </p>
+                    </div>
+                    <!-- 折扣標籤 -->
+                    <span
+                      class="badge fs-9 fs-md-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
+                      >68 折</span
+                    >
+                  </div>
+                </div>
+              </a>
             </div>
-            <!-- 你可能也喜歡卡片八 -->
+            <!-- 你可能也喜歡卡片四 -->
             <div
-              class="card rounded-3 bg-blue-600 max-w-315 flex-grow-0 flex-shrink-0"
+              class="card me-2 me-md-6 rounded-3 bg-blue-600 max-w-172 max-w-md-318 flex-grow-0 flex-shrink-0 hover-effect-3 overflow-hidden"
             >
-              <div>
-                <img
-                  src="../assets/images/product_list_page/product-list_3.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card-body py-6 px-2">
-                <div class="mb-2">
-                  <h5 class="card-title mb-0 fs-6 text-gray-950 fw-bold">
-                    調節護肘
-                  </h5>
-                </div>
-                <!-- 價格 -->
-                <div class="d-flex">
-                  <!-- 售價、原價 -->
+              <a class="rounded-3 position-relative" href="#">
+                <div>
+                  <!-- 商品圖 -->
                   <div>
-                    <p class="card-text text-gray-950 fw-bold">
-                      <span class="me-1">$799</span>
-                      <span
-                        class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
-                      >
-                        $1,099
-                      </span>
-                    </p>
+                    <img
+                      src="../assets/images/product_list_page/product-list_3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
                   </div>
-                  <span
-                    class="badge fs-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
-                    >68 折</span
+                  <div
+                    class="d-flex justify-content-between align-items-center position-absolute top-0 w-100"
                   >
+                    <!-- 優惠標籤 -->
+                    <div class="pt-6 ps-6 d-none d-md-flex">
+                      <span
+                        class="badge me-1 py-1 px-6 bg-danger-normal fs-8 text-white fw-bold d-flex align-items-center"
+                        >熱銷</span
+                      >
+                      <span
+                        class="badge py-1 px-6 bg-primary-400 fs-8 text-blue-900 fw-bold d-flex align-items-center"
+                        >最新上市</span
+                      >
+                    </div>
+                    <!-- 收藏符號 -->
+                    <div
+                      class="p-2 color-primary-400 bg-gray-900-20 blur-30 rounded-2 border-top-left-radius-0 border-bottom-right-radius-0 ms-auto"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 36 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.28592 33.2821C8.54171 33.8176 7.50391 33.2856 7.50391 32.3688V9.875C7.50391 7.18261 9.68651 5 12.3789 5H23.6265C26.3188 5 28.5015 7.18261 28.5015 9.875V32.3688C28.5015 33.2856 27.4636 33.8176 26.7195 33.2821L18.0027 27.0107L9.28592 33.2821ZM26.2515 9.875C26.2515 8.42525 25.0762 7.25 23.6265 7.25H12.3789C10.9292 7.25 9.75391 8.42525 9.75391 9.875V30.1736L17.3457 24.7115C17.7382 24.4292 18.2673 24.4292 18.6597 24.7115L26.2515 30.1736V9.875Z"
+                          fill="#e1ff00"
+                          stroke="#e1ff00"
+                          stroke-width="0.5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <!-- 商品標題、價格、折扣標籤 -->
+                <div class="card-body py-md-6 p-2">
+                  <!-- 商品標題 -->
+                  <div class="mb-2">
+                    <h5
+                      class="card-title mb-0 fs-8 fs-md-6 text-gray-950 fw-bold"
+                    >
+                      調節護肘
+                    </h5>
+                  </div>
+                  <!-- 價格 -->
+                  <div class="d-flex">
+                    <!-- 售價、原價 -->
+                    <div>
+                      <p class="card-text fs-8 fs-md-6 text-gray-950 fw-bold">
+                        <span class="me-1">$799</span>
+                        <span
+                          class="fs-8 text-gray-500 fw-bold text-decoration-line-through"
+                        >
+                          $1,099
+                        </span>
+                      </p>
+                    </div>
+                    <!-- 折扣標籤 -->
+                    <span
+                      class="badge fs-9 fs-md-8 text-warning-normal fw-bold border rounded-3 border-warning-normal ms-auto"
+                      >68 折</span
+                    >
+                  </div>
+                </div>
+              </a>
             </div>
+
             <!-- 按鈕 -->
             <button
               type="button"
-              class="btn bg-white-opacity-20 p-6 rounded-circle d-flex align-items-center justify-content-center translate-middle-y position-absolute top-50 left--70 hover-effect-3"
+              class="btn bg-white-opacity-20 p-6 rounded-circle d-flex align-items-center justify-content-center translate-middle-y position-absolute top-50 left--70 hover-effect-3 carousel-prev d-none d-md-flex"
             >
               <svg
                 width="16"
@@ -2113,7 +2697,7 @@
 
             <button
               type="button"
-              class="btn bg-white-opacity-20 p-6 rounded-circle d-flex align-items-center justify-content-center translate-middle-y position-absolute top-50 right--70 hover-effect-3"
+              class="btn bg-white-opacity-20 p-6 rounded-circle d-flex align-items-center justify-content-center translate-middle-y position-absolute top-50 right--70 hover-effect-3 carousel-next d-none d-md-flex"
             >
               <svg
                 width="20"
@@ -2137,5 +2721,100 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script type="module" src="../main.js"></script>
+
+    <!-- 客製 -->
+
+    <script>
+      const mainImg = document.querySelector(".product-main-img");
+      const thumbs = document.querySelectorAll(".thumb-list img");
+
+      thumbs.forEach((img) => {
+        img.addEventListener("click", () => {
+          mainImg.style.backgroundImage = `url('${img.src}')`;
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // 找到所有橫向輪播容器
+        const carousels = document.querySelectorAll(".scroll");
+        if (!carousels.length) return;
+
+        carousels.forEach((container) => {
+          const cards = container.querySelectorAll(".card");
+          if (!cards.length) return;
+
+          // 優先找 container 內的 prev/next 按鈕，如果沒有就 fallback 全局找
+          const btnPrev =
+            container.querySelector(".carousel-prev") ||
+            container.querySelector(".left--70");
+          const btnNext =
+            container.querySelector(".carousel-next") ||
+            container.querySelector(".right--70");
+
+          // 計算每次滾動距離
+          function calcStep() {
+            const c = cards[0];
+            const style = getComputedStyle(c);
+            const marginRight = parseFloat(style.marginRight) || 0;
+            return Math.round(c.offsetWidth + marginRight);
+          }
+          let step = calcStep();
+
+          // 更新按鈕狀態
+          function updateButtons() {
+            const maxScroll = Math.max(
+              0,
+              container.scrollWidth - container.clientWidth - 1
+            );
+            if (btnPrev) btnPrev.disabled = container.scrollLeft <= 0;
+            if (btnNext) btnNext.disabled = container.scrollLeft >= maxScroll;
+          }
+
+          // 按鈕行為
+          if (btnPrev) {
+            btnPrev.addEventListener("click", () => {
+              container.scrollBy({ left: -step, behavior: "smooth" });
+            });
+          }
+          if (btnNext) {
+            btnNext.addEventListener("click", () => {
+              container.scrollBy({ left: step, behavior: "smooth" });
+            });
+          }
+
+          // 點卡片置中
+          function selectCard(card) {
+            cards.forEach((c) => c.classList.remove("active"));
+            card.classList.add("active");
+
+            const targetLeft =
+              card.offsetLeft - (container.clientWidth - card.offsetWidth) / 2;
+            container.scrollTo({ left: targetLeft, behavior: "smooth" });
+          }
+
+          cards.forEach((card) => {
+            card.addEventListener("click", () => selectCard(card));
+          });
+
+          // 滑動時更新按鈕
+          let rafId = null;
+          container.addEventListener("scroll", () => {
+            if (rafId) cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(updateButtons);
+          });
+
+          // resize 時重新計算 step
+          window.addEventListener("resize", () => {
+            step = calcStep();
+            updateButtons();
+          });
+
+          // 初始狀態
+          if (cards[0]) cards[0].classList.add("active");
+          updateButtons();
+        });
+      });
+    </script>
   </body>
 </html>
