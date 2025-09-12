@@ -4,30 +4,55 @@
   max-width: 1296px;
 }
 
-.max-w-136 {
-  max-width: 136px;
-}
-
-.max-w-111 {
-  max-width: 111px;
-}
-
 .max-w-312 {
   max-width: 312px;
 }
 
-.max-w-315 {
-  max-width: 315px;
+.max-w-318 {
+  max-width: 318px;
+}
+
+.max-w-136 {
+  max-width: 136px;
+}
+
+.max-w-172 {
+  max-width: 172px;
+}
+
+.max-w-60 {
+  max-width: 60px;
+  width: 60px;
 }
 
 .max-w-40 {
   max-width: 40px;
 }
 
+.max-w-36 {
+  max-width: 36px;
+}
+
 // max-height
 
 .max-h-796 {
   max-height: 796px;
+}
+
+.max-h-100 {
+  max-height: 100px;
+  height: 100px;
+}
+
+.max-h-7 {
+  max-height: 7px;
+  height: 7px;
+}
+
+// min-width
+
+.min-w-111 {
+  min-width: 111px;
 }
 
 // spacer
@@ -42,7 +67,7 @@
 
 // hover
 
-// 無背景 初始border為灰色、2px
+// 無背景 初始border為灰色、1px
 .hover-effect {
   border: 1px solid $gray-950;
 }
@@ -96,10 +121,24 @@
   color: $gray-900;
 }
 
+.img-change-btn {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.img-change-btn:hover,
+.img-change-btn:focus,
+.img-change-btn:active {
+  background: $white;
+}
+
 // bg
 
 .bg-white-opacity-20 {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-gray-900-20 {
+  background-color: rgba(26, 26, 26, 0.2);
 }
 
 .product-main-img {
@@ -107,6 +146,11 @@
   background-size: cover; /* 建議加上 */
   background-position: center; /* 建議加上 */
   background-repeat: no-repeat; /* 建議加上 */
+}
+
+// blur
+.blur-30 {
+  backdrop-filter: blur(30px);
 }
 
 // placeholder
@@ -129,6 +173,14 @@ input.placeholder-lg::placeholder {
   border-radius: $border-radius-16;
 }
 
+.border-top-left-radius-0 {
+  border-top-left-radius: 0px !important;
+}
+
+.border-bottom-right-radius-0 {
+  border-bottom-right-radius: 0px !important;
+}
+
 // opacity
 .transparent {
   background-color: transparent;
@@ -143,4 +195,24 @@ input.placeholder-lg::placeholder {
 
 .scroll::-webkit-scrollbar {
   display: none;
+}
+
+// 斷點
+
+@media (min-width: 768px) {
+  .lh-md-sm {
+    line-height: 1.2; /* md 以上 */
+  }
+
+  .max-w-md-318 {
+    max-width: 318px;
+  }
+
+  .max-w-md-136 {
+    max-width: 136px;
+  }
+
+  .max-w-md-40 {
+    max-width: 40px;
+  }
 }
