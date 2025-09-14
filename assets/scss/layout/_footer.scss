@@ -1,0 +1,227 @@
+// 基礎設定
+
+footer{
+    background: radial-gradient(550px at calc(100% - 1200px) calc(100% - 5px), rgba($primary-400, 0.1) 0%, transparent 100%),
+    linear-gradient(to bottom, $blue-700 0%,$blue-900 100%); 
+}
+
+@media (max-width: 992px) {
+    footer{
+    background: radial-gradient(550px at 900px calc(100% - 90px), rgba($primary-400, 0.1) 0%, transparent 100%); 
+}
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link{
+    color: $gray-300;
+    padding: 0px;
+}
+
+.nav-link:hover .page-title,.nav-link:hover {
+  color: $primary-400;
+}
+
+.nav-link:focus {
+  outline: none;
+  box-shadow: none;
+  color: inherit; 
+}
+
+svg{
+    display: block;
+}
+
+// footer 樣式
+
+.page-title{
+    font-size: $h5-font-size;
+    font-weight: 600;
+    color:$white;
+}
+
+@media(max-width:992px){
+    .page-title{
+        font-size: $h6-font-size;
+        font-weight: 700;
+    }
+}
+
+.page-item{
+    font-weight: 500;
+}
+
+@media(max-width:992px){
+    .page-item{
+        font-size: $h8-font-size;
+        font-weight: 400;
+    }
+}
+
+.link-item{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-right: 102px;
+}
+
+@media(max-width:992px){
+    .navbar-brand img{
+        width: 157px;
+        height: auto;
+    }
+}
+
+.form-mb-40{
+    margin-bottom: 40px;
+}
+
+// footer mail輸入框&按鈕
+
+.mail-btn{
+    color: white;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 228, 0.2); 
+    padding: 8px 24px;
+}
+
+
+.mail-btn:hover,
+.mail-btn:focus{
+    background-color: $primary-400;
+    color: $gray-900;
+}
+
+.mail-btn-mobile{
+    color: white;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 228, 0.2); 
+    padding: 9px 16px;
+}
+
+.mail-btn-mobile:hover,
+.mail-btn-mobile:focus{
+    background-color: $primary-400;
+    color: $gray-900;
+}
+
+.mail-btn-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .form-control[type="email"] {
+    width: 241px;
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $gray-500;
+
+    &::placeholder {
+        color: $gray-400;
+        opacity: 1;
+    }
+
+    &:focus {
+        color: $white;
+        border-color: $primary-400;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+// footer-subs
+.footer-subs{
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 1);
+}
+
+// footer-tail
+
+.footer-tail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid rgba(128, 128, 128, 1);
+}
+
+@media(max-width:992px){
+    .footer-tail{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: start;
+        padding-top: 24px;
+        padding-bottom: 20px;
+        border-top: none;
+    }
+}
+
+.tail-text{
+    font-size: $h7-font-size;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 1);
+}
+
+@media(max-width:992px){
+    .tail-text{
+        font-size: $h8-font-size;
+    }
+}
+
+.info-text{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(196, 196, 196, 1);
+}
+
+@media(max-width:992px){
+    .info-text{
+    font-size: 14px;
+    font-weight: 400;
+}
+}
+
+.infon-tell-spacing{
+    margin-bottom: none;
+}
+
+@media(max-width:992px){
+    .infon-tell-spacing{
+        margin-bottom: 12px;
+    }
+}
+
+// 返回頂部按鈕
+.back-top{
+    padding-right: 120px;
+    padding-bottom: 118px;
+}
+
+@media(max-width:992px){
+    .back-top{
+        padding-right: 24px;
+        padding-bottom: 24px;
+    }
+    .back-top svg{
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.arrow-up {
+    &:hover {
+        .back-top-bg {
+            fill-opacity: 0.3;
+        }
+        .back-top-arrow {
+            fill: $primary-400;
+        }
+    }
+}
