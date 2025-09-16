@@ -57,14 +57,6 @@
 
 // spacer
 
-.left--70 {
-  left: -20px;
-}
-
-.right--70 {
-  right: -20px;
-}
-
 // hover
 
 // 無背景 初始border為灰色、1px
@@ -86,7 +78,8 @@
 
 .hover-effect-2:hover, // border+outline
 .hover-effect-2:focus, // border
-.hover-effect-2:active {
+.hover-effect-2:active,
+.hover-effect-2.active {
   border-color: $primary-400 !important;
   outline: 2px solid $primary-900;
 }
@@ -197,6 +190,12 @@ input.placeholder-lg::placeholder {
   display: none;
 }
 
+// position
+
+.bottom--8 {
+  bottom: -30px;
+}
+
 // 斷點
 
 @media (min-width: 768px) {
@@ -214,5 +213,26 @@ input.placeholder-lg::placeholder {
 
   .max-w-md-40 {
     max-width: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .max-h-lg-688 {
+    max-height: 688px;
+    height: 688px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .top-lg-50 {
+    top: 50%;
+  }
+
+  .left-lg--70 {
+    left: -20px !important;
+  }
+
+  .right-lg--70 {
+    right: -20px !important;
   }
 }
