@@ -1,0 +1,52 @@
+@mixin pad{
+  @media(max-width: 768px){
+	@content;
+  }
+}
+
+// 左邊選單樣式調整
+.nav-pills .nav-link.active{
+    color: #E1FF00 !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.accordion-item{
+    border-radius: 12px !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border: 0px !important;
+
+    .nav-link{
+        color: #F3F4EF;
+    }
+}
+
+.accordion-button{
+    color: #F3F4EF;
+    background-color: rgba(255, 255, 255, 0) !important;
+    &:not(.collapsed){
+        color: #F3F4EF;
+        box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 rgba(255, 255, 255, 0.2);
+    }
+}
+
+.mlr--10{
+    margin: 0 -10px;
+    @include pad{
+        margin: 0 -6px;
+    }
+}
+
+.plr-10{
+    padding: 0 10px;
+    @include pad{
+        padding: 0 6px;
+    }
+}
+
+// 商品卡圖片拉高
+.cardlist-img-h{
+    height: 280px;
+    @include pad{
+        height: 155px;
+    }
+}
