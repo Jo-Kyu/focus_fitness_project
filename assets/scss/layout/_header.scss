@@ -1,0 +1,83 @@
+// 文章定位
+
+.carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+
+}
+
+// 首頁按鈕
+
+.header-btn{
+    color: white;
+    font-size: $h7-font-size;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 5%;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 228, 0.2); 
+    padding: 16px 40px;
+}
+
+.header-btn:hover,
+.header-btn:focus{
+    color: $gray-900;
+    background-color: $primary-400;
+}
+
+// 輪播圖指示器
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(128, 128, 128, 1); 
+    width: 20px;
+    height: 10px;
+    transition: all 0.3s ease; // 平滑動畫
+    background-color: rgba(255, 255, 228); 
+    margin: 0 8px; // 間距
+}
+
+.carousel-indicators [data-bs-target]:hover {
+    width: 50px; 
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    width: 30px;      
+    background-color: $primary-400; 
+    }
+
+// 上下頁箭頭
+
+.carousel-control-prev{
+  width: 48px;
+  height: 104px;
+  padding: 40px 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  border-radius: 0 16px 16px 0;
+}
+
+.carousel-control-next{
+  width: 48px;
+  height: 104px;
+  padding: 40px 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  border-radius: 16px 0 0 16px;
+}
+
+.carousel-control-prev:hover{
+    color: $gray-900;
+    background-color: $primary-400;
+}
+
+.carousel-control-next:hover{
+    color: $gray-900;
+    background-color: $primary-400;
+}
+
