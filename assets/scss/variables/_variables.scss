@@ -525,9 +525,9 @@ $spacers: (
   // 20px
   8: $spacer * 2,
   // 32px
-  9: $spacer * 3,
+  9: $spacer * 2.5,
   // 40px
-  10: $spacer * 3,
+  10: $spacer * 3.5,
   // 56px
   11: $spacer * 4,
   // 64px
@@ -537,6 +537,16 @@ $spacers: (
   // 296px
   101: $spacer * 42,
   // 672px
+  102: $spacer * 1.375,
+  // 22px
+  103: $spacer * 0.875,
+  // 14px
+  104: $spacer * 0.625,
+  // 10px
+  105: $spacer * 5,
+  // 80px
+  106: $spacer * 0.375,
+  // 6px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
