@@ -1,58 +1,74 @@
 <!-- 毛玻璃導覽列 -->
-  <div class="container">
-    <nav class="navbar navbar-expand-lg container glass-navbar">
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand fw-bold" href="#">
-          <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/logos/FOCUS-FITNESS-logo-3-long-big.png?raw=true" alt="Logo-Focus" style="width: 137px; height: 60px;" class="d-none d-lg-block">
-          <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/logos/FOCUS-FITNESS-logo-3-long-small.png?raw=true" alt="Logo" style="width: 36px; height: 40px;" class="d-block d-lg-none">
-        </a>
+<div class="container">
+  <nav class="navbar navbar-expand-lg glass-navbar container">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/logos/FOCUS-FITNESS-logo-3-long-big.png?raw=true" alt="Logo-Focus" style="width: 137px; height: 60px;" class="d-none d-lg-block">
+        <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/logos/FOCUS-FITNESS-logo-3-long-small.png?raw=true" alt="Logo" style="width: 36px; height: 40px;" class="d-block d-lg-none">
+      </a>
 
-        <!-- Toggler (手機選單按鈕) -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- 導覽列內容 -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <!-- Dropdown: FOCUS商城 -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle nav-hover no-caret" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                FOCUS商城
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">健身器材</a></li>
-                <li><a class="dropdown-item" href="#">運動服飾</a></li>
-                <li><a class="dropdown-item" href="#">營養補給</a></li>
-              </ul>
-            </li>
-            <!-- 知識專欄 -->
-            <li class="nav-item">
-              <a class="nav-link nav-hover" href="#">知識專欄</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- 右側功能區 -->
-        <div class="d-flex align-items-center gap-3 d-none d-lg-block">
-          <a href="#" class="text-dark">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Toggler (手機選單按鈕) -->
+      <div class="mobile-toggler d-flex justify-content-center align-items-center column-gap-1">
+        <a class="d-lg-none p-2" href="#" class="text-dark">
+            <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 30C9 28.3431 10.3431 27 12 27C13.6569 27 15 28.3431 15 30C15 31.6569 13.6569 33 12 33C10.3431 33 9 31.6569 9 30ZM24 30C24 28.3431 25.3431 27 27 27C28.6569 27 30 28.3431 30 30C30 31.6569 28.6569 33 27 33C25.3431 33 24 31.6569 24 30ZM4.90283 3C5.23578 3 5.5677 2.99933 5.85059 3.02051C6.07676 3.03745 6.33035 3.07158 6.59619 3.15528L6.86572 3.25635L7.05469 3.34717C7.42358 3.5422 7.74694 3.81262 8.00537 4.13965L8.12988 4.30811L8.27783 4.5542C8.40826 4.80001 8.48822 5.04272 8.5459 5.26172C8.618 5.53562 8.67754 5.86261 8.73779 6.18897L8.97949 7.5H28.4824C28.9703 7.5 29.4353 7.49845 29.8184 7.53223C30.2137 7.56711 30.6936 7.65056 31.1543 7.92627C31.7739 8.29729 32.245 8.88168 32.4697 9.57715C32.6349 10.0884 32.6066 10.5749 32.5518 10.9673C32.4985 11.3482 32.3932 11.8007 32.2837 12.2754V12.2769L29.9297 22.4766L29.9253 22.4971L29.9238 22.5015C29.854 22.8043 29.7845 23.1075 29.7056 23.3628C29.6193 23.6416 29.494 23.958 29.269 24.2666C28.9526 24.7006 28.5247 25.0461 28.0239 25.2598C27.672 25.4099 27.3338 25.4597 27.0425 25.481C26.9061 25.4909 26.7581 25.4963 26.6045 25.4985L26.1328 25.5H10.5C9.77665 25.5 9.15625 24.9838 9.0249 24.2725L5.7876 6.73389C5.71928 6.36381 5.6809 6.16642 5.64404 6.02637C5.64282 6.02173 5.64079 6.01739 5.63965 6.01319C5.63548 6.01284 5.63103 6.01206 5.62647 6.01172C5.48138 6.00087 5.28015 6 4.90283 6H4.5C3.67157 6 3 5.32843 3 4.5C3 3.67158 3.67157 3 4.5 3H4.90283ZM11.748 22.5H26.1328C26.4943 22.5 26.6861 22.4984 26.8242 22.4883C26.8278 22.488 26.8312 22.4871 26.8345 22.4868C26.8355 22.4834 26.8377 22.4802 26.8389 22.4766C26.8796 22.3449 26.9233 22.1587 27.0044 21.8071L27.0059 21.7998L29.3599 11.603V11.6001C29.4816 11.0728 29.5503 10.7722 29.5811 10.5527C29.5825 10.5427 29.5814 10.5324 29.5825 10.5234C29.5738 10.5226 29.5645 10.5214 29.5547 10.5205C29.3342 10.5011 29.0251 10.5 28.4824 10.5H9.5332L11.748 22.5Z" fill="white"/>
             </svg>
-          </a>
-          <a href="#" class="text-dark">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </a>
+        <a class="d-lg-none p-2" href="#" class="text-dark">
+            <svg width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M25.5 28.5C25.5 27.5007 24.8918 26.4129 23.5312 25.5059C22.1812 24.6059 20.2303 24 18 24C15.7697 24 13.8188 24.6059 12.4688 25.5059C11.1082 26.4129 10.5 27.5007 10.5 28.5C10.5 29.3284 9.82843 30 9 30C8.17157 30 7.5 29.3284 7.5 28.5C7.5 26.1856 8.90783 24.2743 10.8047 23.0098C12.712 21.7383 15.26 21 18 21C20.74 21 23.288 21.7383 25.1953 23.0098C27.0922 24.2743 28.5 26.1856 28.5 28.5C28.5 29.3284 27.8284 30 27 30C26.1716 30 25.5 29.3284 25.5 28.5ZM22.5 12C22.5 9.51472 20.4853 7.5 18 7.5C15.5147 7.5 13.5 9.51472 13.5 12C13.5 14.4853 15.5147 16.5 18 16.5C20.4853 16.5 22.5 14.4853 22.5 12ZM25.5 12C25.5 16.1421 22.1421 19.5 18 19.5C13.8579 19.5 10.5 16.1421 10.5 12C10.5 7.85786 13.8579 4.5 18 4.5C22.1421 4.5 25.5 7.85786 25.5 12Z" fill="white"/>
             </svg>
-          </a>
-        </div>
+        </a>
+        <button class="navbar-toggler p-2 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 16C19.5523 16 20 16.4477 20 17C20 17.5523 19.5523 18 19 18H5C4.44772 18 4 17.5523 4 17C4 16.4477 4.44772 16 5 16H19ZM19 11C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H19ZM19 6C19.5523 6 20 6.44772 20 7C20 7.55228 19.5523 8 19 8H5C4.44772 8 4 7.55228 4 7C4 6.44772 4.44772 6 5 6H19Z" fill="white"/>
+          </svg>
+        </button>
       </div>
-    </nav>
-  </div>
+      <!-- 導覽列內容 -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav column-gap-6">
+          <!-- Dropdown: FOCUS商城 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-pill no-caret" 
+                href="#" id="navbarDropdownMenuLink" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                data-bs-display="static"
+                aria-expanded="false" >
+              FOCUS商城
+            </a>
+            <ul class="dropdown-menu custom-dropdown-menu mt-2 mb-2" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">健身器材</a></li>
+              <li><a class="dropdown-item" href="#">運動服飾</a></li>
+              <li><a class="dropdown-item" href="#">營養補給</a></li>
+            </ul>
+          </li>
+          <!-- 知識專欄 -->
+          <li class="nav-item">
+            <a class="nav-link nav-pill" href="#">知識專欄</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 右側功能區 -->
+      <div class="d-flex align-items-center column-gap-6 d-none d-lg-block">
+        <a class="p-2" href="#" class="text-dark">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 30C9 28.3431 10.3431 27 12 27C13.6569 27 15 28.3431 15 30C15 31.6569 13.6569 33 12 33C10.3431 33 9 31.6569 9 30ZM24 30C24 28.3431 25.3431 27 27 27C28.6569 27 30 28.3431 30 30C30 31.6569 28.6569 33 27 33C25.3431 33 24 31.6569 24 30ZM4.90283 3C5.23578 3 5.5677 2.99933 5.85059 3.02051C6.07676 3.03745 6.33035 3.07158 6.59619 3.15528L6.86572 3.25635L7.05469 3.34717C7.42358 3.5422 7.74694 3.81262 8.00537 4.13965L8.12988 4.30811L8.27783 4.5542C8.40826 4.80001 8.48822 5.04272 8.5459 5.26172C8.618 5.53562 8.67754 5.86261 8.73779 6.18897L8.97949 7.5H28.4824C28.9703 7.5 29.4353 7.49845 29.8184 7.53223C30.2137 7.56711 30.6936 7.65056 31.1543 7.92627C31.7739 8.29729 32.245 8.88168 32.4697 9.57715C32.6349 10.0884 32.6066 10.5749 32.5518 10.9673C32.4985 11.3482 32.3932 11.8007 32.2837 12.2754V12.2769L29.9297 22.4766L29.9253 22.4971L29.9238 22.5015C29.854 22.8043 29.7845 23.1075 29.7056 23.3628C29.6193 23.6416 29.494 23.958 29.269 24.2666C28.9526 24.7006 28.5247 25.0461 28.0239 25.2598C27.672 25.4099 27.3338 25.4597 27.0425 25.481C26.9061 25.4909 26.7581 25.4963 26.6045 25.4985L26.1328 25.5H10.5C9.77665 25.5 9.15625 24.9838 9.0249 24.2725L5.7876 6.73389C5.71928 6.36381 5.6809 6.16642 5.64404 6.02637C5.64282 6.02173 5.64079 6.01739 5.63965 6.01319C5.63548 6.01284 5.63103 6.01206 5.62647 6.01172C5.48138 6.00087 5.28015 6 4.90283 6H4.5C3.67157 6 3 5.32843 3 4.5C3 3.67158 3.67157 3 4.5 3H4.90283ZM11.748 22.5H26.1328C26.4943 22.5 26.6861 22.4984 26.8242 22.4883C26.8278 22.488 26.8312 22.4871 26.8345 22.4868C26.8355 22.4834 26.8377 22.4802 26.8389 22.4766C26.8796 22.3449 26.9233 22.1587 27.0044 21.8071L27.0059 21.7998L29.3599 11.603V11.6001C29.4816 11.0728 29.5503 10.7722 29.5811 10.5527C29.5825 10.5427 29.5814 10.5324 29.5825 10.5234C29.5738 10.5226 29.5645 10.5214 29.5547 10.5205C29.3342 10.5011 29.0251 10.5 28.4824 10.5H9.5332L11.748 22.5Z" fill="white"/>
+          </svg>
+        </a>
+        <a class="p-2" href="#" class="text-dark">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.5 28.5C25.5 27.5007 24.8918 26.4129 23.5312 25.5059C22.1812 24.6059 20.2303 24 18 24C15.7697 24 13.8188 24.6059 12.4688 25.5059C11.1082 26.4129 10.5 27.5007 10.5 28.5C10.5 29.3284 9.82843 30 9 30C8.17157 30 7.5 29.3284 7.5 28.5C7.5 26.1856 8.90783 24.2743 10.8047 23.0098C12.712 21.7383 15.26 21 18 21C20.74 21 23.288 21.7383 25.1953 23.0098C27.0922 24.2743 28.5 26.1856 28.5 28.5C28.5 29.3284 27.8284 30 27 30C26.1716 30 25.5 29.3284 25.5 28.5ZM22.5 12C22.5 9.51472 20.4853 7.5 18 7.5C15.5147 7.5 13.5 9.51472 13.5 12C13.5 14.4853 15.5147 16.5 18 16.5C20.4853 16.5 22.5 14.4853 22.5 12ZM25.5 12C25.5 16.1421 22.1421 19.5 18 19.5C13.8579 19.5 10.5 16.1421 10.5 12C10.5 7.85786 13.8579 4.5 18 4.5C22.1421 4.5 25.5 7.85786 25.5 12Z" fill="white"/>
+          </svg>
+        </a>
+      </div>
+  </nav>
+</div>
+<!-- 背景輪播區塊 -->  
 <header id="carouselExampleCaptions" class="carousel slide">
-  
-  <!-- 背景輪播區塊 -->
+  <!-- 輪播圖指示器 -->
   <div class="carousel-indicators">
     <div class="container d-flex justify-content-center justify-content-lg-start">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -60,9 +76,9 @@
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
   </div>
+  <!-- background-image -->
   <div class="carousel-inner">
       <div class="carousel-item active">
-        <!-- <img src="https://github.com/Jo-Kyu/focuss_fitness_project/blob/dev/assets/images/index_page/banner/Home%20Page1.jpg?raw=true" class="d-block w-100" alt="Home Page1"> -->
           <div class="carousel-caption img-slide1">
             <div class="container">
               <div class="d-flex flex-column align-items-start row-gap-6 row-gap-lg-4 mb-6 mb-lg-4">
@@ -80,7 +96,6 @@
           </div>
       </div>
       <div class="carousel-item">
-        <!-- <img src="https://github.com/Jo-Kyu/focuss_fitness_project/blob/dev/assets/images/index_page/banner/Home%20Page2.jpg?raw=true" class="d-block w-100" alt="Home Page2"> -->
           <div class="carousel-caption img-slide2">
             <div class="container">
               <div class="d-flex flex-column align-items-start row-gap-6 row-gap-lg-4 mb-6 mb-lg-4">
@@ -98,7 +113,6 @@
           </div>
       </div>
       <div class="carousel-item">
-        <!-- <img src="https://github.com/Jo-Kyu/focuss_fitness_project/blob/dev/assets/images/index_page/banner/Home%20Page3.jpg?raw=true" class="d-block w-100" alt="Home Page3"> -->
           <div class="carousel-caption img-slide3">
             <div class="container">
               <div class="d-flex flex-column align-items-start row-gap-6 row-gap-lg-4 mb-6 mb-lg-4">

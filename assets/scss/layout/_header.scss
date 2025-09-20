@@ -1,3 +1,138 @@
+/* 毛玻璃 Navbar */
+
+// Navbar定位
+.navbar{
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+}
+
+@media (max-width:992px) {
+  .navbar{
+    top: 20px;
+  }
+}
+
+// 毛玻璃效果 Navbar
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 16px;
+  padding: 12px 24px;
+  box-shadow: 2px 3px 5.5px 0px #ffffff40 inset,
+    -6px -6px 4px 0px #7f7f7f14 inset;
+}
+
+// Nav 膠囊 hover
+.navbar-nav .nav-item .nav-pill {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .nav-item .nav-pill {
+    font-size: 16px;
+  }
+}
+
+.navbar-nav .nav-item .nav-pill:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+//下拉選單
+.navbar-nav .dropdown-menu {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 2px 3px 5.5px 0px #ffffff40 inset,
+    -6px -6px 4px 0px #7f7f7f14 inset;
+  position: absolute;
+  inset: auto;               
+  transform: none;        
+  top: calc(100% + 20px); 
+  left: 0;
+  right: auto;
+  z-index: 1;      
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .dropdown-menu {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem;
+    box-shadow: 2px 3px 5.5px 0px #ffffff40 inset,
+      -6px -6px 4px 0px #7f7f7f14 inset;
+    position: relative;    
+  }
+}
+
+// dropdown item 樣式
+.dropdown-item {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 16px;
+  padding: 12px 83px 12px 12px; 
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 992px) {
+  .dropdown-item {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    padding: 4px 113px 4px 12px;
+    transition: all 0.2s ease;
+  }
+}
+
+// dropdown item hover 效果
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: $primary-400 ;
+  color: #000 ;
+}
+
+// 去掉 Bootstrap 預設的下拉箭頭
+.no-caret::after {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(30px);
+    border-radius: 16px;
+    margin-top: 8px;
+    padding: 8px;
+    z-index: 1;
+  }
+}
+
+// 取消漢堡選單預設樣式
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* 背景輪播區塊 */
+
 //文字設定
 .header-lh-120{
     font-weight: 700;
@@ -51,16 +186,16 @@
   }
 }
 
-// 文章定位
+// 文章定位&輪播背景
 
 .carousel-caption {
   position: relative; /* 移除絕對定位 */
-  top: auto;
-  bottom: auto;
-  transform: none;
+  // top: auto;
+  // bottom: auto;
+  // transform: none;
   padding-top: 389px;
   padding-bottom: 313px;
-  text-align: left;
+  // text-align: left;
 }
 
 @media (max-width:992px) {
@@ -95,8 +230,6 @@
   background-image: url("https://github.com/Jo-Kyu/focuss_fitness_project/blob/dev/assets/images/index_page/banner/Home%20Page3.jpg?raw=true");
 }
 
-
-
 // 首頁按鈕
 
 .serve-btn{
@@ -129,7 +262,6 @@
 // 輪播圖指示器
 
 .carousel-indicators{
-  // position: relative;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
@@ -190,99 +322,4 @@
     backdrop-filter: blur(30px);
     transition: all 0.3s ease;
 
-}
-
-// Navbar定位
-.navbar{
-  position: absolute;
-  top: 40px;
-  z-index: 1;
-}
-
-@media (max-width:992px) {
-  .navbar{
-    top: 20px;
-  }
-}
-
-
-// 毛玻璃效果 Navbar
-.glass-navbar {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  border-radius: 16px;
-  padding: 0.75rem 1.5rem;
-  box-shadow: 2px 3px 5.5px 0px #ffffff40 inset,
-    -6px -6px 4px 0px #7f7f7f14 inset;
-}
-
-// Nav 膠囊 hover
-.nav-hover {
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-}
-
-.nav-hover:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-// Glassmorphism 下拉選單
-.dropdown-menu {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  border: none;
-  border-radius: 12px;
-  padding: 0.5rem;
-  box-shadow: 2px 3px 5.5px 0px #ffffff40 inset,
-    -6px -6px 4px 0px #7f7f7f14 inset;
-  position: absolute;
-  top: 100%;       /* 緊貼在 navbar 下方 */
-  margin-top: 10px; /* 額外距離 */
-  left: 0;         /* 靠左對齊 */
-}
-
-// Dropdown item 樣式
-.dropdown-item {
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-  transition: all 0.2s ease;
-}
-
-// hover 效果
-.dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-// active 狀態顏色
-.dropdown-item.active,
-.dropdown-item:active {
-  background-color: #85d431 ;
-  color: #000 ; /* 確保文字可讀 */
-}
-
-// 去掉 Bootstrap 預設的下拉箭頭
-.no-caret::after {
-  display: none;
-}
-
-@media (max-width: 992px) {
-  .navbar-collapse {
-    width: 200px;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(30px);
-    border-radius: 12px;
-    margin-top: 8px;
-    padding: 1rem;
-    z-index: 1000;
-  }
-}
-
-.custom-dropdown-menu {
-  top: 50px !important;
 }
