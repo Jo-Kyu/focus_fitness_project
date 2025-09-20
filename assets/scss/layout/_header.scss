@@ -2,14 +2,20 @@
 
 // Navbar定位
 .navbar{
+  width: 100%; 
   position: absolute;
   top: 40px;
+  right: auto;
+  left: auto;
   z-index: 1;
 }
 
-@media (max-width:992px) {
-  .navbar{
+@media (max-width: 576px) {
+  .navbar {
     top: 20px;
+    left: 12px;
+    right: 12px;
+    width: auto;
   }
 }
 
