@@ -1,0 +1,28 @@
+// main 樣式
+
+.padding-style{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width:992px) {
+        .padding-style{
+            padding-top: 100px;
+            padding-bottom: 20px;
+    }
+}
+
+// 全方位專注健身服務區塊
+
+.sub-topics{
+    color: $primary-400;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+@media (max-width:992px) {
+        .sub-topics{
+            font-size: 14px;
+    }
+}
