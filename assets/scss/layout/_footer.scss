@@ -5,11 +5,22 @@ footer{
     linear-gradient(to bottom, $blue-700 0%,$blue-900 100%); 
     margin-top: -8px;
     margin-bottom: -8px;
+    padding-right: 12px;
+    padding-left: 12px;
 }
 
 @media (max-width: 992px) {
         footer{
         background: radial-gradient(550px at 900px calc(100% - 90px), rgba($primary-400, 0.1) 0%, transparent 100%); 
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        top: 20px;
+        left: 0px;
+        right: 0px;
+        width: auto;
     }
 }
 

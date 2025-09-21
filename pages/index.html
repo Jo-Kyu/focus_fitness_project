@@ -16,26 +16,123 @@
     <title>首頁</title>
   </head>
 <body>
-    
+    <%- include('./layout/header'); -%>
+    <!-- 背景輪播區塊 -->  
+    <header id="carouselExampleCaptions" class="carousel slide">
+        <!-- 輪播圖指示器 -->
+        <div class="carousel-indicators">
+          <div class="container d-flex justify-content-center justify-content-lg-start">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+        <!-- background-image -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption img-slide1">
+                  <div class="container">
+                    <div class="d-flex flex-column align-items-start row-gap-6 row-gap-lg-4 mb-6 mb-lg-4">
+                      <h1 class="header-title text-start text-nowrap">你的健身全配站<br>
+                          訓練與裝備一次到位
+                      </h1>
+                      <h2 class="header-sub-title text-nowrap">一站開練，零煩惱</h2>
+                      <p class="header-notes text-nowrap">開啟一場改變大腦思惟與理想體態的奇幻旅程</p>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row row-gap-3 column-gap-lg-3">
+                      <button class="btn serve-btn text-nowrap" type="button">立即購物</button>
+                      <button class="btn serve-btn text-nowrap" type="button">預約服務</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption img-slide2">
+                  <div class="container">
+                    <div class="d-flex flex-column align-items-start row-gap-6 row-gap-lg-4 mb-6 mb-lg-4">
+                      <h1 class="header-title text-start">專屬計畫<br>
+                          專業教練全程陪練
+                      </h1>
+                      <h2 class="header-sub-title">量身打造，科學訓練</h2>
+                      <p class="header-notes">無論新手還是進階，專業團隊助你達標</p>
+                    </div>
+                    <div class="d-flex column-gap-3">
+                      <button class="btn serve-btn" type="button">立即購物</button>
+                      <button class="btn serve-btn" type="button">預約服務</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption img-slide3">
+                  <div class="container">
+                    <div class="d-flex flex-column align-items-start row-gap-6 row-gap-lg-4 mb-6 mb-lg-4">
+                      <h1 class="header-title text-start">嚴選健身裝備<br>
+                          讓訓練事半功倍
+                      </h1>
+                      <h2 class="header-sub-title">專業品質，全面提升</h2>
+                      <p class="header-notes">從重訓到瑜珈，配齊你的每一次健身</p>
+                    </div>
+                    <div class="d-flex column-gap-3">
+                      <button class="btn serve-btn" type="button">立即購物</button>
+                      <button class="btn serve-btn" type="button">預約服務</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <button class="d-none d-lg-block carousel-control-prev top-50 translate-middle-y" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="d-none d-lg-block carousel-control-next top-50 translate-middle-y" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </header>
     <main class="padding-style">
       <!-- 全方位專注健身服務 -->
-      <section class="container">
-        <!-- 上半部 -->
-        <div class="d-flex flex-column justify-content-center align-items-center text-center border-bottom border-gray-500">
-          <p class="sub-topics mb-6 mb-lg-3">/  Various Focus Service  /</p>
-          <h3 class="fs-3 fs-lg-1 fw-bold mb-6 mb-lg-3">全方位專注健身服務</h3>
-          <p class="fs-7 fs-lg-4 mb-3 mb-lg-8 text-center">專注目標肌群，感受動作完整過程<span class="d-none d-lg-inline">，</span><br class="d-block d-lg-none">強化專屬肌肉記憶。</p>
+      <!-- <section class="topics">
+        <div class="container">
+          <div class="d-flex flex-column justify-content-center align-items-center text-center border-bottom border-gray-500">
+            <p class="sub-topics mb-6 mb-lg-3">/  Various Focus Service  /</p>
+            <h3 class="fs-3 fs-lg-1 fw-bold mb-6 mb-lg-3">全方位專注健身服務</h3>
+            <p class="fs-7 fs-lg-4 mb-3 mb-lg-8 text-center">專注目標肌群，感受動作完整過程<span class="d-none d-lg-inline">，</span><br class="d-block d-lg-none">強化專屬肌肉記憶。</p>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <p class="text-center mt-3 mt-lg-8">
+              當你開始投入運動，每一次流汗都是挑戰極限、超越自我的契機。你會從懷疑到堅定，從拖延到自律，身心同步成長。<br class="d-none d-lg-block">
+              這段旅程，將引領你走向理想的體態與更強大的內在力量，讓自信與健康成為生活的一部分。
+            </p>
+          </div>
         </div>
-        <!-- 下半部 -->
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <p class="text-center mt-3 mt-lg-8">
-            當你開始投入運動，每一次流汗都是挑戰極限、超越自我的契機。你會從懷疑到堅定，從拖延到自律，身心同步成長。<br class="d-none d-lg-block">
-            這段旅程，將引領你走向理想的體態與更強大的內在力量，讓自信與健康成為生活的一部分。
-          </p>
+      </section> -->
+      <!-- 卡片區 -->
+      <!-- <section class="service-cards">
+        <div class="container card-gap">
+
+          <div class="card d-flex flex-column flex-lg-row bg-transparent border-0">
+            <div class="card-body order-1 order-lg-0 p-0 me-8">
+              <h5 class="card-title fs-10 fw-bold text-primary-400 mb-8">專項功能訓練</h5>
+              <p class="card-text fs-5 fw-normal text-white mb-8">專項功能訓練著重提升身體協調性、穩定性與運動表現。透過針對日常動作模式與運動需求設計的課程，強化核心控制、關節靈活度及肌群協作。每一動作皆引導學員專注目標肌群，減少代償，打造深層肌肉記憶，讓身體在各種情境下展現精準與高效的表現。</p>
+              <a href="#" class="btn btn-primary">立即購物</a>
+            </div>
+            <img class="card-img-top card-img-service order-0 order-lg-1 rounded-3" src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE/%E5%B0%88%E9%A0%85%E5%8A%9F%E8%83%BD%E8%A8%93%E7%B7%B4.jpg?raw=true" alt="專項功能訓練">
+          </div>
+
+          <div class="card d-flex flex-column flex-lg-row">
+            <div class="card-body order-1">
+              <h5 class="card-title">專項功能訓練</h5>
+              <p class="card-text">專項功能訓練著重提升身體協調性、穩定性與運動表現。透過針對日常動作模式與運動需求設計的課程，強化核心控制、關節靈活度及肌群協作。每一動作皆引導學員專注目標肌群，減少代償，打造深層肌肉記憶，讓身體在各種情境下展現精準與高效的表現。</p>
+              <a href="#" class="btn btn-primary">立即購物</a>
+            </div>
+            <img class="card-img-top card-img-service order-0" src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE/%E5%B0%88%E9%A0%85%E5%8A%9F%E8%83%BD%E8%A8%93%E7%B7%B4.jpg?raw=true" alt="專項功能訓練">
+          </div>
+
         </div>
-      </section>
+      </section> -->
     </main>
-    
+    <%- include('./layout/footer'); -%>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script type="carousel" src="../main.js"></script>
