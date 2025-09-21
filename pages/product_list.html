@@ -30,7 +30,7 @@
 
       <!-- 分頁 -->
       <section class="p-0 mb-0 mb-md-7 container max-w-1296">
-        <ul class="nav nav-pills d-md-none mb-6 phone_nav">
+        <ul class="nav nav-pills d-md-none phone_nav">
             <li class="nav-item me-6 nav-item_new">
                 <a class="nav-link ruby-text active" aria-current="page" href="#">所有商品</a>
             </li>
@@ -228,6 +228,18 @@
                             <li><a class="dropdown-item fs-8" href="#">價格高至低</a></li>
                             <li><a class="dropdown-item fs-8" href="#">價格低至高</a></li>
                         </ul>
+                        </div>
+
+                        <button class="btn text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">排序</button>
+
+                        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasBottomLabel">排序依據</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body small">
+                            ...
+                        </div>
                         </div>
                           
                       </div>
