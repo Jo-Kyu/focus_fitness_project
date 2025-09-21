@@ -74,6 +74,23 @@
 }
 
 // 篩選器樣式
+
+// 手機板
+.w-200{
+    width: 200px;
+}
+
+.filter_svg{
+    width: 16px;
+    height: 16px;;
+}
+
+.btn-close{
+    --bs-btn-close-color:#ffffff !important;
+}
+
+
+// PC版
 .dropdown .btn{
     z-index: 10;
     padding: 10px 12px ;
