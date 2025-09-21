@@ -7,8 +7,14 @@
 // 左邊選單樣式調整
 .nav-pills .nav-link.active{
     color: #E1FF00 !important;
-    background-color: rgba(255, 255, 255, 0) !important;
+    background-color: rgba(255, 255, 255, 0);
 }
+
+.accordion{
+    --bs-accordion-btn-icon:url('https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/dee4b84316581b9f30b5b0711577d1a2ef5a883d/assets/images/icons/ic_Chevron_down.svg');
+    --bs-accordion-btn-active-icon:url('https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/dee4b84316581b9f30b5b0711577d1a2ef5a883d/assets/images/icons/ic_Chevron_down.svg');
+}
+
 
 .accordion-item{
     border-radius: 12px !important;
@@ -43,10 +49,118 @@
     }
 }
 
+
+// 手機板選單
+.nav-item_new{
+    .nav-link{
+        padding: 8px 16px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .active{
+        color: #E1FF00;
+        background-color: #4C5C0B !important;
+    }
+}
+
+.phone_nav{
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+
+
+.ruby-text{
+    display: ruby-text;
+}
+
+// 篩選器樣式
+
+// 手機板
+.w-200{
+    width: 200px;
+}
+
+.filter_svg{
+    width: 16px;
+    height: 16px;;
+}
+
+.btn-close{
+    --bs-btn-close-bg:url('https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/7def9c568b902553e2dec19f8d7830167a1c4ce3/assets/images/icons/ic_close.svg');
+}
+
+.offcanvas{
+    border-radius: 16px 16px 0 0;
+}
+
+.shodow_none{
+    box-shadow:none !important;
+}
+
+// PC版
+.dropdown .btn{
+    z-index: 10;
+    padding: 10px 12px ;
+    border-radius: 8px;
+    border: 0px;
+    color: #F3F4EF;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: inset -6px -6px 4px rgba(127, 127, 127, 0.08) ;
+    box-shadow: inset 2px 3px 5.5px rgba(255, 255, 255, 0.25) ;
+    backdrop-filter: blur(30px);
+
+    &:focus{
+        box-shadow: inset -6px -6px 4px rgba(127, 127, 127, 0.08) ;
+        box-shadow: inset 2px 3px 5.5px rgba(255, 255, 255, 0.25) ;
+        backdrop-filter: blur(30px);
+        box-shadow: 0 0 0 0.25rem rgb(37 60 95 / 0%);
+    }
+}
+
+.dropdown-menu{
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: inset -6px -6px 4px rgba(127, 127, 127, 0.08) ;
+    box-shadow: inset 2px 3px 5.5px rgba(255, 255, 255, 0.25) ;
+    backdrop-filter: blur(30px);
+    .dropdown-item{
+        font-weight: 400;
+    }
+}
+
 // 商品卡圖片拉高
 .cardlist-img-h{
     height: 280px;
     @include pad{
         height: 155px;
+    }
+}
+
+// 換頁頁碼
+.pagination{
+    --bs-pagination-bg: rgba(255, 255, 255, 0);
+    --bs-pagination-color:#808080;
+    --bs-pagination-focus-box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0);
+    
+    .page-item{
+        margin: 0 6px;
+    }
+    
+    .page-link{
+        border: 0px;
+
+        &:hover{
+            color: black;
+            background-color:#E1FF00 ;
+
+            path{
+                fill: black;
+            }
+        }
+
+        &:focus{
+            color: black;
+            background-color:#E1FF00 ;
+        }
     }
 }
