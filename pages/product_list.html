@@ -181,14 +181,20 @@
                           <p class="fw-bold text-gray-950 fs-mg-8 fs-9">共有<span class="fs-8 fs-md-7 mx-2">65</span>樣商品</p>
                       </div>                
 
-                      <div class="col-2">
-                          <select class="form-select" aria-label="Default select example">
-                          <option selected>熱銷排行</option>
-                          <option value="1">最新上市</option>
-                          <option value="2">商城推薦</option>
-                          <option value="3">價格高至低</option>
-                          <option value="4">價格低至高</option>
-                      </select>
+                      <div class="col-3">
+                        <div class="dropdown">
+                        <button class="btn dropdown-toggle w-100 fs-8 d-flex justify-content-between align-items-center text-white" style="border: 0px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            熱銷排行
+                        </button>
+                        <ul class="dropdown-menu w-100 p-2 mt-1" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item fs-8" href="#">熱銷排行</a></li>
+                            <li><a class="dropdown-item fs-8" href="#">最新上市</a></li>
+                            <li><a class="dropdown-item fs-8" href="#">商城推薦</a></li>
+                            <li><a class="dropdown-item fs-8" href="#">價格高至低</a></li>
+                            <li><a class="dropdown-item fs-8" href="#">價格低至高</a></li>
+                        </ul>
+                        </div>
+                          
                       </div>
                       
                   </div>
@@ -1945,10 +1951,14 @@
                   <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                       <nav aria-label="Page navigation example">
-                        <ul class="pagination">
+                        <ul class="pagination d-flex align-items-center">
                           <li class="page-item">
                             <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
+                              <span aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(180deg);">
+                                <path d="M6.91009 3.57757C7.23553 3.25214 7.76304 3.25214 8.08848 3.57757L13.9218 9.41091C14.2473 9.73634 14.2473 10.2639 13.9218 10.5893L8.08848 16.4226C7.76304 16.7481 7.23553 16.7481 6.91009 16.4226C6.58466 16.0972 6.58466 15.5697 6.91009 15.2442L12.1542 10.0001L6.91009 4.75596C6.58466 4.43052 6.58466 3.90301 6.91009 3.57757Z" fill="white"/>
+                                </svg>
+                              </span>
                             </a>
                           </li>
                           <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -1956,7 +1966,11 @@
                           <li class="page-item"><a class="page-link" href="#">3</a></li>
                           <li class="page-item">
                             <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
+                              <span aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.91009 3.57757C7.23553 3.25214 7.76304 3.25214 8.08848 3.57757L13.9218 9.41091C14.2473 9.73634 14.2473 10.2639 13.9218 10.5893L8.08848 16.4226C7.76304 16.7481 7.23553 16.7481 6.91009 16.4226C6.58466 16.0972 6.58466 15.5697 6.91009 15.2442L12.1542 10.0001L6.91009 4.75596C6.58466 4.43052 6.58466 3.90301 6.91009 3.57757Z" fill="white"/>
+                                </svg>
+                              </span>
                             </a>
                           </li>
                         </ul>
