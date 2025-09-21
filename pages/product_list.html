@@ -29,7 +29,42 @@
       />
 
       <!-- 分頁 -->
-      <section class="p-0 mb-6 mb-md-7 container max-w-1296">
+      <section class="p-0 mb-0 mb-md-7 container max-w-1296">
+        <ul class="nav nav-pills d-md-none mb-6 phone_nav">
+            <li class="nav-item me-6 nav-item_new">
+                <a class="nav-link ruby-text active" aria-current="page" href="#">所有商品</a>
+            </li>
+            <li class="nav-item dropdown me-6  nav-item_new">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">健身裝備</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">重量訓練專區</a></li>
+                <li><a class="dropdown-item" href="#">瑜伽伸展專區</a></li>
+                <li><a class="dropdown-item" href="#">核心訓練專區</a></li>
+                <li><a class="dropdown-item" href="#">有氧訓練專區</a></li>
+                <li><a class="dropdown-item" href="#">按摩放鬆專區</a></li>
+                <li><a class="dropdown-item" href="#">輔助訓練專區</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown me-6 nav-item_new">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">健身課程</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">重量訓練</a></li>
+                <li><a class="dropdown-item" href="#">瑜珈</a></li>
+                <li><a class="dropdown-item" href="#">有氧</a></li>
+                <li><a class="dropdown-item" href="#">筋膜放鬆</a></li>
+                <li><a class="dropdown-item" href="#">知識講座</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown me-6 nav-item_new">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">入場方案</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">單次入場</a></li>
+                <li><a class="dropdown-item" href="#">包月入場</a></li>
+                </ul>
+            </li>
+           
+        </ul>
+        <!-- 網站導行列 -->
         <nav style="--bs-breadcrumb-divider: " aria-label="breadcrumb">
           <ol class="breadcrumb mb-0 fs-9 fs-md-6">
             <li class="breadcrumb-item pe-2 pe-md-6">
@@ -112,8 +147,8 @@
       <section class="p-0 mb-8 mb-md-11 container max-w-1296">
         <!-- 格線系統 -->
         <div class="row flex-column flex-lg-row px-6">
-            <!-- 左邊選單列表 -->
-            <div class="col-12 col-lg-3 p-0">
+            <!-- 左邊 電腦版選單 -->
+            <div class="col-12 col-lg-3 p-0 d-none d-md-block">
               <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item border-radius-12 mb-7">
@@ -176,8 +211,8 @@
               <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                   <!-- 產品數量+排列選單 -->
-                  <div class="row d-flex justify-content-between align-items-center mb-7">
-                      <div class="col-2">
+                  <div class="row d-flex justify-content-between align-items-center mb-0 mb-md-7">
+                      <div class="col-6">
                           <p class="fw-bold text-gray-950 fs-mg-8 fs-9">共有<span class="fs-8 fs-md-7 mx-2">65</span>樣商品</p>
                       </div>                
 
@@ -1995,10 +2030,11 @@
             </div>
         </div>
       </section>  
-
+    
+     
     </main>
 
-    <%- include('./layout/footer'); -%>
+     <%- include('./layout/footer'); -%>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script type="module" src="../main.js"></script>
