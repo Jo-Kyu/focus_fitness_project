@@ -8,9 +8,9 @@ footer{
 }
 
 @media (max-width: 992px) {
-    footer{
-    background: radial-gradient(550px at 900px calc(100% - 90px), rgba($primary-400, 0.1) 0%, transparent 100%); 
-}
+        footer{
+        background: radial-gradient(550px at 900px calc(100% - 90px), rgba($primary-400, 0.1) 0%, transparent 100%); 
+    }
 }
 
 .navbar-brand {
@@ -45,14 +45,13 @@ svg{
 
 .footer-header{
     margin-top: 80px;
-    margin-bottom: 20px;
 }
 
 @media(max-width:992px){
     .footer-header{
         margin-top: 20px;
+        // 調整手機版間距
     }
-
 }
 
 .page-title{
@@ -79,12 +78,24 @@ svg{
     }
 }
 
+// 連結區塊向右偏移102px
+
 .link-item{
     display: flex;
     flex-direction: column;
     align-self: start;
     margin-right: 102px;
 }
+
+// 清除手機版下的102px
+
+@media (max-width: 992px) {
+  .link-item {
+    margin-right: 0;
+  }
+}
+
+// 調整手機版的logo大小
 
 @media(max-width:992px){
     .navbar-brand img{
@@ -117,7 +128,13 @@ svg{
     color: white;
     backdrop-filter: blur(30px);
     background-color: rgba(255, 255, 228, 0.2); 
-    padding: 9px 16px;
+    padding: 8px 24px;
+}
+
+@media(max-width:992px){
+    .mail-btn-mobile{
+        padding: 9px 16px;
+    }
 }
 
 .mail-btn-mobile:hover,
@@ -149,6 +166,12 @@ footer .form-control[type="email"] {
         box-shadow: none;
         background-color: transparent;
     }
+}
+
+@media (max-width: 992px) {
+  footer .form-control[type="email"] {
+    width: 100%; /* 讓輸入框自動填滿可用寬度 */
+  }
 }
 
 // footer-subs
