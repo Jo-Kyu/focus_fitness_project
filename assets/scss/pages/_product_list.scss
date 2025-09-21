@@ -86,9 +86,16 @@
 }
 
 .btn-close{
-    --bs-btn-close-color:#ffffff !important;
+    --bs-btn-close-bg:url('https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/7def9c568b902553e2dec19f8d7830167a1c4ce3/assets/images/icons/ic_close.svg');
 }
 
+.offcanvas{
+    border-radius: 16px 16px 0 0;
+}
+
+.shodow_none{
+    box-shadow:none !important;
+}
 
 // PC版
 .dropdown .btn{
