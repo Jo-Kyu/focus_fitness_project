@@ -4,6 +4,14 @@
   max-width: 1296px;
 }
 
+.max-w-822 {
+  max-width: 822px;
+}
+
+.max-w-346 {
+  max-width: 349px;
+}
+
 .max-w-312 {
   max-width: 312px;
 }
@@ -14,10 +22,23 @@
 
 .max-w-136 {
   max-width: 136px;
+  width: 136px;
 }
 
 .max-w-172 {
   max-width: 172px;
+}
+
+.max-w-160 {
+  max-width: 160px;
+}
+
+.max-w-117 {
+  max-width: 117px;
+}
+
+.max-w-80 {
+  max-width: 80px;
 }
 
 .max-w-60 {
@@ -33,15 +54,52 @@
   max-width: 36px;
 }
 
+.max-w-26 {
+  max-width: 26px;
+}
+
+.max-w-20 {
+  max-width: 20px;
+  width: 20px;
+}
+
+.max-w-14 {
+  max-width: 14px;
+  width: 14px;
+}
+
 // max-height
 
 .max-h-796 {
   max-height: 796px;
 }
 
+.max-h-145 {
+  max-height: 145px;
+  height: 145px;
+}
+
 .max-h-100 {
   max-height: 100px;
   height: 100px;
+}
+
+.max-h-73 {
+  max-height: 73px;
+  height: 73px;
+}
+
+.max-h-64 {
+  max-height: 64px;
+}
+
+.max-h-20 {
+  max-height: 20px;
+  height: 20px;
+}
+
+.max-h-26 {
+  max-height: 26px;
 }
 
 .max-h-7 {
@@ -56,14 +114,6 @@
 }
 
 // spacer
-
-.left--70 {
-  left: -20px;
-}
-
-.right--70 {
-  right: -20px;
-}
 
 // hover
 
@@ -86,7 +136,8 @@
 
 .hover-effect-2:hover, // border+outline
 .hover-effect-2:focus, // border
-.hover-effect-2:active {
+.hover-effect-2:active,
+.hover-effect-2.active {
   border-color: $primary-400 !important;
   outline: 2px solid $primary-900;
 }
@@ -177,6 +228,10 @@ input.placeholder-lg::placeholder {
   border-top-left-radius: 0px !important;
 }
 
+.border-bottom-leftt-radius-0 {
+  border-bottom-left-radius: 0px !important;
+}
+
 .border-bottom-right-radius-0 {
   border-bottom-right-radius: 0px !important;
 }
@@ -197,11 +252,21 @@ input.placeholder-lg::placeholder {
   display: none;
 }
 
+// position
+
+.bottom--8 {
+  bottom: -30px;
+}
+
 // 斷點
 
 @media (min-width: 768px) {
   .lh-md-sm {
     line-height: 1.2; /* md 以上 */
+  }
+
+  .max-w-md-822 {
+    max-width: 822px;
   }
 
   .max-w-md-318 {
@@ -214,5 +279,48 @@ input.placeholder-lg::placeholder {
 
   .max-w-md-40 {
     max-width: 40px;
+  }
+
+  .max-w-md-18 {
+    max-width: 18px;
+    width: 18px;
+  }
+
+  .max-w-md-64 {
+    max-width: 64px;
+  }
+
+  .max-h-md-64 {
+    max-height: 64px;
+  }
+}
+
+@media (min-width: 992px) {
+  .max-w-lg-160 {
+    max-width: 160px;
+  }
+
+  .max-h-lg-145 {
+    max-height: 145px;
+    height: 145px;
+  }
+
+  .max-h-lg-688 {
+    max-height: 688px;
+    height: 688px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .top-lg-50 {
+    top: 50%;
+  }
+
+  .left-lg--70 {
+    left: -20px !important;
+  }
+
+  .right-lg--70 {
+    right: -20px !important;
   }
 }
