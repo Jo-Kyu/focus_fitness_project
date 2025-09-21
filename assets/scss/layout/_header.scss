@@ -1,0 +1,137 @@
+/* 毛玻璃 Navbar */
+
+// Navbar定位
+.navbar{
+  width: 100%; 
+  position: absolute;
+  top: 40px;
+  right: auto;
+  left: auto;
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    width: auto;
+  }
+}
+
+// 毛玻璃效果 Navbar
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 16px;
+  padding: 12px 24px;
+  box-shadow: 2px 3px 5.5px 0px #ffffff40 inset,
+    -6px -6px 4px 0px #7f7f7f14 inset;
+}
+
+// Nav 膠囊 hover
+.navbar-nav .nav-item .nav-pill {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .nav-item .nav-pill {
+    font-size: 16px;
+  }
+}
+
+.navbar-nav .nav-item .nav-pill:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+//下拉選單
+.navbar-nav .dropdown-menu {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 2px 3px 5.5px 0px #ffffff40 inset,
+    -6px -6px 4px 0px #7f7f7f14 inset;
+  position: absolute;
+  inset: auto;               
+  transform: none;        
+  top: calc(100% + 20px); 
+  left: 0;
+  right: auto;
+  z-index: 1;      
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .dropdown-menu {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem;
+    box-shadow: 2px 3px 5.5px 0px #ffffff40 inset,
+      -6px -6px 4px 0px #7f7f7f14 inset;
+    position: relative;    
+  }
+}
+
+// dropdown item 樣式
+.dropdown-item {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 16px;
+  padding: 12px 83px 12px 12px; 
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 992px) {
+  .dropdown-item {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    padding: 4px 113px 4px 12px;
+    transition: all 0.2s ease;
+  }
+}
+
+// dropdown item hover 效果
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: $primary-400 ;
+  color: #000 ;
+}
+
+// 去掉 Bootstrap 預設的下拉箭頭
+.no-caret::after {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(30px);
+    border-radius: 16px;
+    margin-top: 8px;
+    padding: 8px;
+    z-index: 1;
+  }
+}
+
+// 取消漢堡選單預設樣式
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}

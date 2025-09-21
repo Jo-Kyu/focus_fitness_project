@@ -3,12 +3,25 @@
 footer{
     background: radial-gradient(550px at calc(100% - 1200px) calc(100% - 5px), rgba($primary-400, 0.1) 0%, transparent 100%),
     linear-gradient(to bottom, $blue-700 0%,$blue-900 100%); 
+    margin-top: -8px;
+    margin-bottom: -8px;
+    padding-right: 12px;
+    padding-left: 12px;
 }
 
 @media (max-width: 992px) {
-    footer{
-    background: radial-gradient(550px at 900px calc(100% - 90px), rgba($primary-400, 0.1) 0%, transparent 100%); 
+        footer{
+        background: radial-gradient(550px at 900px calc(100% - 90px), rgba($primary-400, 0.1) 0%, transparent 100%); 
+    }
 }
+
+@media (max-width: 576px) {
+    .navbar {
+        top: 20px;
+        left: 0px;
+        right: 0px;
+        width: auto;
+    }
 }
 
 .navbar-brand {
@@ -16,19 +29,23 @@ footer{
   margin: 0;
 }
 
-.nav-link{
-    color: $gray-300;
-    padding: 0px;
-}
+.nav-link {
+  color: $gray-300;
+  padding: 0px;
 
-.nav-link:hover .page-title,.nav-link:hover {
-  color: $primary-400;
-}
+  &:hover {
+    color: $primary-400;
 
-.nav-link:focus {
-  outline: none;
-  box-shadow: none;
-  color: inherit; 
+    .page-title {
+      color: $primary-400;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    color: inherit; 
+  }
 }
 
 svg{
@@ -36,6 +53,17 @@ svg{
 }
 
 // footer 樣式
+
+.footer-header{
+    margin-top: 80px;
+}
+
+@media(max-width:992px){
+    .footer-header{
+        margin-top: 20px;
+        // 調整手機版間距
+    }
+}
 
 .page-title{
     font-size: $h5-font-size;
@@ -61,12 +89,24 @@ svg{
     }
 }
 
+// 連結區塊向右偏移102px
+
 .link-item{
     display: flex;
     flex-direction: column;
     align-self: start;
     margin-right: 102px;
 }
+
+// 清除手機版下的102px
+
+@media (max-width: 992px) {
+  .link-item {
+    margin-right: 0;
+  }
+}
+
+// 調整手機版的logo大小
 
 @media(max-width:992px){
     .navbar-brand img{
@@ -99,7 +139,13 @@ svg{
     color: white;
     backdrop-filter: blur(30px);
     background-color: rgba(255, 255, 228, 0.2); 
-    padding: 9px 16px;
+    padding: 8px 24px;
+}
+
+@media(max-width:992px){
+    .mail-btn-mobile{
+        padding: 9px 16px;
+    }
 }
 
 .mail-btn-mobile:hover,
@@ -131,6 +177,12 @@ footer .form-control[type="email"] {
         box-shadow: none;
         background-color: transparent;
     }
+}
+
+@media (max-width: 992px) {
+  footer .form-control[type="email"] {
+    width: 100%; /* 讓輸入框自動填滿可用寬度 */
+  }
 }
 
 // footer-subs
