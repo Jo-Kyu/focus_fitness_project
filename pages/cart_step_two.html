@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/scss/all.scss" />
+    <title>商品詳情頁</title>
+  </head>
+  <body class="">
+   
+
+    <main class="py-3  position-relative overflow-hidden">
+    <!-- 光暈 -->
+      <img
+        style="position: absolute; top: -600px; right: -800px; z-index: -100"
+        src="../assets/images/index_page/光暈/Ellipse 2.svg"
+        alt="光暈"
+      />
+      <img
+        style="position: absolute; bottom: -600px; left: -800px; z-index: -100"
+        src="../assets/images/index_page/光暈/Ellipse 2.svg"
+        alt="光暈"
+      />
+     <!-- 購物車步驟  -->
+      <section class="mb-4 mb-md-5 container py-0 px-0 max-w-md-822 max-w-346">
+        <ul class="ps-0 mb-0 d-flex justify-content-lg-between justify-content-center">
+          <!-- 步驟一：確認購買商品 -->
+          <li class="d-flex align-items-center  me-md-3 ">
+            <div
+              class="me-md-8 me-2 bg-primary-500 rounded-circle py-106 py-md-103 px-2 px-md-102 max-w-md-64 max-w-26 max-h-md-64 max-h-26 d-flex justify-content-center align-items-center"
+              
+            >
+              <h2 class="fs-8 fs-md-2 text-gray-900 fw-bold lh-sm">1</h2>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="me-6">
+                <p class="fs-9 fs-md-5 text-white">確認購買商品</p>
+              </div>
+              <div class="d-none d-md-flex">
+                <svg
+                  width="18"
+                  height="16"
+                  viewBox="0 0 18 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.292893 0.292893C0.683417 -0.0976311 1.31643 -0.0976311 1.70696 0.292893L8.70696 7.29289C9.09748 7.68342 9.09748 8.31643 8.70696 8.70696L1.70696 15.707C1.31643 16.0975 0.683417 16.0975 0.292893 15.707C-0.0976311 15.3164 -0.0976311 14.6834 0.292893 14.2929L6.58586 7.99992L0.292893 1.70696C-0.0976311 1.31643 -0.0976311 0.683417 0.292893 0.292893Z"
+                    fill="#C5E600"
+                  />
+                  <path
+                    d="M9.29289 0.292893C9.68342 -0.0976311 10.3164 -0.0976311 10.707 0.292893L17.707 7.29289C18.0975 7.68342 18.0975 8.31643 17.707 8.70696L10.707 15.707C10.3164 16.0975 9.68342 16.0975 9.29289 15.707C8.90237 15.3164 8.90237 14.6834 9.29289 14.2929L15.5859 7.99992L9.29289 1.70696C8.90237 1.31643 8.90237 0.683417 9.29289 0.292893Z"
+                    fill="#C5E600"
+                  />
+                </svg>
+              </div>
+            </div>
+          </li>
+          <!-- 步驟二：填寫訂購資料 -->
+          <li class="d-flex  me-md-3 align-items-center">
+            <div
+              class="me-md-8 me-2 bg-primary-500 rounded-circle py-106 py-md-103 px-2 px-md-102 max-w-md-64 max-w-26 max-h-md-64 max-h-26 d-flex justify-content-center align-items-center"
+            >
+              <h2 class="fs-8 fs-md-2 text-gray-900 fw-bold lh-sm">2</h2>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="me-6">
+                <p class="fs-9 fs-md-5 text-white">填寫訂購資料</p>
+              </div>
+              <div class="d-none d-md-flex">
+                <svg
+                  width="18"
+                  height="16"
+                  viewBox="0 0 18 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.292893 0.292893C0.683417 -0.0976311 1.31643 -0.0976311 1.70696 0.292893L8.70696 7.29289C9.09748 7.68342 9.09748 8.31643 8.70696 8.70696L1.70696 15.707C1.31643 16.0975 0.683417 16.0975 0.292893 15.707C-0.0976311 15.3164 -0.0976311 14.6834 0.292893 14.2929L6.58586 7.99992L0.292893 1.70696C-0.0976311 1.31643 -0.0976311 0.683417 0.292893 0.292893Z"
+                    fill="#C5E600"
+                  />
+                  <path
+                    d="M9.29289 0.292893C9.68342 -0.0976311 10.3164 -0.0976311 10.707 0.292893L17.707 7.29289C18.0975 7.68342 18.0975 8.31643 17.707 8.70696L10.707 15.707C10.3164 16.0975 9.68342 16.0975 9.29289 15.707C8.90237 15.3164 8.90237 14.6834 9.29289 14.2929L15.5859 7.99992L9.29289 1.70696C8.90237 1.31643 8.90237 0.683417 9.29289 0.292893Z"
+                    fill="#C5E600"
+                  />
+                </svg>
+              </div>
+            </div>
+          </li>
+          <!-- 步驟三：完成結帳 -->
+          <li class="d-flex align-items-center">
+            <div
+              class="me-md-8 me-2 bg-white-opacity-20 rounded-circle py-106 py-md-103 px-2 px-md-102 max-w-md-64 max-w-26 max-h-md-64 max-h-26 d-flex justify-content-center align-items-center"
+            >
+              <h2 class="fs-8 fs-md-2 fw-bold lh-sm text-gray-500">3</h2>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class=" me-1 me-md-6">
+                <p class="fs-9 fs-md-5 text-gray-500">完成結帳</p>
+              </div>
+              <div>
+                <svg
+                class="max-w-14 max-w-md-18"
+                  width="23"
+                  height="18"
+                  viewBox="0 0 23 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.3564 0.939411C20.4991 0.800133 20.6695 0.689488 20.8574 0.613953C21.0454 0.538418 21.2472 0.499512 21.4511 0.499512C21.6549 0.499512 21.8568 0.538418 22.0447 0.613953C22.2327 0.689488 22.403 0.800133 22.5457 0.939411C23.1437 1.51745 23.1521 2.45152 22.5666 3.03956L10.2028 17.0205C10.0624 17.168 9.89206 17.2865 9.70216 17.3688C9.51227 17.4511 9.30681 17.4955 9.09836 17.4993C8.88991 17.503 8.68285 17.466 8.48986 17.3906C8.29686 17.3152 8.12198 17.2028 7.97592 17.0605L0.452674 9.76803C0.162528 9.48498 0 9.10437 0 8.70796C0 8.31154 0.162528 7.93093 0.452674 7.64788C0.595373 7.5086 0.765687 7.39796 0.953642 7.32242C1.1416 7.24689 1.34342 7.20798 1.54729 7.20798C1.75116 7.20798 1.95298 7.24689 2.14093 7.32242C2.32889 7.39796 2.4992 7.5086 2.6419 7.64788L9.02349 13.8343L20.3146 0.983414L20.3564 0.939411Z"
+                    fill="#808080"
+                  />
+                </svg>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    <!-- 填寫訂購資訊 -->
+      <section class="mb-4 container max-w-1296">
+        <div class="row flex-column flex-md-row">
+            <!-- 收件人資訊 -->
+            <div class="col col-md-5">
+                <div
+                        class="mb-4 mb-sm-8 container px-0 max-w-1296 border border-secondary-600 border-radius-12"
+                    >
+                        <!-- 須配送商品標題 -->
+                        <div
+                        class="py-6 py-sm-4  bg-blue-700 text-center border-radius-12 border-bottom-leftt-radius-0 border-bottom-right-radius-0"
+                        >
+                        <h2 class="fs-7 text-gray-950 fw-bold">須配送商品</h2>
+                        </div>
+       
+                </div>
+            </div>
+            <!-- 訂單內容、訂單金額總計 -->
+            <div class="col col-md-7">
+                <!-- 訂單內容 -->
+                <div class="mb-4 border border-secondary-600 border-radius-12">
+                         <!-- 訂單內容標題 -->
+                        <div
+                        class="py-6 py-sm-4 bg-blue-700 text-center border-radius-12 border-bottom-leftt-radius-0 border-bottom-right-radius-0"
+                        >
+                        <h2 class="fs-7 text-gray-950 fw-bold">訂單內容</h2>
+                        </div>
+                         <!-- 需配送商品標題 -->
+                        <div class=" py-3 px-106 px-lg-4 border-bottom border-blue-600">
+                            <h3 class="fs-6 text-info-normal fw-regular text-center">
+                                需配送商品
+                            </h3>
+                        </div>
+                        <!-- 商品清單1 -->
+                        <div
+                        class="py-6 py-xl-8 px-106 px-xl-4 d-flex justify-content-between border-bottom border-blue-600 "
+                        >
+                        <!-- 商品圖片、商品資訊 -->
+                        <div class="d-flex  mb-lg-0 mb-3">
+                            <!-- 商品圖片 -->
+                            <div class="me-6 me-xl-4 max-w-80 max-w-xl-160">
+                            <img
+                                class="rounded-3 max-h-73 max-h-xl-145"
+                                src="../assets/images/product_details_page/Rectangle_58.jpg"
+                                alt="Focus耐磨皮格拉力帶"
+                            />
+                            </div>
+                            <!-- 商品資訊 -->
+                            <div>
+                            <!-- 商品名稱 -->
+                            <div class="mb-2 mb-lg-6">
+                                <h2 class="fs-8 fs-xl-5 fw-bold lh-sm">Focus耐磨皮格拉力帶</h2>
+                            </div>
+                            <!-- 商品規格 -->
+                            <div class="mb-2 mb-lg-6">
+                                <p class="fs-9 fs-xl-6 text-gray-500">顏色：經典黑</p>
+                            </div>
+                            <!-- 商品規格 -->
+                            <div class="mb-2 mb-xl-6">
+                                <p class="fs-9 fs-xl-6 text-gray-500">尺寸：單一尺寸</p>
+                            </div>
+                            </div>
+                        </div>
+                            <!-- 售價、原價、優惠資訊、刪除按鈕 -->
+                            <div class="d-flex align-items-top justify-content-end">
+                                <!-- 售價、原價、優惠資訊 -->
+                                <div>
+                                <!-- 售價、原價 -->
+                                <div class="mb-6 d-flex align-items-sm-center align-items-end flex-column flex-sm-row">
+                                    <!-- 售價 -->
+                                    <div class="mb-1 mb-sm-0 me-sm-6">
+                                    <h2 class="fs-8 fs-xl-7 text-gray-950 fw-bold lh-sm">NT$1,280</h2>
+                                    </div>
+                                    <!-- 原價 -->
+                                    <div>
+                                    <h3
+                                        class="fs-9 fs-xl-6 fw-bold text-gray-500 text-decoration-line-through"
+                                    >
+                                        NT$1,580
+                                    </h3>
+                                    </div>
+                                </div>
+                                <!-- 優惠資訊 -->
+                                <div class="mb-6 text-end ">
+                                    <h3 class="fs-9 fs-xl-7 text-warning-dark fw-regular">問您省下19%</h3>
+                                </div>
+                                <!-- 商品數量 -->
+                                <div>
+                                    <h4 class="fs-9 fs-xl-6 fw-regular text-end text-gray-500">數量：1</h4>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 商品清單2 -->
+                        <div
+                        class="py-6 py-xl-8 px-106 px-xl-4 d-flex justify-content-between border-bottom border-blue-600 "
+                        >
+                        <!-- 商品圖片、商品資訊 -->
+                        <div class="d-flex  mb-lg-0 mb-3">
+                            <!-- 商品圖片 -->
+                            <div class="me-6 me-xl-4 max-w-80 max-w-xl-160">
+                            <img
+                                class="rounded-3 max-h-73 max-h-xl-145"
+                                src="../assets/images/product_list_page/product-list_7.jpg"
+                                alt="尼龍翹臀圈"
+                            />
+                            </div>
+                            <!-- 商品資訊 -->
+                            <div>
+                            <!-- 商品名稱 -->
+                            <div class="mb-2 mb-lg-6">
+                                <h2 class="fs-8 fs-xl-5 fw-bold lh-sm">尼龍翹臀圈</h2>
+                            </div>
+                            <!-- 商品規格 -->
+                            <div class="mb-2 mb-lg-6">
+                                <p class="fs-9 fs-xl-6 text-gray-500">顏色：紫色</p>
+                            </div>
+                            <!-- 商品規格 -->
+                            <div class="mb-2 mb-xl-6">
+                                <p class="fs-9 fs-xl-6 text-gray-500">尺寸：200*2cm</p>
+                            </div>
+                            </div>
+                        </div>
+                            <!-- 售價、原價、優惠資訊、刪除按鈕 -->
+                            <div class="d-flex align-items-top justify-content-end">
+                                <!-- 售價、原價、優惠資訊 -->
+                                <div>
+                                <!-- 售價、原價 -->
+                                <div class="mb-6 d-flex align-items-sm-center align-items-end flex-column flex-sm-row">
+                                    <!-- 售價 -->
+                                    <div class="mb-1 mb-sm-0 me-sm-6">
+                                    <h2 class="fs-8 fs-xl-7 text-gray-950 fw-bold lh-sm">NT$799</h2>
+                                    </div>
+                                    <!-- 原價 -->
+                                    <div>
+                                    <h3
+                                        class="fs-9 fs-xl-6 fw-bold text-gray-500 text-decoration-line-through"
+                                    >
+                                        NT$1,099
+                                    </h3>
+                                    </div>
+                                </div>
+                                <!-- 優惠資訊 -->
+                                <div class="mb-6 text-end ">
+                                    <h3 class="fs-9 fs-xl-7 text-warning-dark fw-regular">問您省下27%</h3>
+                                </div>
+                                <!-- 商品數量 -->
+                                <div>
+                                    <h4 class="fs-9 fs-xl-6 fw-regular text-end text-gray-500">數量：1</h4>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 商品清單3 -->
+                        <div
+                        class="py-6 py-xl-8 px-106 px-xl-4 d-flex justify-content-between border-bottom border-blue-600 "
+                        >
+                        <!-- 商品圖片、商品資訊 -->
+                        <div class="d-flex  mb-lg-0 mb-3">
+                            <!-- 商品圖片 -->
+                            <div class="me-6 me-xl-4 max-w-80 max-w-xl-160">
+                            <img
+                                class="rounded-3 max-h-73 max-h-xl-145"
+                                src="../assets/images/product_list_page/product-list_2.jpg"
+                                alt="筋膜球"
+                            />
+                            </div>
+                            <!-- 商品資訊 -->
+                            <div>
+                            <!-- 商品名稱 -->
+                            <div class="mb-2 mb-lg-6">
+                                <h2 class="fs-8 fs-xl-5 fw-bold lh-sm">筋膜球</h2>
+                            </div>
+                            <!-- 商品規格 -->
+                            <div class="mb-2 mb-lg-6">
+                                <p class="fs-9 fs-xl-6 text-gray-500">顏色：藍色</p>
+                            </div>
+                            <!-- 商品規格 -->
+                            <div class="mb-2 mb-xl-6">
+                                <p class="fs-9 fs-xl-6 text-gray-500">尺寸：50*50cm</p>
+                            </div>
+                            </div>
+                        </div>
+                            <!-- 售價、原價、優惠資訊、刪除按鈕 -->
+                            <div class="d-flex align-items-top justify-content-end">
+                                <!-- 售價、原價、優惠資訊 -->
+                                <div>
+                                <!-- 售價、原價 -->
+                                <div class="mb-6 d-flex align-items-sm-center align-items-end flex-column flex-sm-row">
+                                    <!-- 售價 -->
+                                    <div class="mb-1 mb-sm-0 me-sm-6">
+                                    <h2 class="fs-8 fs-xl-7 text-gray-950 fw-bold lh-sm">NT$49</h2>
+                                    </div>
+                                    <!-- 原價 -->
+                                    <div>
+                                    <h3
+                                        class="fs-9 fs-xl-6 fw-bold text-gray-500 text-decoration-line-through"
+                                    >
+                                        NT$149
+                                    </h3>
+                                    </div>
+                                </div>
+                                <!-- 優惠資訊 -->
+                                <div class="mb-6 text-end ">
+                                    <h3 class="fs-9 fs-xl-7 text-warning-dark fw-regular">問您省下67%</h3>
+                                </div>
+                                <!-- 商品數量 -->
+                                <div>
+                                    <h4 class="fs-9 fs-xl-6 fw-regular text-end text-gray-500">數量：1</h4>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 需配送商品金額總計 -->
+                        <div class="py-6 py-lg-8 px-106 px-lg-4">
+                            <div class="mb-106 mb-sm-3 d-flex justify-content-between">
+                                <h3 class="fs-8 text-gray-500 fw-regular">商品金額 (<span class="text-primary-500">3</span>件商品 )</h3>
+                                <h2 class="fs-6 fs-lg-5 text-gray-950 fw-bold">NT$2,128</h2>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h3 class="fs-8 text-gray-500 fw-regular">宅配運費</h3>
+                                <h2 class="fs-8 fs-lg-6 fs-sm-6 text-warning-normal fw-bold">免運</h2>
+                            </div>
+
+                        </div>
+
+                        <!-- 免配送商品標題 -->
+                        <div class=" py-3 px-106 px-lg-4 border-top border-bottom border-blue-600">
+                            <h3 class="fs-6 text-info-normal fw-regular text-center">
+                                免配送商品
+                            </h3>
+                        </div>
+                        <!-- 商品清單1 -->
+                        <div
+                        class="py-6 py-xl-8 px-106 px-xl-4  border-bottom border-blue-600 "
+                        >
+                        <div class="d-flex justify-content-between">
+                            <!-- 複選按鈕、商品圖片、商品資訊 -->
+                            <div class="d-flex  mb-lg-0 mb-6">
+                                <!-- 商品圖片 -->
+                                <div class="me-6 me-xl-4 max-w-80 max-w-xl-160">
+                                <img
+                                    class="rounded-3 max-h-73 max-h-xl-145"
+                                    src="../assets/images/index_page/商城/product-6.jpg"
+                                    alt="戰鬥有氧"
+                                />
+                                </div>
+                                <!-- 商品資訊 -->
+                                <div>
+                                <!-- 商品名稱 -->
+                                <div class="max-w-210">
+                                    <div class="mb-6">
+                                    <h2 class="fs-9 fs-sm-8 fs-xl-5 fw-bold lh-sm">戰鬥有氧</h2>
+                                    </div>
+                                    <div class="d-none d-sm-block">
+                                    <h3 class="fs-9 text-secondary-400 fw-regular">
+                                        ( 請至實體門市櫃台出示訂單編號，並辦理相關手續 ) 
+                                    </h3>
+                                    </div>
+                                </div>          
+                                </div>
+                            </div>
+                            
+                            <!-- 售價、原價、優惠資訊、刪除按鈕 -->
+                            <div class="mb-2 d-flex align-items-top justify-content-end">
+                                <!-- 售價、原價、優惠資訊 -->
+                                <div>
+                                <!-- 售價、原價 -->
+                                <div class="mb-6 d-flex align-items-sm-center align-items-end flex-column flex-sm-row">
+                                    <!-- 售價 -->
+                                    <div class="mb-1 mb-sm-0 me-sm-6">
+                                    <h2 class="fs-8 fs-xl-7 text-gray-950 fw-bold lh-sm">NT$799</h2>
+                                    </div>
+                                    <!-- 原價 -->
+                                    <div>
+                                    <h3
+                                        class="fs-9 fs-xl-6 fw-bold text-gray-500 text-decoration-line-through"
+                                    >
+                                        NT$1,099
+                                    </h3>
+                                    </div>
+                                </div>
+                                <!-- 優惠資訊 -->
+                                <div class="mb-6 text-end">
+                                    <h3 class="fs-9 fs-xl-7 text-warning-dark fw-regular">問您省下27%</h3>
+                                </div>
+                                <!-- 商品數量 -->
+                                    <div>
+                                        <h4 class="fs-9 fs-xl-6 fw-regular text-end text-gray-500">數量：1</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <!-- 購物須知，手機板顯示 -->
+                        <div class="d-sm-none text-center">
+                            <h3 class="fs-9 text-secondary-400 fw-regular">
+                            ( 請至實體門市櫃台出示訂單編號，並辦理相關手續 ) 
+                            </h3>
+                        </div>
+                        </div>
+                        <!-- 商品清單2 -->
+                        <div
+                        class="py-6 py-xl-8 px-106 px-xl-4  border-bottom border-blue-600 "
+                        >
+                        <div class="d-flex justify-content-between">
+                            <!-- 複選按鈕、商品圖片、商品資訊 -->
+                            <div class="d-flex  mb-lg-0 mb-6">
+                                <!-- 商品圖片 -->
+                                <div class="me-6 me-xl-4 max-w-80 max-w-xl-160">
+                                <img
+                                    class="rounded-3 max-h-73 max-h-xl-145"
+                                    src="../assets/images/product_details_page/Rectangle_58.jpg"
+                                    alt="混合有氧"
+                                />
+                                </div>
+                                <!-- 商品資訊 -->
+                                <div>
+                                <!-- 商品名稱 -->
+                                <div class="max-w-210">
+                                    <div class="mb-6">
+                                    <h2 class="fs-9 fs-sm-8 fs-xl-5 fw-bold lh-sm">混合有氧</h2>
+                                    </div>
+                                    <div class="d-none d-sm-block">
+                                    <h3 class="fs-9 text-secondary-400 fw-regular">
+                                        ( 請至實體門市櫃台出示訂單編號，並辦理相關手續 ) 
+                                    </h3>
+                                    </div>
+                                </div>          
+                                </div>
+                            </div>
+                            
+                            <!-- 售價、原價、優惠資訊、刪除按鈕 -->
+                            <div class="mb-2 d-flex align-items-top justify-content-end">
+                                <!-- 售價、原價、優惠資訊 -->
+                                <div>
+                                <!-- 售價、原價 -->
+                                <div class="mb-6 d-flex align-items-sm-center align-items-end flex-column flex-sm-row">
+                                    <!-- 售價 -->
+                                    <div class="mb-1 mb-sm-0 me-sm-6">
+                                    <h2 class="fs-8 fs-xl-7 text-gray-950 fw-bold lh-sm">NT$799</h2>
+                                    </div>
+                                    <!-- 原價 -->
+                                    <div>
+                                    <h3
+                                        class="fs-9 fs-xl-6 fw-bold text-gray-500 text-decoration-line-through"
+                                    >
+                                        NT$1,280
+                                    </h3>
+                                    </div>
+                                </div>
+                                <!-- 優惠資訊 -->
+                                <div class="mb-6 text-end">
+                                    <h3 class="fs-9 fs-xl-7 text-warning-dark fw-regular">問您省下27%</h3>
+                                </div>
+                                <!-- 商品數量 -->
+                                    <div>
+                                        <h4 class="fs-9 fs-xl-6 fw-regular text-end text-gray-500">數量：1</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <!-- 購物須知，手機板顯示 -->
+                        <div class="d-sm-none text-center">
+                            <h3 class="fs-9 text-secondary-400 fw-regular">
+                            ( 請至實體門市櫃台出示訂單編號，並辦理相關手續 ) 
+                            </h3>
+                        </div>
+                        </div>
+                        <!-- 免配送商品金額總計 -->
+                        <div class="py-6 py-lg-8 px-106 px-lg-4">
+                            <div class="mb-106 mb-sm-3 d-flex justify-content-between">
+                                <h3 class="fs-8 text-gray-500 fw-regular">商品金額 (<span class="text-primary-500">2</span>件商品 )</h3>
+                                <h2 class="fs-6 fs-lg-5 text-gray-950 fw-bold">NT$1,598</h2>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h3 class="fs-8 text-gray-500 fw-regular">宅配運費</h3>
+                                <h2 class="fs-8 fs-lg-6 text-warning-normal fw-bold">免運</h2>
+                            </div>
+
+                        </div>        
+                </div>
+                <!-- 訂單金額總計 -->
+                <div class="border border-secondary-600 border-radius-12">
+                    <!-- 訂單金額總計標題 -->
+                    <div
+                        class="py-6 py-sm-4 bg-blue-700 text-center border-radius-12 border-bottom-leftt-radius-0 border-bottom-right-radius-0"
+                        >
+                        <h2 class="fs-7 text-gray-950 fw-bold">訂單內容</h2>
+                    </div>
+                    <!-- 訂單金額總計 -->
+                     <div class="py-6 py-lg-8 px-106 px-lg-4">
+                        <div>
+                        <!-- 商品金額 -->
+                        <div class="mb-6 d-flex">
+                            <div class="ms-auto">
+                                <h3 class="fs-6 text-gray-500 fw-regular">商品金額：</h3>
+                            </div>
+                            <div class="max-w-120">
+                                <h3 class="fs-6 text-gray-950 fw-bold text-end">NT$3,728</h3>
+                            </div>
+                        </div>
+                        <!-- 優惠券折抵 -->
+                        <div class="mb-6 d-flex">
+                            <div class="ms-auto">
+                                <h3 class="fs-6 text-gray-500 fw-regular">優惠券折抵：</h3>
+                            </div>
+                            <div class="max-w-120" >
+                                <h3 class="fs-6 text-warning-dark fw-bold text-end">-NT$100</h3>
+                            </div>
+                        </div>
+                        <!-- 運費 -->
+                        <div class="mb-6 d-flex">
+                            <div class="ms-auto">
+                                <h3 class="fs-6 text-gray-500 fw-regular">運費：</h3>
+                            </div>
+                            <div class="max-w-120">
+                                <h3 class="fs-6 text-gray-950 fw-bold text-end">NT$0</h3>
+                            </div>
+                        </div>
+                        <!-- 結帳總金額 -->
+                        <div class="d-flex">
+                            <div class="ms-auto">
+                                <h3 class="fs-6 text-gray-500 fw-regular">結帳總金額：</h3>
+                            </div>
+                            <div class="max-w-120">
+                                <h3 class="fs-6 text-primary-400 fw-bold text-end">NT$3,626</h3>
+                            </div>
+                        </div>
+
+     
+
+
+
+
+
+
+                        
+                     </div>
+                </div>
+            </div>
+            </div>
+      </section>
+    <!-- 完成結帳按鈕 -->
+      <section class="container max-w-1296 text-end">
+            <button
+                  class="mx-auto py-2 px-9 py-md-3 btn py-md-3 fill-btn fs-7 fw-bold flex-fill border-radius-12"
+                >
+                  開始結帳
+            </button>
+      </section>
+
+      
+
+
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="../main.js"></script>
+    <script src="../product_details.js"></script>
+  </body>
+</html>
