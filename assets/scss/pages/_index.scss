@@ -211,6 +211,10 @@
     }
 }
 
+// 背景光暈
+
+
+
 /* 全方位專注健身服務區塊 */
 
 .sub-topics{
@@ -364,7 +368,56 @@
   }
 }
 
+/* 教練團隊 */
 
+.coachs{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #232733;
+}
+
+@media (max-width: 992px) {
+    .coachs{
+      padding-top: 32px;
+      padding-bottom: 68px;
+  }
+}
+
+// Swiper輪播
+
+.swiper-slide {
+  width: 100%; 
+  flex-shrink: 0;
+}
+
+@media (min-width: 375px) {
+  .swiper-slide {
+    width: 395px;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper-slide {
+    width: 565px;
+  }
+}
+
+// 教練名牌
+
+.coach-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  backdrop-filter: blur(30px);
+  box-shadow: 2px 3px 5.5px 0px #FFFFFF40 inset,
+              -6px -6px 4px 0px #7F7F7F14 inset;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 12px; 
+  left: 15px;
+  z-index: 1; 
+}
 
 /* 聯絡資訊區塊 */
 
