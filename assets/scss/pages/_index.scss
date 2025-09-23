@@ -195,9 +195,9 @@
 
 /* main 樣式 */
 
-// main{
-//     background-color: gray;
-// }
+main{
+    background-color: gray;
+}
 
 .padding-style{
     padding-top: 100px;
@@ -355,6 +355,15 @@
             padding-bottom: 32px;
     }
 }
+
+.card {
+  border: 1px solid transparent;
+  transition: border-color .2s;
+  &:hover {
+    border-color: $primary-400;
+  }
+}
+
 
 
 /* 聯絡資訊區塊 */
