@@ -1,22 +1,22 @@
 /* 毛玻璃 Navbar */
 
 // Navbar定位
-.navbar{
+.container .navbar{
   width: 100%; 
-  position: absolute;
+  position: fixed;
   top: 40px;
   right: auto;
   left: auto;
-  z-index: 1;
+  z-index: 2;
 }
 
-@media (max-width: 576px) {
-  .navbar {
-    top: 20px;
-    left: 0px;
-    right: 0px;
-    width: auto;
-  }
+@media (max-width: 992px) {
+  .container .navbar {
+      top: 20px;
+      left: 0px;
+      right: 0px;
+      width: 95%;
+    }
 }
 
 // 毛玻璃效果 Navbar
