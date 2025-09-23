@@ -18,8 +18,8 @@
 <body>
     
     <!-- 背景輪播區塊 -->  
-    <!-- <header id="carouselExampleCaptions" class="carousel slide">
-        
+    <header id="carouselExampleCaptions" class="carousel slide">
+        <!-- 輪播圖指示器 -->
         <div class="carousel-indicators">
           <div class="container d-flex justify-content-center justify-content-lg-start">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -27,7 +27,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
         </div>
-        
+        <!-- 背景圖片 -->
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="carousel-caption img-slide1">
@@ -89,7 +89,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-    </header> -->
+    </header>
 
     <main class="padding-style">
       <!-- 全方位專注健身服務 -->
@@ -108,6 +108,7 @@
           </div>
         </div>
       </section>
+
       <!-- 卡片區 -->
       <section class="service-cards">
         <div class="container card-gap">
@@ -186,106 +187,124 @@
           
         </div>
       </section>
+
       <!-- 聯絡資訊 -->
-       <section class="info-about">
-        <div class="container">
-          <!-- About-Us -->
-          <div class="about-us p-7 p-lg-9">
-            <div class="about-us-head">
-              <span class="fs-8 fs-lg-7 text-primary-400 mb-6 mb-lg-3">/  About Us  /</span>
-              <h5 class="fs-3 fs-lg-1 text-white mb-7 mb-lg-8">關於我們</h5>
-            </div>
-            <div class="about-us-body mt-7 mt-lg-8">
-              <p class="fs-7 fs-lg-4 fw-bold  text-white mb-6">我們是專注健身</p>
-              <p class="fs-7 fs-lg-4 fw-bold  text-white mb-4">專注目標肌群，感受動作完整過程，強化專屬肌肉記憶。</p>
-              <div>
-                  <p class="mb-2 mb-lg-3">我們期許每一位來到這裡的健身夥伴，在每一次訓練之前，先確認目標肌群，知道自己這個動作，是要用哪一塊肌肉來完成，避免不必要的代償與受傷。</p>
-                  <p class="mb-2 mb-lg-3">我們相信「專注」，是成為資深健身者的關鍵技能。當你能夠把大腦的專注力完全投注在肌肉感受上，就能產生更強的肌肉記憶，讓神經連結變得敏銳而強化，進一步提升動作效率、減少代償、減少受傷風險、達到肌肉深層刺激。</p>
-                  <p>這就是我們品牌所倡導的健身哲學，透過「專注力」，完成身體與大腦的雙向進化。訓練的不只是身體，更是專注力與內在覺察力。」</p>
-              </div>
+      <section class="info-about">
+      <div class="container">
+        <!-- About-Us -->
+        <div class="about-us p-7 p-lg-9">
+          <div class="about-us-head">
+            <span class="fs-8 fs-lg-7 text-primary-400 mb-6 mb-lg-3">/  About Us  /</span>
+            <h5 class="fs-3 fs-lg-1 text-white mb-7 mb-lg-8">關於我們</h5>
+          </div>
+          <div class="about-us-body mt-7 mt-lg-8">
+            <p class="fs-7 fs-lg-4 fw-bold  text-white mb-6">我們是專注健身</p>
+            <p class="fs-7 fs-lg-4 fw-bold  text-white mb-4">專注目標肌群，感受動作完整過程，強化專屬肌肉記憶。</p>
+            <div>
+                <p class="mb-2 mb-lg-3">我們期許每一位來到這裡的健身夥伴，在每一次訓練之前，先確認目標肌群，知道自己這個動作，是要用哪一塊肌肉來完成，避免不必要的代償與受傷。</p>
+                <p class="mb-2 mb-lg-3">我們相信「專注」，是成為資深健身者的關鍵技能。當你能夠把大腦的專注力完全投注在肌肉感受上，就能產生更強的肌肉記憶，讓神經連結變得敏銳而強化，進一步提升動作效率、減少代償、減少受傷風險、達到肌肉深層刺激。</p>
+                <p>這就是我們品牌所倡導的健身哲學，透過「專注力」，完成身體與大腦的雙向進化。訓練的不只是身體，更是專注力與內在覺察力。」</p>
             </div>
           </div>
-          <!-- Contact-Us -->
-          <div class="contact-us p-7 p-lg-9">
-            <div class="contact-us-head">
-              <span class="fs-8 fs-lg-7 text-primary-400 mb-6 mb-lg-3">/  Contact Us  /</span>
-              <h5 class="fs-3 fs-lg-1 text-white mb-7 mb-lg-8">聯絡我們</h5>
-            </div>
-            <form class="contact-us-body mt-7 mt-lg-8">
-              <!-- 輸入姓名&電話 -->
-              <div class="input-info d-flex flex-column flex-lg-row">
-                <div>
-                  <label for="exampleInputName" class="form-label fs-8 fw-bold text-white">姓名<span class="start-red">*</span></label>
-                  <input type="text" class="form-control" id="exampleInputName" placeholder="請輸入姓名">
-                </div>
-                <div>
-                  <label for="exampleInputPhone" class="form-label fs-8 fw-bold text-white">聯絡電話<span class="start-red">*</span></label>
-                  <input type="tel" class="form-control" id="exampleInputPhone" placeholder="請輸入電話號碼">
-                </div>
-              </div>
-              <!-- 選擇時間 -->
-              <div class="input-time mb-6 mb-lg-7">
-                <p class="form-label fs-8 fw-bold text-white">方便聯絡時間<span class="start-red">*</span></p>
-                <div class="d-flex flex-column flex-lg-row column-gap-2 mb-lg-2">
-                  <div class="form-check m-0 pt-6 pb-6 w-100">
-                    <input class="form-check-input" type="radio" name="time" id="flexRadioDefault1">
-                    <label class="form-check-label fs-6 fw-medium text-white text-nowrap" for="flexRadioDefault1">
-                      上午 10 點 ～ 中午 12 點
-                    </label>
-                  </div>
-                  <div class="form-check m-0 pt-6 pb-6 w-100">
-                    <input class="form-check-input" type="radio" name="time" id="flexRadioDefault2">
-                    <label class="form-check-label fs-6 fw-medium text-white" for="flexRadioDefault2">
-                      中午 12 點 ～ 下午 1 點
-                    </label>
-                  </div>
-                </div>
-                <div class="d-flex flex-column flex-lg-row column-gap-2">
-                  <div class="form-check m-0 pt-6 pb-6 w-100">
-                    <input class="form-check-input" type="radio" name="time" id="flexRadioDefault3">
-                    <label class="form-check-label fs-6 fw-medium text-white" for="flexRadioDefault3">
-                      下午 1 點 ～ 下午 2 點
-                    </label>
-                  </div>
-                  <div class="form-check m-0 pt-6 pb-6 w-100">
-                    <input class="form-check-input" type="radio" name="time" id="flexRadioDefault4">
-                    <label class="form-check-label fs-6 fw-medium text-white" for="flexRadioDefault4">
-                      傍晚 6 點 ～ 傍晚 9 點
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <!-- 選擇方案 -->
-              <div class="input-plan mb-6 mb-lg-9">
-                <p class="form-label fs-8 fw-bold text-white">諮詢服務<span class="smaller-gray">（可複選）</span></p>
-                <div class="d-flex flex-column flex-lg-row justify-content-between">
-                  <div class="form-check m-0 pt-6 pb-6 pe-104">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label fs-6 fw-medium text-white" for="exampleCheck1">私人教練</label>
-                  </div>
-                  <div class="form-check m-0 pt-6 pb-6 pe-104">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                    <label class="form-check-label fs-6 fw-medium text-white" for="exampleCheck2">團體課程</label>
-                  </div>
-                  <div class="form-check m-0 pt-6 pb-6 pe-104">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck4">
-                    <label class="form-check-label fs-6 fw-medium text-white" for="exampleCheck4">飲食規劃</label>
-                  </div>
-                  <div class="form-check m-0 pt-6 pb-6 pe-104">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck5">
-                    <label class="form-check-label fs-6 fw-medium text-white" for="exampleCheck5">運動按摩</label>
-                  </div>
-                </div>
-              </div>
-              <!-- 送出表單 -->
-              <button type="submit" class="btn plan-btn">送出表單</button>
-
-            </form>
-          </div>
-
         </div>
-       </section>
-              
+        <!-- Contact-Us -->
+        <div class="contact-us p-7 p-lg-9">
+          <div class="contact-us-head">
+            <span class="fs-8 fs-lg-7 text-primary-400 mb-6 mb-lg-3">/  Contact Us  /</span>
+            <h5 class="fs-3 fs-lg-1 text-white mb-7 mb-lg-8">聯絡我們</h5>
+          </div>
+          <form class="contact-us-body mt-7 mt-lg-8">
+            <!-- 輸入姓名&電話 -->
+            <div class="input-info d-flex flex-column flex-lg-row">
+              <div>
+                <label for="exampleInputName" class="form-label fs-8 fw-bold text-white">姓名<span class="start-red">*</span></label>
+                <input type="text" class="form-control" id="exampleInputName" placeholder="請輸入姓名">
+              </div>
+              <div>
+                <label for="exampleInputPhone" class="form-label fs-8 fw-bold text-white">聯絡電話<span class="start-red">*</span></label>
+                <input type="tel" class="form-control" id="exampleInputPhone" placeholder="請輸入電話號碼">
+              </div>
+            </div>
+            <!-- 選擇時間 -->
+            <div class="input-time mb-6 mb-lg-7">
+              <p class="form-label fs-8 fw-bold text-white">方便聯絡時間<span class="start-red">*</span></p>
+              <div class="d-flex flex-column flex-lg-row column-gap-2 mb-lg-2">
+                <div class="form-check m-0 pt-6 pb-6 w-100">
+                  <input class="form-check-input" type="radio" name="time" id="flexRadioDefault1">
+                  <label class="form-check-label fs-6 fw-medium text-white text-nowrap" for="flexRadioDefault1">
+                    上午 10 點 ～ 中午 12 點
+                  </label>
+                </div>
+                <div class="form-check m-0 pt-6 pb-6 w-100">
+                  <input class="form-check-input" type="radio" name="time" id="flexRadioDefault2">
+                  <label class="form-check-label fs-6 fw-medium text-white" for="flexRadioDefault2">
+                    中午 12 點 ～ 下午 1 點
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-lg-row column-gap-2">
+                <div class="form-check m-0 pt-6 pb-6 w-100">
+                  <input class="form-check-input" type="radio" name="time" id="flexRadioDefault3">
+                  <label class="form-check-label fs-6 fw-medium text-white" for="flexRadioDefault3">
+                    下午 1 點 ～ 下午 2 點
+                  </label>
+                </div>
+                <div class="form-check m-0 pt-6 pb-6 w-100">
+                  <input class="form-check-input" type="radio" name="time" id="flexRadioDefault4">
+                  <label class="form-check-label fs-6 fw-medium text-white" for="flexRadioDefault4">
+                    傍晚 6 點 ～ 傍晚 9 點
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- 選擇方案 -->
+            <div class="input-plan mb-6 mb-lg-9">
+              <p class="form-label fs-8 fw-bold text-white">諮詢服務<span class="smaller-gray">（可複選）</span></p>
+              <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <div class="form-check m-0 pt-6 pb-6 pe-104">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label fs-6 fw-medium text-white" for="exampleCheck1">私人教練</label>
+                </div>
+                <div class="form-check m-0 pt-6 pb-6 pe-104">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                  <label class="form-check-label fs-6 fw-medium text-white" for="exampleCheck2">團體課程</label>
+                </div>
+                <div class="form-check m-0 pt-6 pb-6 pe-104">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                  <label class="form-check-label fs-6 fw-medium text-white" for="exampleCheck4">飲食規劃</label>
+                </div>
+                <div class="form-check m-0 pt-6 pb-6 pe-104">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                  <label class="form-check-label fs-6 fw-medium text-white" for="exampleCheck5">運動按摩</label>
+                </div>
+              </div>
+            </div>
+            <!-- 送出表單 -->
+            <button type="submit" class="btn plan-btn">送出表單</button>
+          </form>
+        </div>
+      </div>
+      </section>
+
+      <!-- 地圖 -->
+      <section class="info-map">
+        <div class="container">
+          <div class="map position-relative">
+            <div class="location p-9 position-absolute top-50 start-0 translate-middle-y">
+              <div class="mb-9">
+                <p class="fs-7 fw-bold text-primary-400 mb-3">/  Location  /</p>
+                <h5 class="fs-1 fw-bold text-white">專注健身｜忠孝店</h5>
+              </div>
+              <div>
+                <p class="fs-7 mb-6">02-1888-2878 #9</p>
+                <p class="fs-7 mb-6">FocusFitness@gym.io</p>
+                <p class="fs-7">台北市中正區忠孝東路198巷10-2號 B1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <%- include('./layout/footer'); -%>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

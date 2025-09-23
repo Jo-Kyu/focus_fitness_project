@@ -195,9 +195,9 @@
 
 /* main 樣式 */
 
-// main{
-//     background-color: gray;
-// }
+main{
+    background-color: gray;
+}
 
 .padding-style{
     padding-top: 100px;
@@ -348,7 +348,7 @@
 
 .info-about{
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 64px;
 }
 
 .info-about .container {
@@ -529,4 +529,36 @@ main .form-control[type="tel"] {
 .plan-btn:focus{
     color: $gray-900;
     background-color: $primary-400;
+}
+
+/* 聯絡資訊區塊 */
+
+// 地圖基礎設定
+
+.map{
+  height:772px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url("https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E5%9C%B0%E5%9C%96/map-dark.png?raw=true");
+}
+
+@media (max-width: 992px) {
+    .map{
+    height:450px;
+  }
+}
+
+.location{
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 2px 3px 5.5px 0px rgba(255, 255, 255, 0.25) inset;
+  box-shadow: -6px -6px 4px 0px rgba(127, 127, 127, 0.08) inset;
+
 }
