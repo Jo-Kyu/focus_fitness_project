@@ -249,31 +249,3 @@ footer .form-control[type="email"] {
         margin-bottom: 12px;
     }
 }
-
-// 返回頂部按鈕
-.back-top{
-    padding-right: 120px;
-    padding-bottom: 118px;
-}
-
-@media(max-width:992px){
-    .back-top{
-        padding-right: 24px;
-        padding-bottom: 24px;
-    }
-    .back-top svg{
-        width: 44px;
-        height: 44px;
-    }
-}
-
-.arrow-up {
-    &:hover {
-        .back-top-bg {
-            fill-opacity: 0.3;
-        }
-        .back-top-arrow {
-            fill: $primary-400;
-        }
-    }
-}
