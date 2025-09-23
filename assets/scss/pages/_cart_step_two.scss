@@ -1,0 +1,25 @@
+.must{
+  color: #FF514F;
+}
+
+main .form-control[type=number],
+main .form-control[type=email]{
+  flex: 1; /* 讓兩個輸入框平均分配可用空間 */
+  min-width: 0; /* 允許輸入框隨 flexbox 壓縮 */
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #808080;
+}
+main .form-control[type=number]::placeholder,
+main .form-control[type=email]::placeholder {
+  font-size: 14px;
+  color: #969696;
+  opacity: 1;
+}
+main .form-control[type=number]:focus,
+main .form-control[type=email]:focus {
+  color: #ffffff;
+  border-color: #e1ff00;
+  box-shadow: none;
+  background-color: transparent;
+}
