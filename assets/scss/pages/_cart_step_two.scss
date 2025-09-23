@@ -3,7 +3,7 @@
 }
 
 main .form-control[type=number],
-main .form-control[type=email],{
+main .form-control[type=email]{
   flex: 1; /* 讓兩個輸入框平均分配可用空間 */
   min-width: 0; /* 允許輸入框隨 flexbox 壓縮 */
   color: #ffffff;
