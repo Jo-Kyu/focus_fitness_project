@@ -646,6 +646,7 @@ main .form-control[type="tel"] {
   top: 227.5px;
   left: 60px;
   right: auto;
+  z-index: 20;
 }
 
 .map-icon{
@@ -671,18 +672,14 @@ main .form-control[type="tel"] {
 /* 回到頂部按鈕 */
 
 .back-top{
-    // padding-right: 120px;
-    // padding-bottom: 118px;
     position:fixed;
     bottom: 64px;
     right: 120px;
-    z-index: 1;
+    z-index: 10;
 }
 
 @media(max-width:1200px){
     .back-top{
-        // padding-right: 24px;
-        // padding-bottom: 24px;
         bottom: 24px;
         right: 24px;
     }
