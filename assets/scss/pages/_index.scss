@@ -206,7 +206,7 @@
 
 @media (max-width:992px) {
         .padding-style{
-            padding-top: 100px;
+            padding-top: 32px;
             padding-bottom: 20px;
     }
 }
@@ -671,18 +671,18 @@ main .form-control[type="tel"] {
 /* 回到頂部按鈕 */
 
 .back-top{
-    padding-right: 120px;
-    padding-bottom: 118px;
+    // padding-right: 120px;
+    // padding-bottom: 118px;
     position:fixed;
     bottom: 64px;
     right: 120px;
     z-index: 1;
 }
 
-@media(max-width:1400px){
+@media(max-width:1200px){
     .back-top{
-        padding-right: 24px;
-        padding-bottom: 24px;
+        // padding-right: 24px;
+        // padding-bottom: 24px;
         bottom: 24px;
         right: 24px;
     }
