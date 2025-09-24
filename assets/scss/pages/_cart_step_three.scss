@@ -1,0 +1,67 @@
+// 購物車狀態
+
+.cart-status{
+    margin-top: 203px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+    .cart-status{
+        margin-top: 108px;
+        margin-bottom: 40px;
+    }
+}
+
+// 提醒事項
+
+.notes-info{
+    padding-top: 48px;
+    padding-bottom: 80px;
+    padding-right: 236px;
+    padding-left: 236px;
+    background-color: #31374D;
+    border-radius: 16px;
+}
+
+@media (max-width: 992px) {
+    .notes-info{
+        padding-top: 32px;
+        padding-bottom: 48px;
+        padding-right: 39px;
+        padding-left: 39px;
+    }
+}
+
+// 繼續購物或查看訂單
+
+.order-buy{
+    margin-bottom: 160px;
+}
+
+@media (max-width: 992px) {
+    .order-buy{
+        margin-bottom: 40px;
+    }
+}
+
+.order-buy-btn{
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 12PX;
+    color: white;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 228, 0.2); 
+    padding: 16px 80px;
+}
+
+@media (max-width: 992px) {
+    .order-buy-btn{
+        padding: 16px 40px;
+    }
+}
+
+.order-buy-btn:hover,
+.order-buy-btn:focus{
+    background-color: $primary-400;
+    color: $gray-900;
+}
