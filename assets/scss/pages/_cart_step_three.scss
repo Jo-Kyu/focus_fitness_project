@@ -65,3 +65,38 @@
     background-color: $primary-400;
     color: $gray-900;
 }
+
+/* 回到頂部按鈕 */
+
+.back-top{
+    padding-right: 120px;
+    padding-bottom: 118px;
+    position:fixed;
+    bottom: 64px;
+    right: 120px;
+    z-index: 1;
+}
+
+@media(max-width:1400px){
+    .back-top{
+        padding-right: 24px;
+        padding-bottom: 24px;
+        bottom: 24px;
+        right: 24px;
+    }
+    .back-top svg{
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.arrow-up {
+    &:hover {
+        .back-top-bg {
+            fill-opacity: 0.3;
+        }
+        .back-top-arrow {
+            fill: $primary-400;
+        }
+    }
+}

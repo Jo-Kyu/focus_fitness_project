@@ -13,13 +13,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/scss/all.scss" />
-    <title>首頁</title>
+    <title>完成結帳</title>
   </head>
 <body id="top">
 
     <%- include('./layout/header'); -%>
 
     <main>
+        <!-- 光暈 -->
+      <img
+        style="position: absolute; top: -600px; right: -800px; z-index: -100"
+        src="../assets/images/index_page/光暈/Ellipse 2.svg"
+        alt="光暈"
+      />
+      <img
+        style="position: absolute; bottom: -600px; left: -800px; z-index: -100"
+        src="../assets/images/index_page/光暈/Ellipse 2.svg"
+        alt="光暈"
+      />
       <!-- 購物車步驟  -->
       <section class="cart-status container py-0 px-0 max-w-md-822 max-w-346">
           <ul class="ps-0 mb-0 d-flex justify-content-lg-between justify-content-center">
@@ -145,8 +156,8 @@
       </div>
       <!-- 繼續購物&查看訂單 -->
       <section class="order-buy d-flex justify-content-center">
-        <button type="button" class="btn order-buy-btn me-6 me-lg-3">繼續購物</button>
-        <button type="button" class="btn order-buy-btn">查看訂單</button>
+        <a type="button" class="btn order-buy-btn me-6 me-lg-3" href="http://localhost:5173/focuss_fitness_project/pages/product_list.html#top">繼續購物</a>
+        <a type="button" class="btn order-buy-btn">查看訂單</a>
       </section>
     </main>
     
