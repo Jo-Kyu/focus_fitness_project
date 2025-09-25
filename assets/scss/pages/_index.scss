@@ -1,0 +1,701 @@
+/* 背景輪播區塊 */
+
+//文字設定
+.header-lh-120{
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 5%;
+}
+
+.header-lh-150{
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 5%;
+}
+
+.header-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 5%; 
+}
+
+@media (min-width: 992px) {
+  .header-title {
+    font-size: 72px;
+  }
+}
+
+.header-sub-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 5%; 
+}
+
+@media (min-width: 992px) {
+  .header-sub-title {
+    font-size: 40px;
+  }
+}
+
+.header-notes {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 5%;
+    color: $gray-200; 
+}
+
+@media (min-width: 992px) {
+  .header-notes {
+    font-size: 18px;
+  }
+}
+
+// 文章定位&輪播背景
+
+.carousel-caption {
+  position: relative; /* 移除絕對定位 */
+  // top: auto;
+  // bottom: auto;
+  // transform: none;
+  padding-top: 389px;
+  padding-bottom: 313px;
+  // text-align: left;
+}
+
+@media (max-width:992px) {
+  .carousel-caption {
+    padding-top: 306px;
+    padding-bottom: 258px;
+  }
+  
+}
+
+.img-slide1,
+.img-slide2,
+.img-slide3 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.img-slide1 {
+  background-image: url("https://github.com/Jo-Kyu/focuss_fitness_project/blob/dev/assets/images/index_page/banner/Home%20Page1.jpg?raw=true");
+}
+
+.img-slide2 {
+  background-image: url("https://github.com/Jo-Kyu/focuss_fitness_project/blob/dev/assets/images/index_page/banner/Home%20Page2.jpg?raw=true");
+}
+
+.img-slide3 {
+  background-image: url("https://github.com/Jo-Kyu/focuss_fitness_project/blob/dev/assets/images/index_page/banner/Home%20Page3.jpg?raw=true");
+}
+
+// 首頁按鈕
+
+.serve-btn{
+    color: white;
+    font-size: $h7-font-size;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 5%;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 228, 0.2); 
+    border-radius: 12px;
+    padding: 16px 40px;
+}
+
+@media (max-width: 992px) {
+  .serve-btn {
+    font-size: $h6-font-size;
+    background-color: rgba(255, 255, 228, 0.2); 
+    padding: 8px 24px;
+    align-self: start;
+  }
+}
+
+.serve-btn:hover,
+.serve-btn:focus{
+    color: $gray-900;
+    background-color: $primary-400;
+}
+
+// 輪播圖指示器
+
+.carousel-indicators{
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .carousel-indicators {
+    margin-bottom: 40px;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(128, 128, 128, 1); 
+    width: 20px;
+    height: 8px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 228); 
+}
+
+.carousel-indicators [data-bs-target]:hover {
+    width: 50px; 
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    width: 30px;      
+    background-color: $primary-400; 
+    }
+
+// 上下頁箭頭
+
+.carousel-control-prev{
+  width: 48px;
+  height: 104px;
+  padding: 40px 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  border-radius: 0 16px 16px 0;
+}
+
+.carousel-control-next{
+  width: 48px;
+  height: 104px;
+  padding: 40px 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  border-radius: 16px 0 0 16px;
+}
+
+.carousel-control-prev:hover{
+    color: $gray-900;
+    backdrop-filter: blur(30px);
+    transition: all 0.3s ease;
+}
+
+.carousel-control-next:hover{
+    color: $gray-900;
+    backdrop-filter: blur(30px);
+    transition: all 0.3s ease;
+
+}
+
+/*-----------------------------------------*/
+
+/* main 樣式 */
+
+// main{
+//     background-color: gray;
+// }
+
+.padding-style{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width:992px) {
+        .padding-style{
+            padding-top: 32px;
+            padding-bottom: 20px;
+    }
+}
+
+// 背景光暈
+
+
+
+/* 全方位專注健身服務區塊 */
+
+.sub-topics{
+    color: $primary-400;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+@media (max-width:992px) {
+        .sub-topics{
+            font-size: 14px;
+    }
+}
+
+/* 卡片區塊 */
+
+.service-cards{
+    padding-top: 64px;
+    padding-bottom: 100px;
+}
+
+@media (max-width:992px) {
+        .service-cards{
+            padding-top: 32px;
+            padding-bottom: 32px;
+    }
+}
+
+// 設定card-body寬高
+
+.card-body {
+  max-width: 391px;    /* 文字區最大寬 */
+  max-height: 550px;   /* 最高不超過圖片 */
+  width: 100%;         /* 小於391時可自動縮 */
+  margin: 0;     
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* 垂直置中內容（可選） */
+}
+
+@media (max-width: 992px) {
+  .card-body{
+    max-width: 100%; 
+    max-height: 100%;
+  }
+}
+
+// 卡片按鈕
+
+.card-btn{
+    max-width: 155px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 40px;
+    border: 0;
+    background: rgba(255, 255, 228, 0.2);
+    backdrop-filter: blur(30px);
+}
+
+@media (max-width: 992px) {
+  .card-btn{
+    max-width: 115px;
+    font-size: 16px;
+    padding: 8px 24px;
+  }
+}
+
+.btn.card-btn:hover{
+    color: $gray-900;
+    background-color: $primary-400;
+}
+
+.btn.card-btn:active,
+.btn.card-btn:focus {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+// 設定卡片img大小
+
+.card-img-wrapper {
+  max-width: 873px;
+  max-height: 550px;
+  width: 100%;           /* 保持自適應 */
+  height: 100%;
+  margin: 0;        
+  border-radius: 16px;   /* 外層也要圓角，避免 img 溢出 */
+  overflow: hidden;      /* 裁切超出的圖片 */
+  position: relative;    /* 保證 cube-num 絕對定位正常 */
+}
+
+@media (max-width: 992px) {
+  .card-img-wrapper {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.card-img-service {
+  width: 100%;
+  height: 100%;          /* 撐滿 wrapper */
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+// 數字方塊設定
+
+.number-cube{
+    color: #171A29;
+    font-size: 28px;
+    font-weight: 700;
+    width: 68px;
+    height: 66px;
+    padding: 16px;
+    border-radius: 16px 0 16px 0;
+    background-color: $primary-400;
+    position: absolute;
+}
+
+// 卡片之間的間距
+
+.card-gap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
+}
+
+/* 熱門商品區塊 */
+
+.best-sell{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width:992px) {
+        .best-sell{
+            padding-top: 32px;
+            padding-bottom: 32px;
+    }
+}
+
+.card {
+  border: 1px solid transparent;
+  transition: border-color .2s;
+  &:hover {
+    border-color: $primary-400;
+  }
+}
+
+/* 教練團隊 */
+
+.coachs{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #232733;
+}
+
+@media (max-width: 992px) {
+    .coachs{
+      padding-top: 32px;
+      padding-bottom: 68px;
+  }
+}
+
+// Swiper輪播
+
+.swiper-slide {
+  width: 100%; 
+  flex-shrink: 0;
+}
+
+@media (min-width: 375px) {
+  .swiper-slide {
+    width: 395px;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper-slide {
+    width: 565px;
+  }
+}
+
+// 教練名牌
+
+.coach-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  backdrop-filter: blur(30px);
+  box-shadow: 2px 3px 5.5px 0px #FFFFFF40 inset,
+              -6px -6px 4px 0px #7F7F7F14 inset;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 12px; 
+  left: 15px;
+  z-index: 1; 
+}
+
+/* 聯絡資訊區塊 */
+
+// info-about基礎設定
+
+.info-about{
+    padding-top: 100px;
+    padding-bottom: 64px;
+}
+
+.info-about .container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    column-gap: 64px;
+}
+
+.about-us, 
+.contact-us {
+    // flex: 1;            
+    // max-width: 616px;   
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+
+    flex: 1;            
+    // max-width: 616px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // align-self: stretch;
+}
+
+@media (max-width: 992px) {
+  .info-about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .info-about .container {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+
+  .about-us, 
+  .contact-us {
+    max-width: 100%;
+  }
+}
+
+// About-Us
+
+.about-us{
+  // max-width: 616px;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  border: 1px solid $primary-400;
+  background: $blue-800;
+}
+
+.about-us-head{
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 1px solid $primary-400;
+}
+
+.about-us-body{
+  color: $gray-200;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 5%;
+}
+
+@media (max-width:992px) {
+        .about-us-body{
+          font-size: 16px;
+          font-weight: 500;
+    }
+}
+
+// Contact-Us
+
+.contact-us{
+  // max-width: 616px;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: $blue-600;
+}
+
+.contact-us-head{
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 1px solid $gray-500;
+}
+
+
+// input-info
+
+.input-info{
+  column-gap: 38px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    .input-info{
+      column-gap: 0;
+      row-gap: 12px;
+      margin-bottom: 12px;
+    }
+}
+
+.start-red{
+  color: $danger-normal;/* 紅色米字號 */
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.smaller-gray{
+  color: $gray-500;/* 灰色小字 */
+  font-size: 14px;
+  font-weight: 400;
+}
+
+main .form-control[type="text"] ,
+main .form-control[type="tel"] {
+    flex: 1; /* 讓兩個輸入框平均分配可用空間 */
+    min-width: 0; /* 允許輸入框隨 flexbox 壓縮 */
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $gray-500;
+
+    &::placeholder {
+        font-size: 14px;
+        color: $gray-400;
+        opacity: 1;
+    }
+
+    &:focus {
+        color: $white;
+        border-color: $primary-400;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 992px) {
+  main .form-control[type="text"] {
+    width: 100%; /* 讓輸入框自動填滿可用寬度 */
+  }
+  main .form-control[type="tel"] {
+    width: 100%; /* 讓輸入框自動填滿可用寬度 */
+  }
+}
+
+// 送出表單
+
+.plan-btn{
+    color: white;
+    font-size: $h7-font-size;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 5%;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 228, 0.2); 
+    border-radius: 12px;
+    padding: 16px 40px;
+}
+
+@media (max-width: 992px) {
+  .plan-btn {
+    font-size: $h6-font-size;
+    background-color: rgba(255, 255, 228, 0.2); 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%; 
+    align-self: stretch;
+  }
+}
+
+.plan-btn:hover,
+.plan-btn:focus{
+    color: $gray-900;
+    background-color: $primary-400;
+}
+
+/* 聯絡資訊區塊 */
+
+// 地圖基礎設定
+
+.map{
+  height:772px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url("https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E5%9C%B0%E5%9C%96/map-dark.png?raw=true");
+  position: relative;
+}
+
+@media (max-width: 992px) {
+    .map{
+    height:450px;
+  }
+}
+
+// 地點設定說明
+
+.location{
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  padding: 12px 24px;
+  box-shadow: 2px 3px 5.5px 0px #ffffff40 inset,
+              -6px -6px 4px 0px #7f7f7f14 inset;
+  position: absolute;
+  top: 227.5px;
+  left: 60px;
+  right: auto;
+  z-index: 20;
+}
+
+.map-icon{
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+@media (max-width: 992px) {
+    .map-icon{
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+
+    .location{
+      top: 12px;
+      left: 20px;
+      right: 20px;
+    }
+}
+
+/* 回到頂部按鈕 */
+
+.back-top{
+    position:fixed;
+    bottom: 64px;
+    right: 120px;
+    z-index: 10;
+}
+
+@media(max-width:1200px){
+    .back-top{
+        bottom: 24px;
+        right: 24px;
+    }
+    .back-top svg{
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.arrow-up {
+    &:hover {
+        .back-top-bg {
+            fill-opacity: 0.3;
+        }
+        .back-top-arrow {
+            fill: $primary-400;
+        }
+    }
+}

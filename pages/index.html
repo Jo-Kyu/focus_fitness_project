@@ -12,21 +12,568 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../assets/scss/all.scss" />
-    <title>index</title>
+    <title>首頁</title>
   </head>
-  <body>
+<body id="top">
     <%- include('./layout/header'); -%>
+    <!-- 背景輪播區塊 -->  
+    <header id="carouselExampleCaptions" class="carousel slide">
+        <!-- 輪播圖指示器 -->
+        <div class="carousel-indicators">
+          <div class="container d-flex justify-content-center justify-content-lg-start">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+        <!-- 背景圖片 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption img-slide1">
+                  <div class="container">
+                    <div class="d-flex flex-column align-items-start row-gap-6 row-gap-lg-4 mb-6 mb-lg-4">
+                      <h1 class="header-title text-start text-nowrap">你的健身全配站<br>
+                          訓練與裝備一次到位
+                      </h1>
+                      <h2 class="header-sub-title text-nowrap">一站開練，零煩惱</h2>
+                      <p class="header-notes text-nowrap">開啟一場改變大腦思惟與理想體態的奇幻旅程</p>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row row-gap-3 column-gap-lg-3">
+                      <a class="btn serve-btn text-nowrap" type="button" href="http://localhost:5173/focuss_fitness_project/pages/product_list.html#">立即購物</a>
+                      <a class="btn serve-btn text-nowrap" type="button">預約服務</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption img-slide2">
+                  <div class="container">
+                    <div class="d-flex flex-column align-items-start row-gap-6 row-gap-lg-4 mb-6 mb-lg-4">
+                      <h1 class="header-title text-start">專屬計畫<br>
+                          專業教練全程陪練
+                      </h1>
+                      <h2 class="header-sub-title">量身打造，科學訓練</h2>
+                      <p class="header-notes">無論新手還是進階，專業團隊助你達標</p>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row row-gap-3 column-gap-lg-3">
+                      <a class="btn serve-btn text-nowrap" type="button" href="http://localhost:5173/focuss_fitness_project/pages/product_list.html#">立即購物</a>
+                      <a class="btn serve-btn" type="button">預約服務</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption img-slide3">
+                  <div class="container">
+                    <div class="d-flex flex-column align-items-start row-gap-6 row-gap-lg-4 mb-6 mb-lg-4">
+                      <h1 class="header-title text-start">嚴選健身裝備<br>
+                          讓訓練事半功倍
+                      </h1>
+                      <h2 class="header-sub-title">專業品質，全面提升</h2>
+                      <p class="header-notes">從重訓到瑜珈，配齊你的每一次健身</p>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row row-gap-3 column-gap-lg-3">
+                      <a class="btn serve-btn text-nowrap" type="button" href="http://localhost:5173/focuss_fitness_project/pages/product_list.html#">立即購物</a>
+                      <a class="btn serve-btn" type="button">預約服務</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <button class="d-none d-lg-block carousel-control-prev top-50 translate-middle-y" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="d-none d-lg-block carousel-control-next top-50 translate-middle-y" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </header>
 
-    <h1
-      class="index-title text-primary-500 text-md-info-light fs-9 fs-md-1 display-lg-1"
-    >
-      您的vite專案，運行正常。有套用變數顏色。文字斷點，包含fs-*和display-*。拖拉螢幕寬度產生斷點。
-    </h1>
-    <img src="../assets/images/首頁/教練/coach-1.jpg" alt="" />
+    <main class="padding-style position-relative overflow-hidden">
+      <!-- 光暈 -->
+      <img
+        style="position: absolute; top: -650px; left: -900px; z-index: -100"
+        src="https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/bc9a888e21e0148db11348e3dece3ad6595f8262/assets/images/index_page/%E5%85%89%E6%9A%88/Ellipse%202.svg"
+        alt="光暈"
+      />
+      <img
+        style="position: absolute; top: -1000px; right: -1000px; z-index: -100"
+        src="https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/bc9a888e21e0148db11348e3dece3ad6595f8262/assets/images/index_page/%E5%85%89%E6%9A%88/Ellipse%204.svg"
+        alt="光暈"
+      />
+      <img
+        style="position: absolute; top: 2000px; right: -1000px; z-index: -100"
+        src="https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/bc9a888e21e0148db11348e3dece3ad6595f8262/assets/images/index_page/%E5%85%89%E6%9A%88/Ellipse%203.svg"
+        alt="光暈"
+      />
+      <img
+        style="position: absolute; top: 5000px; left: -900px; z-index: -100"
+        src="https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/bc9a888e21e0148db11348e3dece3ad6595f8262/assets/images/index_page/%E5%85%89%E6%9A%88/Ellipse%202.svg"
+        alt="光暈"
+      />
+      
+      <!-- 全方位專注健身服務 -->
+      <section class="topics">
+        <div class="container">
+          <div class="d-flex flex-column justify-content-center align-items-center text-center border-bottom border-gray-500">
+            <p class="sub-topics mb-6 mb-lg-3">/  Various Focus Service  /</p>
+            <h3 class="fs-3 fs-lg-1 text-gray-950 fw-bold mb-6 mb-lg-3">全方位專注健身服務</h3>
+            <p class="fs-7 fs-lg-4 text-gray-950 mb-3 mb-lg-8 text-center">專注目標肌群，感受動作完整過程<span class="d-none d-lg-inline">，</span><br class="d-block d-lg-none">強化專屬肌肉記憶。</p>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <p class="text-center mt-3 mt-lg-8">
+              當你開始投入運動，每一次流汗都是挑戰極限、超越自我的契機。你會從懷疑到堅定，從拖延到自律，身心同步成長。<br class="d-none d-lg-block">
+              這段旅程，將引領你走向理想的體態與更強大的內在力量，讓自信與健康成為生活的一部分。
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <!-- 卡片區 -->
+      <section class="service-cards">
+        <div class="container card-gap">
+
+          <div class="card d-flex flex-column flex-lg-row justify-content-between bg-transparent border-0">
+            <div class="card-body order-1 order-lg-0 p-0">
+              <h5 class="card-title fs-5 fs-lg-10 fw-bold text-primary-400 mb-6 mb-lg-8">專項功能訓練</h5>
+              <p class="card-text fs-8 fs-lg-5 fw-normal text-gray-950 mb-6 mb-lg-8">專項功能訓練著重提升身體協調性、穩定性與運動表現。透過針對日常動作模式與運動需求設計的課程，強化核心控制、關節靈活度及肌群協作。每一動作皆引導學員專注目標肌群，減少代償，打造深層肌肉記憶，讓身體在各種情境下展現精準與高效的表現。</p>
+              <a href="javascript:void(0)" class="btn card-btn text-nowrap">立即購物</a>
+            </div>
+            <div class="card-img-wrapper order-0 order-lg-1 position-relative mb-2 mb-lg-0">
+              <img class="card-img-top card-img-service" src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE/%E5%B0%88%E9%A0%85%E5%8A%9F%E8%83%BD%E8%A8%93%E7%B7%B4.jpg?raw=true" alt="專項功能訓練">
+              <div class="number-cube position-absolute top-0 start-0">01</div>
+            </div>
+          </div>
+
+          <div class="card d-flex flex-column flex-lg-row justify-content-between bg-transparent border-0">
+            <div class="card-body order-1 order-lg-1 p-0">
+              <h5 class="card-title fs-5 fs-lg-10 fw-bold text-primary-400 mb-6 mb-lg-8">自由重量訓練</h5>
+              <p class="card-text fs-8 fs-lg-5 fw-normal text-gray-950 mb-6 mb-lg-8">自由重量訓練使用槓鈴、啞鈴、壺鈴等器材，提升平衡、協調與神經肌肉控制。透過全身多平面動作，幫助學員專注於肌群發力的細節，建立敏銳的神經連結，強化核心穩定性，並減少不必要的代償與受傷風險，實現功能性與美觀兼備的體態。</p>
+              <a href="javascript:void(0)" class="btn card-btn text-nowrap">立即購物</a>
+            </div>
+            <div class="card-img-wrapper order-0 order-lg-0 position-relative mb-2 mb-lg-0">
+              <img class="card-img-top card-img-service" src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE/%E8%87%AA%E7%94%B1%E9%87%8D%E9%87%8F%E8%A8%93%E7%B7%B4.jpg?raw=true" alt="專項功能訓練">
+              <div class="number-cube position-absolute top-0 start-0">02</div>
+            </div>
+          </div>
+
+          <div class="card d-flex flex-column flex-lg-row justify-content-between bg-transparent border-0">
+            <div class="card-body order-1 order-lg-0 p-0">
+              <h5 class="card-title fs-5 fs-lg-10 fw-bold text-primary-400 mb-6 mb-lg-8">機械式器材訓練</h5>
+              <p class="card-text fs-8 fs-lg-5 fw-normal text-gray-950 mb-6 mb-lg-8">機械式器材以固定軌道提供穩定支撐，適合初學者掌握正確動作路徑，也利於進階者進行高強度肌肉刺激。每次訓練皆讓身體逐步建立高效、安全的動作模式。</p>
+              <a href="javascript:void(0)" class="btn card-btn text-nowrap">立即購物</a>
+            </div>
+            <div class="card-img-wrapper order-0 order-lg-1 position-relative mb-2 mb-lg-0">
+              <img class="card-img-top card-img-service" src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE/%E6%A9%9F%E6%A2%B0%E5%BC%8F%E5%99%A8%E6%9D%90%E8%A8%93%E7%B7%B4.jpg?raw=true" alt="專項功能訓練">
+              <div class="number-cube position-absolute top-0 start-0">03</div>
+            </div>
+          </div>
+
+          <div class="card d-flex flex-column flex-lg-row justify-content-between bg-transparent border-0">
+            <div class="card-body order-1 order-lg-1 p-0">
+              <h5 class="card-title fs-5 fs-lg-10 fw-bold text-primary-400 mb-6 mb-lg-8">私人/團體教練課程</h5>
+              <p class="card-text fs-8 fs-lg-5 fw-normal text-gray-950 mb-6 mb-lg-8">私人與團體教練課程提供個人化訓練規劃與即時動作調整，讓學員在專業指導下熟悉肌肉拉伸與收縮的完整過程。教練結合科學化訓練與覺察力引導，幫助每位健身者逐步進化，從基礎建立到高階挑戰，穩健達成理想體態。</p>
+              <a href="javascript:void(0)" class="btn card-btn text-nowrap">立即購物</a>
+            </div>
+            <div class="card-img-wrapper order-0 order-lg-0 position-relative mb-2 mb-lg-0">
+              <img class="card-img-top card-img-service" src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE/%E5%9C%98%E9%AB%94%E6%95%99%E7%B7%B4%E8%AA%B2%E7%A8%8B.jpg?raw=true" alt="專項功能訓練">
+              <div class="number-cube position-absolute top-0 start-0">04</div>
+            </div>
+          </div>
+
+          <div class="card d-flex flex-column flex-lg-row justify-content-between bg-transparent border-0">
+            <div class="card-body order-1 order-lg-0 p-0">
+              <h5 class="card-title fs-5 fs-lg-10 fw-bold text-primary-400 mb-6 mb-lg-8">運動深層按摩服務</h5>
+              <p class="card-text fs-8 fs-lg-5 fw-normal text-gray-950 mb-6 mb-lg-8">筋膜放鬆專注於釋放緊繃肌群與恢復肌肉彈性，提升關節活動度與動作效率。透過專業手法與輔助設備，引導學員覺察身體張力變化，減少運動後代償與受傷風險，讓訓練與放鬆達到完美平衡，加速身體與大腦的修復進程。</p>
+              <a href="javascript:void(0)" class="btn card-btn text-nowrap">立即購物</a>
+            </div>
+            <div class="card-img-wrapper order-0 order-lg-1 position-relative mb-2 mb-lg-0">
+              <img class="card-img-top card-img-service" src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE/%E9%81%8B%E5%8B%95%E6%B7%B1%E5%B1%A4%E6%8C%89%E6%91%A9%E6%9C%8D%E5%8B%99.jpg?raw=true" alt="專項功能訓練">
+              <div class="number-cube position-absolute top-0 start-0">05</div>
+            </div>
+          </div>
+
+          <div class="card d-flex flex-column flex-lg-row justify-content-between bg-transparent border-0">
+            <div class="card-body order-1 order-lg-1 p-0">
+              <h5 class="card-title fs-5 fs-lg-10 fw-bold text-primary-400 mb-6 mb-lg-8">多元入場方案</h5>
+              <p class="card-text fs-8 fs-lg-5 fw-normal text-gray-950 mb-6 mb-lg-8">多元入場方案提供彈性化選擇，從單次體驗到包月會員，滿足不同訓練需求。搭配線上線下資源整合，學員可依訓練階段選擇最適合自己的方案，無縫銜接自主訓練與團體鍛鍊，實現沉浸式健身體驗，讓專注成為日常習慣。</p>
+              <a href="javascript:void(0)" class="btn card-btn text-nowrap">立即購物</a>
+            </div>
+            <div class="card-img-wrapper order-0 order-lg-0 position-relative mb-2 mb-lg-0">
+              <img class="card-img-top card-img-service" src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE/%E5%A4%9A%E5%85%83%E5%85%A5%E5%A0%B4%E6%96%B9%E6%A1%88.jpg?raw=true" alt="專項功能訓練">
+              <div class="number-cube position-absolute top-0 start-0">06</div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- 熱門商品 -->
+      <section class="best-sell">
+        <div class="container">
+          <div class="d-flex flex-column justify-content-center align-items-center text-center mb-4 mb-lg-11">
+            <p class="sub-topics mb-6 mb-lg-3">/  Hot Product  /</p>
+            <h3 class="fs-3 fs-lg-1 text-gray-950 fw-bold">熱門商品</h3>
+          </div>
+          <!-- 熱門課程 -->
+          <div class="mb-4 mb-lg-11">
+            <div class="best-class d-flex justify-content-between align-items-center mb-2 mb-lg-6">
+              <p class="fs-5 fs-lg-4 fw-bold text-gray-950">熱門課程</p>
+              <a href="javascript:void(0)" class="fs-8 fs-lg-7 fw-bold text-gray-200 text-decoration-underline">
+                查看全部
+              </a>
+            </div>
+            <div class="row flex-nowrap scroll">
+              <!-- 熱門課程卡一 -->
+              <div class="col-10 col-lg-4">
+                <a href="javascript:void(0)">
+                  <div class="card bg-blue-600">
+                    <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E5%95%86%E5%9F%8E/product-5.jpg?raw=true" class="card-img-top" alt="product-5">
+                    <div class="card-body p-7">
+                      <h5 class="card-title fs-5 fs-lg-4 fw-bold text-gray-950 mb-6">單人私人教練</h5>
+                      <p class="card-text fs-5 fs-lg-4 fw-bold text-gray-950">$1,500/堂
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 熱門課程卡二 -->
+              <div class="col-10 col-lg-4">
+                <a href="javascript:void(0)">
+                  <div class="card bg-blue-600">
+                    <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E5%95%86%E5%9F%8E/product-7.jpg?raw=true" class="card-img-top" alt="product-7">
+                    <div class="card-body p-7">
+                      <h5 class="card-title fs-5 fs-lg-4 fw-bold text-gray-950 mb-6">團體私人教練</h5>
+                      <p class="card-text fs-5 fs-lg-4 fw-bold text-gray-950">$2,500/堂
+                        <span class="fs-7 fw-bold ms-6 text-gray-500 text-decoration-line-through">$2,899</span>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 熱門課程卡三 -->
+              <div class="col-10 col-lg-4">
+                <a href="javascript:void(0)">
+                  <div class="card bg-blue-600">
+                    <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E5%95%86%E5%9F%8E/product-6.jpg?raw=true" class="card-img-top" alt="product-6">
+                    <div class="card-body p-7">
+                      <h5 class="card-title fs-5 fs-lg-4 fw-bold text-gray-950 mb-6">戰鬥有氧</h5>
+                      <p class="card-text fs-5 fs-lg-4 fw-bold text-gray-950">$399/人
+                        <span class="fs-7 fw-bold ms-6 text-gray-500 text-decoration-line-through">$899</span>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- 熱門裝備 -->
+          <div class="mb-4 mb-lg-11">
+            <div class="best-class d-flex justify-content-between align-items-center mb-2 mb-lg-6">
+              <p class="fs-5 fs-lg-4 fw-bold text-gray-950">熱門裝備</p>
+                <a href="javascript:void(0)" class="fs-8 fs-lg-7 fw-bold text-gray-200 text-decoration-underline">
+                  查看全部
+                </a>
+            </div>
+            <div class="row flex-nowrap scroll">
+              <!-- 熱門裝備卡一 -->
+              <div class="col-10 col-lg-4">
+                <a href="javascript:void(0)">
+                  <div class="card bg-blue-600">
+                    <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E5%95%86%E5%9F%8E/product-2.jpg?raw=true" class="card-img-top" alt="product-5">
+                    <div class="card-body p-7">
+                      <h5 class="card-title fs-5 fs-lg-4 fw-bold text-gray-950 mb-6">健身護腕</h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="card-text fs-5 fs-lg-4 fw-bold text-gray-950">$799
+                          <span class="fs-7 fw-bold ms-6 text-gray-500 text-decoration-line-through">$1,099</span>
+                        </p>
+                        <span class="badge fs-9 fs-md-8 text-warning-normal fw-bold border rounded-3 border-warning-normal">68折</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 熱門裝備卡二 -->
+              <div class="col-10 col-lg-4">
+                <a href="javascript:void(0)">
+                  <div class="card bg-blue-600 position-relative">
+                    <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E5%95%86%E5%9F%8E/product-1.jpg?raw=true" class="card-img-top" alt="product-5">
+                    <div class="px-6 py-1 bg-primary-400 fs-8 fw-bold text-gray-900 rounded-2 position-absolute mt-6 ms-6">🔥 庫存不多</div>
+                    <div class="card-body p-7">
+                      <h5 class="card-title fs-5 fs-lg-4 fw-bold text-gray-950 mb-6">深蹲護膝</h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="card-text fs-5 fs-lg-4 fw-bold text-gray-950">$419
+                          <span class="fs-7 fw-bold ms-6 text-gray-500 text-decoration-line-through">$599</span>
+                        </p>
+                        <span class="badge fs-9 fs-md-8 text-warning-normal fw-bold border rounded-3 border-warning-normal">8折</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 熱門裝備卡三 -->
+              <div class="col-10 col-lg-4">
+                <a href="javascript:void(0)">
+                  <div class="card bg-blue-600">
+                    <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E5%95%86%E5%9F%8E/product-3.jpg?raw=true" class="card-img-top" alt="product-5">
+                    <div class="card-body p-7">
+                      <h5 class="card-title fs-5 fs-lg-4 fw-bold text-gray-950 mb-6">三合一拉力帶</h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="card-text fs-5 fs-lg-4 fw-bold text-gray-950">$299
+                          <span class="fs-7 fw-bold ms-6 text-gray-500 text-decoration-line-through">$499</span>
+                        </p>
+                        <span class="badge fs-9 fs-md-8 text-warning-normal fw-bold border rounded-3 border-warning-normal">68折</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 教練團隊 -->
+      <section class="coachs">
+        <div class="container">
+          <div class="d-flex flex-column justify-content-center align-items-center text-center mb-4 mb-lg-11">
+            <p class="sub-topics mb-6 mb-lg-3">/  Team  /</p>
+            <h3 class="fs-3 fs-lg-1 text-gray-950 fw-bold">教練團隊</h3>
+          </div>
+        </div>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%95%99%E7%B7%B4%E5%9C%98%E9%9A%8A/Team%20member%20card%20(1).png?raw=true" alt="教練1">
+                <div class="coach-name p-2 p-lg-6">
+                  <p class="fs-lg-8 fw-bold text-gray-950 mb-1">復興店｜運動按摩師</p>
+                  <h5 class="fs-3 fw-bold text-primary-400">Hank</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%95%99%E7%B7%B4%E5%9C%98%E9%9A%8A/Team%20member%20card%20(2).png?raw=true" alt="教練2">
+                <div class="coach-name p-2 p-lg-6">
+                  <p class="fs-lg-8 fw-bold text-gray-950 mb-1">忠孝店｜飛輪教練</p>
+                  <h5 class="fs-3 fw-bold text-primary-400">Max</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%95%99%E7%B7%B4%E5%9C%98%E9%9A%8A/Team%20member%20card%20(3).png?raw=true" alt="教練3">
+                <div class="coach-name p-2 p-lg-6">
+                  <p class="fs-lg-8 fw-bold text-gray-950 mb-1">忠孝店｜有氧教練</p>
+                  <h5 class="fs-3 fw-bold text-primary-400">Sam</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%95%99%E7%B7%B4%E5%9C%98%E9%9A%8A/Team%20member%20card%20(4).png?raw=true" alt="教練4">
+                <div class="coach-name p-2 p-lg-6">
+                  <p class="fs-lg-8 fw-bold text-gray-950 mb-1">中山店｜啞鈴教練</p>
+                  <h5 class="fs-3 fw-bold text-primary-400">Sandy</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%95%99%E7%B7%B4%E5%9C%98%E9%9A%8A/Team%20member%20card%20(5).png?raw=true" alt="教練5">
+                <div class="coach-name p-2 p-lg-6">
+                  <p class="fs-lg-8 fw-bold text-gray-950 mb-1">光復店｜核心訓練師</p>
+                  <h5 class="fs-3 fw-bold text-primary-400">Cindy</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%95%99%E7%B7%B4%E5%9C%98%E9%9A%8A/Team%20member%20card%20(6).png?raw=true" alt="教練6">
+                <div class="coach-name p-2 p-lg-6">
+                  <p class="fs-lg-8 fw-bold text-gray-950 mb-1">忠孝店｜拳擊教練</p>
+                  <h5 class="fs-3 fw-bold text-primary-400">Tiffany</h5>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://github.com/Jo-Kyu/focus_fitness_project/blob/dev/assets/images/index_page/%E6%95%99%E7%B7%B4%E5%9C%98%E9%9A%8A/Team%20member%20card%EF%BC%887%EF%BC%89.png?raw=true" alt="教練7">
+                <div class="coach-name p-2 p-lg-6">
+                  <p class="fs-lg-8 fw-bold text-gray-950 mb-1">忠孝店｜瑜伽平衡教練</p>
+                  <h5 class="fs-3 fw-bold text-primary-400">Mandy</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- 聯絡資訊 -->
+      <section class="info-about">
+      <div class="container">
+        <!-- About-Us -->
+        <div class="about-us p-7 p-lg-9">
+          <div class="about-us-head">
+            <span class="fs-8 fs-lg-7 text-primary-400 mb-6 mb-lg-3">/  About Us  /</span>
+            <h5 class="fs-3 fs-lg-1 text-gray-950 mb-7 mb-lg-8">關於我們</h5>
+          </div>
+          <div class="about-us-body mt-7 mt-lg-8">
+            <p class="fs-7 fs-lg-4 fw-bold  text-gray-950 mb-6">我們是專注健身</p>
+            <p class="fs-7 fs-lg-4 fw-bold  text-gray-950 mb-4">專注目標肌群，感受動作完整過程，強化專屬肌肉記憶。</p>
+            <div>
+                <p class="mb-2 mb-lg-3">我們期許每一位來到這裡的健身夥伴，在每一次訓練之前，先確認目標肌群，知道自己這個動作，是要用哪一塊肌肉來完成，避免不必要的代償與受傷。</p>
+                <p class="mb-2 mb-lg-3">我們相信「專注」，是成為資深健身者的關鍵技能。當你能夠把大腦的專注力完全投注在肌肉感受上，就能產生更強的肌肉記憶，讓神經連結變得敏銳而強化，進一步提升動作效率、減少代償、減少受傷風險、達到肌肉深層刺激。</p>
+                <p>這就是我們品牌所倡導的健身哲學，透過「專注力」，完成身體與大腦的雙向進化。訓練的不只是身體，更是專注力與內在覺察力。」</p>
+            </div>
+          </div>
+        </div>
+        <!-- Contact-Us -->
+        <div class="contact-us p-7 p-lg-9">
+          <div class="contact-us-head">
+            <span class="fs-8 fs-lg-7 text-primary-400 mb-6 mb-lg-3">/  Contact Us  /</span>
+            <h5 class="fs-3 fs-lg-1 text-gray-950 mb-7 mb-lg-8">聯絡我們</h5>
+          </div>
+          <form class="contact-us-body mt-7 mt-lg-8">
+            <!-- 輸入姓名&電話 -->
+            <div class="input-info d-flex flex-column flex-lg-row">
+              <div>
+                <label for="exampleInputName" class="form-label fs-8 fw-bold text-gray-950">姓名<span class="start-red">*</span></label>
+                <input type="text" class="form-control" id="exampleInputName" placeholder="請輸入姓名">
+              </div>
+              <div>
+                <label for="exampleInputPhone" class="form-label fs-8 fw-bold text-gray-950">聯絡電話<span class="start-red">*</span></label>
+                <input type="tel" class="form-control" id="exampleInputPhone" placeholder="請輸入電話號碼">
+              </div>
+            </div>
+            <!-- 選擇時間 -->
+            <div class="input-time mb-6 mb-lg-7">
+              <p class="form-label fs-8 fw-bold text-gray-950">方便聯絡時間<span class="start-red">*</span></p>
+              <div class="d-flex flex-column flex-lg-row column-gap-2 mb-lg-2">
+                <div class="form-check m-0 pt-6 pb-6 w-100">
+                  <input class="form-check-input" type="radio" name="time" id="flexRadioDefault1">
+                  <label class="form-check-label fs-6 fw-medium text-gray-950 text-nowrap" for="flexRadioDefault1">
+                    上午 10 點 ～ 中午 12 點
+                  </label>
+                </div>
+                <div class="form-check m-0 pt-6 pb-6 w-100">
+                  <input class="form-check-input" type="radio" name="time" id="flexRadioDefault2">
+                  <label class="form-check-label fs-6 fw-medium text-gray-950" for="flexRadioDefault2">
+                    中午 12 點 ～ 下午 1 點
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-lg-row column-gap-2">
+                <div class="form-check m-0 pt-6 pb-6 w-100">
+                  <input class="form-check-input" type="radio" name="time" id="flexRadioDefault3">
+                  <label class="form-check-label fs-6 fw-medium text-gray-950" for="flexRadioDefault3">
+                    下午 1 點 ～ 下午 2 點
+                  </label>
+                </div>
+                <div class="form-check m-0 pt-6 pb-6 w-100">
+                  <input class="form-check-input" type="radio" name="time" id="flexRadioDefault4">
+                  <label class="form-check-label fs-6 fw-medium text-gray-950" for="flexRadioDefault4">
+                    傍晚 6 點 ～ 傍晚 9 點
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- 選擇方案 -->
+            <div class="input-plan mb-6 mb-lg-9">
+              <p class="form-label fs-8 fw-bold text-gray-950">諮詢服務<span class="smaller-gray">（可複選）</span></p>
+              <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <div class="form-check m-0 pt-6 pb-6 pe-104">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label fs-6 fw-medium text-gray-950" for="exampleCheck1">私人教練</label>
+                </div>
+                <div class="form-check m-0 pt-6 pb-6 pe-104">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                  <label class="form-check-label fs-6 fw-medium text-gray-950" for="exampleCheck2">團體課程</label>
+                </div>
+                <div class="form-check m-0 pt-6 pb-6 pe-104">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                  <label class="form-check-label fs-6 fw-medium text-gray-950" for="exampleCheck4">飲食規劃</label>
+                </div>
+                <div class="form-check m-0 pt-6 pb-6 pe-104">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                  <label class="form-check-label fs-6 fw-medium text-gray-950" for="exampleCheck5">運動按摩</label>
+                </div>
+              </div>
+            </div>
+            <!-- 送出表單 -->
+            <button type="submit" class="btn plan-btn">送出表單</button>
+          </form>
+        </div>
+      </div>
+      </section>
+
+      <!-- 地圖 -->
+      <section class="info-map">
+        <div class="container">
+          <div class="map">
+            <!-- 地點說明 -->
+            <div class="location p-3 p-lg-9">
+              <div class="mb-7 mb-lg-9">
+                <p class="fs-8 fs-lg-7 fw-bold text-primary-400 mb-6 mb-lg-3">/  Location  /</p>
+                <h5 class="fs-5 fs-lg-1 fw-bold text-gray-950">專注健身｜忠孝店</h5>
+              </div>
+              <div>
+                <p class="fs-8 fs-lg-7 mb-2 mb-lg-6">
+                  <img class="map-icon" src="https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/cfe32d41cf4865ed773ce38aa3184880859dff69/assets/images/icons/ic_Phone.svg" alt="ic_Phone">
+                  02-1888-2878 #9
+                </p>
+                <p class="fs-8 fs-lg-7 mb-2 mb-lg-6">
+                  <img class="map-icon" src="https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/cfe32d41cf4865ed773ce38aa3184880859dff69/assets/images/icons/ic_Mail.svg" alt="ic_Mail">
+                  FocusFitness@gym.io
+                </p>
+                <p class="fs-8 fs-lg-7">
+                  <img class="map-icon" src="https://raw.githubusercontent.com/Jo-Kyu/focus_fitness_project/cfe32d41cf4865ed773ce38aa3184880859dff69/assets/images/icons/ic_Map_Pin.svg" alt="ic_Map_Pin">
+                  台北市中正區忠孝東路198巷10-2號 B1
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
     <%- include('./layout/footer'); -%>
+    <!-- 回到頂部按鈕 -->
+    <div class="back-top">
+        <a href="#top" class="d-block">
+            <svg class="arrow-up" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="back-top-bg" d="M0 32C0 14.3269 14.3269 0 32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32Z" fill="white" fill-opacity="0.2"/>
+            <path class="back-top-arrow" d="M32 32C32.442 32 32.8658 32.1757 33.1783 32.4883L39.845 39.1549C40.4959 39.8058 40.4959 40.8608 39.845 41.5117C39.1941 42.1626 38.1391 42.1626 37.4882 41.5117L32 36.0234L26.5117 41.5117C25.8608 42.1626 24.8058 42.1626 24.1549 41.5117C23.504 40.8608 23.504 39.8058 24.1549 39.1549L30.8216 32.4883L30.9436 32.3776C31.2402 32.1345 31.6131 32 32 32ZM30.9485 22.3743C31.6031 21.8404 32.5681 21.8781 33.1783 22.4883L39.845 29.1549C40.4959 29.8058 40.4959 30.8608 39.845 31.5117C39.1941 32.1626 38.1391 32.1626 37.4882 31.5117L32 26.0234L26.5117 31.5117C25.8608 32.1626 24.8058 32.1626 24.1549 31.5117C23.504 30.8608 23.504 29.8058 24.1549 29.1549L30.8216 22.4883L30.9485 22.3743Z" fill="white"/>
+            </svg>
+        </a>
+    </div>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="carousel" src="../main.js"></script>
+    <script>
+            const swiper = new Swiper('.swiper', {
+              loop: true,
+              // Default
+              slidesPerView: 2,
+              spaceBetween: 10,
+              breakpoints: {
+                375: {
+                  slidesPerView: "auto",  // 自動根據 slide 寬度
+                  spaceBetween: -120
+                },
+                576: {
+                  slidesPerView: "auto",
+                  spaceBetween: -150
+                },
+                992: {
+                  slidesPerView: "auto",
+                  spaceBetween: -200
+                }
+              },
+              autoplay: {
+                delay: 3000, // 每 3 秒切換
+                disableOnInteraction: false, // 使用者滑動後仍繼續自動播放
+                pauseOnMouseEnter: true      // 滑鼠移到上面會暫停（可選）
+              }
+          });
+    </script>
+</body>
 </html>

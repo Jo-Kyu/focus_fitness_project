@@ -14,4 +14,11 @@
 
 // 你的基礎樣式 & 客製化
 @import "./base/base";
-@import "./custom/custom";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/index";
+@import "./pages/product_details";
+@import "./pages/product_list";
+@import "./pages/cart_step_one";
+@import "./pages/cart_step_two";
+@import "./pages/cart_step_three";
