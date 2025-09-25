@@ -88,6 +88,11 @@
   height: 145px;
 }
 
+.max-h-130 {
+  max-height: 130px;
+  height: 130px;
+}
+
 .max-h-100 {
   max-height: 100px;
   height: 100px;
@@ -301,6 +306,11 @@ input.placeholder-lg::placeholder {
 
   .max-h-md-64 {
     max-height: 64px;
+  }
+
+  .max-h-md-144 {
+    max-height: 144px;
+    height: 144px;
   }
 }
 
